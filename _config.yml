@@ -16,7 +16,7 @@ lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: ⚛️  # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://bzr2915.github.io/bzr2915/ # the base hostname & protocol for your site
-baseurl: /al-folio # the subpath of your site, e.g. /blog/
+baseurl: /bzr2915 # the subpath of your site, e.g. /blog/
 
 # baseurl: ''
 # url: 'http://localhost:4000'
