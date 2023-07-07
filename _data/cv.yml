@@ -1,97 +1,102 @@
-- title: General Information
-  type: map
+# - title: 
+#   type: map
+#   contents:
+#     - name: Full Name
+#       value: Zhaori Bi
+#     # - name: Date of Birth
+#     #   value: 14th March 1879
+#     - name: Languages
+#       value: English, Chinese
+
+- title: Academic Interests
+  type: time_table
   contents:
-    - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
-    - name: Languages
-      value: English, German
+    - year: AI EDA
+      items: 
+        - Black-box Optimization Methods
+        - Circuit Behavior Modeling
+        - Automated Sizing, Layout
+    - year: AI Medical
+      items: 
+        - AI for Medical Application
+        - Virtual Touch  
+  
+
+- title: Fund
+  type: time_table
+  contents:
+    - title: Shanghai Sailing Program 19YF1405600 (¥200k)
+      institution: The Science and Technology Commission of Shanghai Municipality (STCSM) 
+      year: 2019 - 2022
+
+
+- title: Experience
+  type: time_table
+  contents:
+    - title: Assistant Professor
+      institution: State Key Laboratory of Integrated Chips and Systems, Fudan University, Shanghai
+      year: 2021 - now
+    - title: Assistant Researcher
+      institution: National Clinical Research Center for Aging and Medicine, Huashan Hospital, Fudan University, Shanghai
+      year: 2018 - 2021
+    - title: Design Automation Engineer Intern
+      institution: AMS-AG, Plano, TX
+      year: 2016
+      # description:
+      #   - Description 1.
+      #   - Description 2.
+
+    - title: Teaching Assistant
+      institution: The University of Texas at Dallas
+      year: 2013 -- 2017
 
 - title: Education
   type: time_table
   contents:
     - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+      institution: University of Texas at Dallas, Richardson, U.S.A
+      year: Dec. 2017
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
+        - Computer Engineering
+        - Thesis "Efficient and Quality Assured Techniques for Analog Circuit Design Automation"
+    - title: M.Sc.
+      institution: University of Texas at Dallas, Richardson, U.S.A
+      year: May. 2013
       description:
-        - Description 1.
-        - Description 2.
-
-- title: Experience
-  type: time_table
-  contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+        - Electrical Engineering
+        - Thesis "Near Field Communication System Design with A Circuit Implementation"
+    - title: B.A.(Second Degree)
+      institution: Huazhong University of Science and Technology, Wuhan, Hubei
+      year: Jun. 2011
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+        - English Language and Literature\Letters
+    - title: B.Eng.
+      institution: Wuhan University of Technology, Wuhan, Hubei
+      year: Jun. 2011
       description:
-        - Description 1.
-        - Description 2.
+        - Electronic Information Engineering
 
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
 
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
-      description:
+  
+# - title: Open Source Projects
+#   type: time_table
+#   contents:
+#     - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
+#       year: 2015-now
+#       description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
 
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
+# - title: Honors and Awards
+#   type: time_table
+#   contents:
+#     - year: 1921
+#       items: 
+#         - Nobel Prize in Physics 
+#         - Matteucci Medal
+#     - year: 2029
+#       items: 
+#         - Max Planck Medal
 
-- title: Open Source Projects
-  type: time_table
-  contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
-
-- title: Honors and Awards
-  type: time_table
-  contents:
-    - year: 1921
-      items: 
-        - Nobel Prize in Physics 
-        - Matteucci Medal
-    - year: 2029
-      items: 
-        - Max Planck Medal
-
-- title: Academic Interests
-  type: nested_list
-  contents:
-    - title: Topic 1.
-      items: 
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
-      items:
-        - Description 1.
-        - Description 2.
-
-- title: Other Interests
-  type: list
-  contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+# - title: Other Interests
+#   type: list
+#   contents:
+#     - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
