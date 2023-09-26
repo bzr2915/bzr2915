@@ -18,6 +18,9 @@ icon: ⚛️  # the emoji used as the favicon (alternatively, provide image name
 #url: https://alshedivat.github.io # the base hostname & protocol for your site
 #baseurl: /al-folio # the subpath of your site, e.g. /blog/
 
+# url: https://bzr2915.github.io/bzr2915/ # the base hostname & protocol for your site
+# baseurl: /bzr2915 # the subpath of your site, e.g. /blog/
+
 baseurl: ''
 url: 'http://localhost:4000'
 last_updated: false # set to true if you want to display last updated in the footer
