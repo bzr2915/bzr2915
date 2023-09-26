@@ -1,1 +1,25 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://bzr2915.github.io/bzr2915//bzr2915/feed.xml" rel="self" type="application/atom+xml" /><link href="https://bzr2915.github.io/bzr2915//bzr2915/" rel="alternate" type="text/html" hreflang="en" /><updated>2023-07-07T03:47:37+00:00</updated><id>https://bzr2915.github.io/bzr2915//bzr2915/feed.xml</id><title type="html">blank</title><subtitle></subtitle></feed>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2023-09-26T11:37:13+00:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">blank</title><subtitle></subtitle><entry><title type="html">Our paper titled “cVTS A Constrained Voronoi Tree Search Method for High Dimensional Analog Circuit Synthesis” is accepted with 2023 60th DAC!</title><link href="http://localhost:4000/blog/2023/DAC-paper/" rel="alternate" type="text/html" title="Our paper titled “cVTS A Constrained Voronoi Tree Search Method for High Dimensional Analog Circuit Synthesis” is accepted with 2023 60th DAC!" /><published>2023-07-12T00:00:00+00:00</published><updated>2023-07-12T00:00:00+00:00</updated><id>http://localhost:4000/blog/2023/DAC-paper</id><content type="html" xml:base="http://localhost:4000/blog/2023/DAC-paper/"><![CDATA[<p>Abstract: A constrained Voronoi tree-based domain decomposition method for high dimensional Bayesian optimization is proposed to solve large scale analog circuit synthesis problems, which can be formulated as high-dimensional heterogeneous black-box optimization. Hierarchical Voronoi tree progressively breaks down the design space into partitions with implicit performance boundaries such that promising regions are efficiently explored. Fast exploitation is ensured in Voronoi nest via local Bayesian optimization with a few observations. A slice enhanced Gibbs sampling method is proposed to sample acquisition function cMES in irregular polyhedrons with design constraints. Compared with the state-of-the-art methods, cVTS achieved significant speed-up without loss of accuracy.</p>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/DAC_poster_1-480.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/DAC_poster_1-800.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/DAC_poster_1-1400.webp" />
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/DAC_poster_1.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+
+  </picture>
+
+</figure>
+
+    </div>
+</div>
+<div class="caption">
+    Our poster in 60' DAC.
+</div>]]></content><author><name></name></author><category term="paper" /><category term="accepted" /><summary type="html"><![CDATA[paper accepted]]></summary></entry></feed>
