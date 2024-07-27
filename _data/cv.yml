@@ -28,9 +28,13 @@
     - title: Shanghai Sailing Program 19YF1405600 (¥200k)
       institution: The Science and Technology Commission of Shanghai Municipality (STCSM) 
       year: 2019 - 2022
+    - title: General Research Project Fund (¥400k)
+      institution: State Key Laboratory of Integrated Chips and Systems
+      year: 2023 - 2024
     - title: Young Scientists Fund 62304052 (¥300k)
       institution: National Natural Science Foundation of China (NSFC) 
       year: 2024 - 2026
+
 
 
 - title: Experience
@@ -79,6 +83,13 @@
       description:
         - Electronic Information Engineering
 
+- title: Honors and Awards
+  type: time_table
+  contents:
+    - year: 2023
+      items: 
+        - Honorable Mention Award,  IEEE ICCAD CAD 2023 Problem C.
+        - 1st place Award, OpenDACs 2023 Competition.
 
   
 # - title: Open Source Projects
@@ -88,16 +99,7 @@
 #       year: 2015-now
 #       description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
 
-# - title: Honors and Awards
-#   type: time_table
-#   contents:
-#     - year: 1921
-#       items: 
-#         - Nobel Prize in Physics 
-#         - Matteucci Medal
-#     - year: 2029
-#       items: 
-#         - Max Planck Medal
+
 
 # - title: Other Interests
 #   type: list
