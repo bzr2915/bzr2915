@@ -86,11 +86,17 @@
 - title: Honors and Awards
   type: time_table
   contents:
+    - year: 2024
+      items: 
+        - 2024 EDA² Youth Technology Award
+        - 2024 ISEDA Best Paper Award
+        - 2024 CODES+ISSS Best Paper Nomination
+        - 3rd place Award, China Postgraduate Innovation Competition EDA Elite Challenge
+        - 2nd place Award, China College IC Competition(Huadong)
     - year: 2023
       items: 
-        - Honorable Mention Award,  IEEE ICCAD CAD 2023 Problem C.
-        - 1st place Award, OpenDACs 2023 Competition.
-
+        - Honorable Mention Award,  IEEE ICCAD CAD 2023 Problem C
+        - 1st place Award, OpenDACs 2023 Competition
   
 # - title: Open Source Projects
 #   type: time_table
