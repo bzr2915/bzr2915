@@ -135,7 +135,8 @@
   publisher={IEEE},
   abbr={TCAD},
   label={AI for EDA},
-  selected={false}
+  selected={false},
+  abstract={Yield optimization is a critical task in analog circuit design automation, where the goal is to maximize the probability that a circuit meets its performance specifications under process variations. However, the high dimensionality of the design space poses significant challenges for efficient yield optimization. This paper proposes a high-dimensional yield optimization method for analog circuits that combines Monte Carlo tree search (MCTS) with a self-regressive auto-encoder promoted subspace decomposed Gaussian process. The MCTS quickly identifies promising local regions within the design space, while the self-regressive auto-encoder learns a compact latent representation to enable effective subspace decomposition. The subspace decomposed Gaussian process then performs efficient Bayesian optimization within the identified regions. Experimental results on real-world analog circuits demonstrate that the proposed method significantly outperforms state-of-the-art yield optimization approaches in both efficiency and solution quality.}
 }
 
 @article{shen2025atelier,
@@ -146,7 +147,8 @@
   publisher={IEEE},
   abbr={TCAD},
   label={AI for EDA},
-  selected={false}
+  selected={false},
+  abstract={The design of analog circuits requires substantial domain-specific knowledge and extensive manual effort, yet data scarcity limits the application of machine learning techniques in this field. This paper presents Atelier, a large language model (LLM)-based framework for analog circuit design that integrates general-purpose LLMs with a high-quality, compact knowledge base to fulfill the considerable knowledge requirements, obviating the need for extensive domain-specific training or fine-tuning. The framework comprises several LLM agents, structured in a graph-of-thoughts architecture, with each agent specialized in a distinct task including circuit analysis, topology selection, topology modification, parameter tuning, and design decision. The collaborative multi-agent system, enriched with access to the compact knowledge base and advanced mechanisms such as self-reflection, backtracking, and tool integration, automates the analog circuit design process and significantly enhances design quality and efficiency while ensuring interpretability. Experimental results highlight Atelier's superiority over state-of-the-art black-box methods, general-purpose LLMs, and LLM-based methods, demonstrating notable improvements in success rates, design quality, and runtime.}
 }
 
 @article{zhao2024vtsmoc,
@@ -157,7 +159,8 @@
   publisher={IEEE},
   abbr={TCAD},
   label={AI for EDA},
-  selected={false}
+  selected={false},
+  abstract={Multi-objective optimization with constraints is an important and practical problem in high-dimensional analog circuit synthesis. This paper proposes VTSMOC, an efficient Voronoi tree search boosted multi-objective Bayesian optimization method with constraints for high-dimensional analog circuit synthesis. VTSMOC decomposes the design space into Voronoi cells, dynamically constructing a hierarchical Voronoi tree through clustering observations with dominance relationships. The hierarchical Voronoi tree progressively partitions the design space to identify promising regions with implicit performance boundaries, enabling efficient exploration of the high-dimensional multi-objective optimization landscape. Combined with a local Bayesian optimization strategy within each partition that accounts for multiple objectives and constraints, the method effectively balances exploration and exploitation. Experimental results on both synthetic benchmarks and real-world analog circuits demonstrate that VTSMOC significantly outperforms state-of-the-art multi-objective optimization methods in terms of optimization quality and convergence speed for high-dimensional constrained analog circuit synthesis.}
 }
 
 @article{APPLE,
@@ -168,7 +171,8 @@
   publisher={IEEE},
   abbr={TCAD},
   label={AI for EDA},
-  selected={false}
+  selected={false},
+  abstract={The synthesizable and parameterizable RISC-V microarchitecture, combined with multi-objective optimization-based design space exploration (DSE), facilitates agile adaptation to various microprocessor designs for customized applications. However, to enhance design quality, DSE must consider both architecture parameters and EDA tool parameters, resulting in exponentially increased optimization complexity with the dimensionality of parameters. Exhaustively exploring the whole design space is impossible, and due to the time-consuming nature of microprocessor simulation, minimizing the number of simulations is imperative. This paper proposes APPLE-DSE, an asynchronous parallel Pareto set learning method for microarchitecture DSE. APPLE-DSE utilizes the Pareto Set Learning (PSL) technique to obtain an approximate Pareto front with a light-weight evaluation. PSL captures the structural characteristics of the Pareto set guided by surrogate models, enabling exploration of any trade-off area in the approximate Pareto set. Employing the Probabilistic Reparameterization (PR) technique, APPLE-DSE adapts PSL to handle discrete variables. Furthermore, APPLE-DSE incorporates a simulation time-aware asynchronous parallel scheduling strategy to further enhance optimization efficiency. Experimental results show that APPLE-DSE achieves a maximum improvement of 16.81% in hypervolume within the same time budget and a 127.73x speedup in algorithm run time per iteration compared to state-of-the-art methods.}
 }
 
 @article{pPIRW,
@@ -179,7 +183,8 @@
   publisher={IEEE},
   abbr={TCAD},
   label={AI for EDA},
-  selected={false}
+  selected={false},
+  abstract={Conventional deterministic thermal analysis methods have difficulties in obtaining local temperature solutions efficiently, and the existing stochastic method is inaccurate when dealing with thermal analysis problems involving Robin boundary conditions (BCs). This paper proposes a highly parallelized path integral random walk (PIRW) solver for steady-state thermal analysis with mixed boundary conditions, especially Robin BCs. The rigorous calculation of the local time and the Feynman-Kac functional are adopted to accurately handle Neumann and Robin boundary conditions for the first time. Based on the PIRW, an accurate and microsecond-level pre-calculation PIRW (pPIRW) predictor is proposed, which pre-calculates time-consuming random walks, obtains temperatures by simple vector multiplication, and is suitable for proactive thermal management. Compared with 3D-ICE, the PIRW solver maintains high accuracy with a negligible error within 0.5 degrees Celsius, achieves 136-209x speedup and 8.53-11.1x storage space reduction with all three kinds of boundary conditions. The pPIRW has speed improvement of 2.5e4-6.7e6x and memory reduction of 36.6-42.5x over PIRW without loss of accuracy.}
 }
 
 @article{ATOM,
@@ -190,7 +195,8 @@
   publisher={IEEE},
   abbr={TCAD},
   label={AI for EDA},
-  selected={false}
+  selected={false},
+  abstract={Automated topology synthesis of operational amplifiers is a fundamental yet challenging task in analog circuit design automation. The design space for behavior-level opamp topologies involves numerous connections that are difficult to comprehend, and evaluating each topology incurs substantial computational costs. This paper proposes ATOM, an automatic opamp topology synthesis framework that constructs a concise design space for behavior-level opamp topologies consisting of topologies designers can easily understand, and proposes an opamp topology optimization method incorporating freeze-thaw Bayesian optimization that efficiently explores the design space and expedites the evaluation process. Experimental studies demonstrate that ATOM outperforms state-of-the-art topology synthesis methods in terms of success rate and optimization results while reducing the number of required simulations by up to 8.15 times.}
 }
 
 @article{gu2023bbgp,
@@ -201,7 +207,8 @@
   publisher={IEEE},
   abbr={TCAD},
   label={AI for EDA},
-  selected={true}
+  selected={true},
+  abstract={High-dimensional analog circuit synthesis is a challenging simulation-expensive optimization problem. This paper proposes BBGP-sDFO, a novel batch Bayesian and Gaussian process enhanced subspace derivative free optimization method to solve high-dimensional and simulation-expensive analog circuit optimization problems. The method includes a batch Bayesian querying strategy for exploring the global design space and a Gaussian process enhanced subspace derivative free optimization method for exploiting promising regions in effective low-dimensional subspace. By combining global exploration with local exploitation in reduced subspaces, BBGP-sDFO efficiently handles the curse of dimensionality while maintaining high optimization quality. Experimental results on both synthetic benchmarks and real-world analog circuits demonstrate that BBGP-sDFO significantly outperforms state-of-the-art methods in terms of optimization efficiency and solution quality for high-dimensional analog circuit synthesis.}
 }
 
 @article{chen2023pneurfill,
@@ -212,7 +219,8 @@
   publisher={IEEE},
   abbr={TCAD},
   label={AI for EDA},
-  selected={false}
+  selected={false},
+  abstract={Dummy filling is widely applied to significantly improve the planarity of topographic patterns for the chemical mechanical polishing (CMP) process in VLSI manufacturing, with dummy synthesis serving as the key step to adjust the post-CMP profile height. However, existing dummy synthesis optimization approaches usually fail to balance the filling quality and efficiency. This paper proposes pNeurFill, an enhanced neural network model-based dummy filling synthesis framework with perimeter adjustment, integrated with a multiple starting points-sequential quadratic programming (MSP-SQP) optimization solver. Inside this framework, a full-chip CMP simulator is first migrated to the neural network, achieving 8134x speedup on gradient calculation by backward propagation. An improved version with perimeter adjustment (pNeurFill) is further implemented to alleviate the post-CMP height variation caused by dummy perimeter. The extra perimeter adjustment strategy in pNeurFill achieves an average 66.97 Angstrom decrease in height variation and 8.92% quality improvement compared to the baseline NeurFill.}
 }
 
 @article{bao2024multiagent,
@@ -223,7 +231,8 @@
   publisher={IEEE},
   abbr={TCAD},
   label={AI for EDA},
-  selected={false}
+  selected={false},
+  abstract={Despite the effort of analog circuit design automation, complex analog circuit design still requires extensive manual iterations, making it labor intensive and time-consuming. Recently, reinforcement learning (RL) algorithms have been demonstrated successfully for analog circuit design optimization. However, a robust and highly efficient RL method to design analog circuits with complex design space has not been fully explored yet. In this work, inspired by multiagent planning theory as well as human expert design practice, a multiagent-based RL (MA-RL) framework is proposed. The framework partitions complex analog circuits into several subblocks based on topology information and effectively reduces the complexity of the design search space. It leverages MA-RL for circuit optimization, where each agent corresponds to a single subblock, and the interactions between agents delicately mimic the design tradeoffs between circuit subblocks by human experts. Three different multiagent RL algorithms and corresponding frameworks are introduced and compared to demonstrate the effectiveness of the MA-RL method, with twin-delayed techniques and proximal policy employed to further boost training stability and accomplish higher performances. Experiments on three different complex analog circuit topologies (gain boost amplifier, delay-locked loop, and SAR ADC) and knowledge transfer demonstrate the advantages of the proposed approach.}
 }
 
 @article{he2022batched,
@@ -234,7 +243,8 @@
   publisher={IEEE},
   abbr={TCAD},
   label={AI for EDA},
-  selected={false}
+  selected={false},
+  abstract={Analog circuit design automation and determining design parameters can be formulated as a constrained nonlinear optimization problem, with the design goal of optimizing circuit performances such as power consumption, bandwidth, and gain to meet specifications. This paper proposes a constrained batch Bayesian optimization approach for analog circuit synthesis via multi-fidelity modeling. The batch Bayesian optimization exploits parallel computing and selects promising parameters by multiple acquisition function ensemble. The multi-fidelity model combines information from low and high fidelity simulations to reduce the number of time-consuming high-fidelity simulations required. A well-designed batch selection policy improves hardware resource utilization and convergence rate. Experimental results on real-world analog circuits demonstrate that the proposed method achieves superior optimization results with significantly reduced simulation costs compared to state-of-the-art methods.}
 }
 
 @article{yang2017smart,
@@ -247,7 +257,8 @@
   year={2017},
   publisher={IEEE},
   abbr={TCAD},
-  label={AI for EDA}
+  label={AI for EDA},
+  abstract={Automated analog circuit design is promising for increasing the design productivity and narrowing the time-to-market, but is facing the bottleneck of tremendous design complexity. In this paper, a simulation-based optimization approach named smart-multiple starting point (MSP) is proposed for analog circuit synthesis. The proposed smart-MSP is based on the framework of MSP optimization, which is shown to be much more efficient than other global optimization methods like simulated annealing, genetic algorithm, particle swarm optimization, etc. Efficient techniques including heuristic-biased starting point selection, sparse regression and probabilistic TABU are developed in smart-MSP and make the algorithm self-adaptive by learning from the previous local searches and can efficiently produce optimal results to approximate the global optimum. Experimental results on real-world analog circuits demonstrate that smart-MSP achieves significant improvements in optimization efficiency and solution quality compared to existing approaches.}
 }
 
 @article{feng2025hierarchical,
@@ -261,7 +272,8 @@
   publisher={ACM New York, NY},
   abbr={TODAES},
   label={AI for EDA},
-  selected={false}
+  selected={false},
+  abstract={Design automation of complex analog circuits (CAC) with multiple sub-blocks is challenging mainly due to large design search space, uncertain intermediate subgoal creation, and lengthy CAC simulation runtime. This paper proposes a hierarchical and heterogeneous integration framework as a fully automated and time-efficient CAC design optimization solution. The framework decomposes CAC into two levels hierarchically and for the first time introduces hierarchical reinforcement learning agents with hindsight and subgoal testing to automate the subgoal creation between these two levels. The subgoal converges to the optimal value through algorithm interactions. At each level, optimization algorithms are integrated to efficiently search the design space within the constraints defined by the hierarchical subgoals. Experimental results on complex analog circuits demonstrate that the proposed framework achieves significant improvements in both design quality and optimization time compared to state-of-the-art methods.}
 }
 
 @article{bi2024optimization,
@@ -275,7 +287,8 @@
   publisher={ACM New York, NY, USA},
   abbr={TODAES},
   label={AI for EDA},
-  selected={false}
+  selected={false},
+  abstract={Large-scale analog circuit sizing is a challenging optimization problem due to the high dimensionality and expensive simulation costs. This paper proposes D3PBO, a dynamic domain decomposition-based parallel Bayesian optimization method for large-scale analog circuit sizing. D3PBO introduces the dynamic domain decomposition method based on maximum variance between clusters, where the search space is decomposed into subdomains progressively to limit the maximal number of observations in each domain. The time complexity of D3PBO is constant for each iteration, enabling scalable optimization. Multiple Bayesian optimization instances run in parallel across the decomposed subdomains, efficiently utilizing computational resources while maintaining effective exploration of the design space. Experiments demonstrate that D3PBO obtains better results with significantly less runtime consumption compared to state-of-the-art methods, achieving up to 10x runtime speedup compared to TuRBO with better solutions for circuit optimization experiments.}
 }
 
 @article{bi2017optimization,
@@ -289,7 +302,8 @@
   publisher={ACM New York, NY, USA},
   abbr={TODAES},
   label={AI for EDA},
-  selected={false}
+  selected={false},
+  abstract={Analog circuit design optimization can be formulated as a global optimization problem, where the objective is to find optimal design parameters that satisfy performance specifications. This paper proposes a random region covering method for optimization and quality estimation of circuit design. The method introduces multiple random regions to cover the design space and employs local optimization solvers initiated from random starting points within each region to explore the optimization landscape. A quality estimation framework is developed to assess the quality of obtained solutions without exhaustive enumeration, providing statistical guarantees on the optimality of the design. Experimental results on analog circuit design problems demonstrate that the proposed method achieves efficient global optimization with reliable quality estimation, outperforming conventional optimization approaches.}
 }
 @article{GAOTIANNING,
   title={A RISC-V PPA-fusion Cooperative Optimization Framework Based on Hybrid Strategies},
@@ -301,7 +315,8 @@
   year={2024},
   publisher={IEEE},
   abbr={TVLSI},
-  label={AI for EDA}
+  label={AI for EDA},
+  abstract={The optimization of RISC-V designs, encompassing both microarchitecture and CAD tool parameters, is a great challenge due to an extensive and high-dimensional search space. To achieve optimal results across various RISC-V designs, this paper proposes a cooperative optimization framework (COF) that integrates multiple black-box optimizers, each specializing in different optimization problems, based on hybrid strategies. The COF introduces the landscape knowledge exchange mechanism (LKEM) to direct the optimizers to share their knowledge of the optimization problem, and employs the dynamic computational resource allocation (DCRA) strategies to dynamically allocate computational resources to the optimizers. By fusing PPA (power, performance, and area) objectives, the framework enables comprehensive cooperative optimization of RISC-V processor designs. Experimental results demonstrate that the proposed framework achieves superior PPA trade-offs compared to state-of-the-art design space exploration methods.}
 }
 @article{qian2014automated,
   title={Automated technology migration methodology for mixed-signal circuit based on multistart optimization framework},
@@ -313,7 +328,8 @@
   year={2014},
   publisher={IEEE},
   abbr={TVLSI},
-  label={AI for EDA}
+  label={AI for EDA},
+  abstract={Technology migration for mixed-signal circuits from one process node to another is a critical but labor-intensive task in the semiconductor industry. This paper presents a hierarchical methodology for efficiently migrating mixed-signal circuit design from one technology node to another, while keeping the same circuit and layout topologies. The multistart global optimization technique is applied to resize the transistor-level block in systematic connection, which provides a good initial point for next system-level refinement. For obtaining a process and parasitic closure solution, both parasitic and process variation effects are explored and used to constrain the schematic migration. A representative mixed-signal system, charge-pump phase-locked loop, is used to validate the proposed methodology. The experimental results show that the proposed methodology efficiently generates quality designs in target technology with much less simulation iterations, when comparing with recent available approaches.}
 }
 @inproceedings{tSS-BO,
   title={tSS-BO: Scalable Bayesian Optimization for Analog Circuit Sizing via Truncated Subspace Sampling},
