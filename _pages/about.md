@@ -3,6 +3,8 @@ layout: about
 title: About
 permalink: /
 subtitle: <a href='#'>Assistant Professor</a>. Fudan University, Shanghai, zhaori_bi AT fudan.edu.cn
+lang: en
+lang_alternate: /zh/
 
 profile:
   align: right
