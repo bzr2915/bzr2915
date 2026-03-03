@@ -2,26 +2,18 @@
 layout: about
 title: About
 permalink: /
-subtitle: <a href='#'>Assistant Professor</a>. College of Integrated Circuits & Micro Nano Electronics, Fudan University
+subtitle: <a href='#'>Assistant Professor</a>. Fudan University, Shanghai, zhaori_bi AT fudan.edu.cn
 lang: en
 lang_alternate: /zh/
 
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: false
+  image_circular: false # crops the image to make it circular
 
-news: true
-latest_posts: true
-selected_papers: true
-social: true
+news: true  # includes a list of news items
+latest_posts: true  # includes a list of the newest posts
+selected_papers: true # includes a list of papers marked as "selected={true}"
+social: true  # includes social icons at the bottom of the page
 ---
-Zhaori Bi is an Assistant Professor at the College of Integrated Circuits & Micro Nano Electronics, Fudan University, and a member of the EDA Innovation Center at the State Key Laboratory of Integrated Chips and Systems.
-
-As chip design complexity grows exponentially, traditional EDA methods struggle to keep pace. His research pursues an AI-native approach to EDA — where artificial intelligence is not merely a tool assisting conventional workflows, but the central driving force of the design process, orchestrating EDA tools as modular services. This vision spans black-box optimization methods (Bayesian optimization, reinforcement learning, Monte Carlo tree search), circuit behavior modeling, and automated analog circuit synthesis.
-
-His work has been published at leading venues including DAC, ICCAD, DATE, and IEEE TCAD/TODAES. He serves as an Associate Editor of *Integration, the VLSI Journal*, and has received the EDA² Youth Technology Award and ISEDA Best Paper Award.
-
-He also explores AI applications in medicine, collaborating with clinicians on machine-learning-based diagnostic and prediction models.
-
-He received his Ph.D. and M.S. in Electrical/Computer Engineering from the University of Texas at Dallas.
+Bi, Zhaori, Ph.D., is an Assistant Professor at Fudan University, Shanghai. He obtained his Master's and Ph.D. degrees at the University of Texas at Dallas in Electrical Engineering and Computer Engineering in May 2013 and December 2017, respectively. In 2017, he worked as an intern CAD engineer at the R&D division of Austria Mikro Systeme, Plano, United States. He joined Fudan University in 2018. His research focuses on fusion circuit design, circuit performance optimization, and medical AI applications. He is an Associate Editor of Integration, The VLSI Journal.
