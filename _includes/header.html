@@ -104,6 +104,15 @@
                 </button>
               </li>
               {%- endif %}
+
+              <!-- Language toggle -->
+              <li class="nav-item">
+                {%- if page.lang == 'zh' -%}
+                <a class="nav-link" href="{{ page.lang_alternate | default: '/' | relative_url }}">EN</a>
+                {%- else -%}
+                <a class="nav-link" href="{{ page.lang_alternate | default: '/zh/' | relative_url }}">中</a>
+                {%- endif -%}
+              </li>
             </ul>
           </div>
         </div>
