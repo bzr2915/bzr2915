@@ -11,7 +11,8 @@
   organization={IEEE},
   abbr={DAC},
   label={AI for EDA},
-  selected={true}
+  selected={true},
+  abstract={Numeric optimization methods are widely utilized to tackle complex analog circuit sizing problems, where the challenges include expensive simulations, non-linearity, and high parameter dimensionality. However, the diverse characteristics exhibited by different circuits result in varied optimization landscapes, making it difficult to identify a single algorithm that consistently outperforms others across all problems. This paper proposes MARIO, a multi-algorithm interworking optimization framework that achieves optimization superadditivity based on a pool of member algorithms and a powerful algorithm-interworking protocol. A computing resource reallocation method is proposed, which employs multi-task Gaussian process regression and portfolio optimization techniques, leading to flexible and prudent online adaption of member algorithms. Furthermore, a cooperative local refinement feature is introduced, allowing algorithms to share evaluation data and leverage each other's strengths for local search. Experimental results on both synthetic benchmarks and real-world analog circuits demonstrate that MARIO surpasses existing algorithm-combining tools and standard optimization methods.}
 }
 
 @inproceedings{lbyl,
@@ -23,7 +24,8 @@
   organization={IEEE},
   abbr={DAC},
   label={AI for EDA},
-  selected={false}
+  selected={false},
+  abstract={High-dimensional constrained optimization poses significant challenges in analog circuit design automation, where expensive simulations and complex design spaces hinder efficient exploration. This paper proposes a self-review Bayesian optimization method that integrates a teacher-student paradigm within a local Bayesian optimization framework to reduce model errors and enhance exploration efficiency in constrained high-dimensional design spaces. The method employs deep ensembles for effective constraint handling, enabling reliable identification of feasible regions. Experimental results on both synthetic benchmarks and real-world analog circuits demonstrate that the proposed approach achieves superior performance compared to state-of-the-art methods for constrained high-dimensional design space exploration.}
 }
 
 @inproceedings{himoss,
@@ -34,7 +36,8 @@
   organization={IEEE},
   abbr={DAC},
   label={AI for EDA},
-  selected={false}
+  selected={false},
+  abstract={This study presents a novel high-dimensional multi-objective optimization method via adaptive gradient-based subspace sampling for analog circuit sizing. To handle constrained multi-objective optimization, we exploit promising regions from a non-crowded Pareto front, with lightweight Bayesian optimization (BO) based on a novel approximate constrained expected hypervolume improvement. This lightweight BO is computational efficient with constant complexity concerning simulation numbers. To tackle high-dimensional challenges, we reduce the effective dimensionality around promising regions by sampling candidates in an adaptive subspace. The subspace is constructed with gradients and previous success steps with their significance decaying over iterations. The gradients are approximated by sparse regression without additional simulations. The experiments on synthetic benchmarks and analog circuits illustrate advantages of the proposed method over Bayesian and evolutionary baselines.}
 }
 
 @inproceedings{evdmarl,
@@ -45,7 +48,8 @@
   organization={IEEE},
   abbr={DAC},
   label={AI for EDA},
-  selected={true}
+  selected={true},
+  abstract={Automated analog circuit design migration significantly alleviates the burden on designers in circuit sizing under various operating conditions. Conventional methods model the migration problem as black-box optimization, requiring excessive iterations of costly simulations to converge. Reinforcement learning exhibits significant promise in transfer learning, as it enables the generation of circuits that fulfill specifications efficiently. This paper proposes EVDMARL, a novel value decomposition-based multi-agent reinforcement learning framework that models complex analog circuits and eliminates the need for manually defined specifications of sub-circuits for new operating conditions. Furthermore, domain randomization is incorporated to efficiently generate circuits that meet unforeseen scenarios with minimal simulations. Experimental results on real-world analog circuits demonstrate the effectiveness of the proposed framework for complex analog circuit design migration.}
 }
 
 @inproceedings{zhao2023cvts,
@@ -56,7 +60,8 @@
   organization={IEEE},
   abbr={DAC},
   label={AI for EDA},
-  selected={true}
+  selected={true},
+  abstract={A constrained Voronoi tree-based domain decomposition method for high-dimensional Bayesian optimization is proposed to solve large scale analog circuit synthesis problems, which can be formulated as high-dimensional heterogeneous black-box optimization. The hierarchical Voronoi tree progressively breaks down the design space into partitions with implicit performance boundaries such that promising regions are efficiently explored. Combined with a local Bayesian optimization strategy within each partition, the method effectively balances exploration and exploitation in high-dimensional spaces. Experimental results on both synthetic benchmarks and real-world analog circuits demonstrate that the proposed method significantly outperforms state-of-the-art methods in terms of optimization quality and convergence speed.}
 }
 
 @inproceedings{zhao2025seeing,
@@ -68,7 +73,8 @@
   organization={IEEE},
   abbr={ICCAD},
   label={AI for EDA},
-  selected={false}
+  selected={false},
+  abstract={SRAM yield analysis in post-layout simulation is critical for ensuring reliable memory designs under process variations. This paper proposes BAGNet, a boundary-aware graph neural network that captures the complex relationships between layout parasitics and SRAM yield metrics. By incorporating boundary-aware attention mechanisms and graph-based representations of the SRAM post-layout structure, BAGNet effectively models the spatial dependencies and boundary effects that significantly impact yield. Experimental results demonstrate that BAGNet achieves highly accurate SRAM yield predictions in post-layout simulation, outperforming existing methods while providing valuable insights for yield-driven design optimization.}
 }
 
 @inproceedings{sang,
@@ -80,7 +86,8 @@
   organization={IEEE},
   abbr={ICCAD},
   label={AI for EDA},
-  selected={false}
+  selected={false},
+  abstract={Modern processor microarchitectures face increasing complexity with larger search spaces and lengthy design-to-silicon validation flows. While reusing design knowledge across architectures offers efficiency gains, the common practice remains specific-architecture search due to discrepancies in power, performance, and area metrics. This paper proposes an attention-based microarchitecture search framework for effective cross-architecture knowledge transfer. A cross-attention network is designed to capture interdependencies between microarchitectural topology and design tool configurations, enabling knowledge adaptation across architectures with minimal fine-tuning. Complemented by an uncertainty-guided optimization strategy, the framework efficiently navigates the design space based on specific user preferences. Experimental results demonstrate that the proposed method achieves significant speedup in microarchitecture design space exploration while maintaining high-quality design outcomes.}
 }
 
 @inproceedings{ajoint,
@@ -91,7 +98,8 @@
   organization={IEEE},
   abbr={ICCAD},
   label={AI for EDA},
-  selected={false}
+  selected={false},
+  abstract={Current state-of-the-art analog circuit sizing methods predominantly rely on derivative-free algorithms, but these methods struggle with sample efficiency due to the lack of derivative information, acting as a bottleneck for further advancements. Classic sensitivity analysis computes partial derivatives of circuit performance with respect to design parameters, enabling efficient first-order optimization. However, sensitivity-driven analog sizing has seen limited use due to accumulated numerical errors from nonlinear devices and the complex, non-convex nature of circuit optimization problems, which makes local search methods like gradient descent ineffective for global optimization. This paper proposes DarBO, a derivative-aware Bayesian optimization method that uses derivatives from error-suppressed adjoint sensitivity analysis to improve Gaussian process posteriors in local optimization, enhancing convergence with fewer circuit simulations. Experimental results on both synthetic benchmarks and real-world analog circuits demonstrate the effectiveness of the proposed approach.}
 }
 
 @inproceedings{li2024analoggym,
@@ -103,7 +111,8 @@
   organization={IEEE},
   abbr={ICCAD},
   label={AI for EDA},
-  selected={false}
+  selected={false},
+  abstract={Recent advances in machine learning for automating analog circuit synthesis have been significant, yet challenges remain. A critical gap is the lack of a standardized evaluation framework, compounded by various process design kits, simulation tools, and a limited variety of circuit topologies. These factors hinder direct comparisons and the validation of algorithms. To address these shortcomings, we introduce AnalogGym, an open-source testing suite designed to provide fair and comprehensive evaluations. AnalogGym includes 30 circuit topologies in five categories: sensing front ends, voltage references, low dropout regulators, amplifiers, and phase-locked loops. It supports several technology nodes for academic and commercial applications and is compatible with commercial simulators such as Cadence Spectre, Synopsys HSPICE, and the open-source simulator Ngspice. AnalogGym standardizes the assessment of ML algorithms in analog circuit synthesis and promotes reproducibility with its open datasets and detailed benchmark specifications. We also conduct a comprehensive comparison of various analog sizing methods on the proposed platform.}
 }
 
 @inproceedings{ESWEEK1,
@@ -114,7 +123,8 @@
   organization={IEEE},
   abbr={ESWEEK},
   label={AI for EDA},
-  selected={false}
+  selected={false},
+  abstract={Design space exploration of RISC-V processors faces significant challenges due to the vastness of the high-dimensional design space and associated expensive simulation costs. This paper proposes ROI-HIT, a region of interest (ROI)-driven method for high-dimensional microarchitecture design space exploration, which focuses on the promising ROIs to reduce the over-exploration on the huge design space and improve the optimization efficiency. The method identifies and prioritizes regions of interest based on historical evaluation data, enabling efficient allocation of simulation resources to the most promising design configurations. Experimental results on RISC-V BOOM processor design demonstrate that ROI-HIT achieves superior Pareto-optimal designs with significantly fewer simulations compared to state-of-the-art methods.}
 }
 
 @article{chen2025high,
@@ -313,7 +323,8 @@
   year={2024},
   organization={IEEE},
   abbr={DATE},
-  label={AI for EDA}
+  label={AI for EDA},
+  abstract={Bayesian optimization (BO) has emerged as a powerful tool for analog circuit sizing, yet its scalability to high-dimensional design spaces remains a critical challenge. This paper proposes tSS-BO, a novel scalable Bayesian optimization method with truncated subspace sampling for large-scale analog circuit sizing. The method addresses the curse of dimensionality by performing optimization in truncated subspaces that capture the most important design variable interactions, thereby reducing the effective dimensionality of the problem while preserving optimization quality. The truncated subspace is adaptively constructed based on observed data to focus the search on the most influential dimensions. Experimental results on both synthetic benchmarks and real-world analog circuits demonstrate that tSS-BO significantly outperforms existing high-dimensional Bayesian optimization methods in terms of optimization efficiency and solution quality.}
 }
 @inproceedings{CRC,
   title={Circuits Physics Constrained Predictor of Static IR Drop with Limited Data},
@@ -323,7 +334,8 @@
   year={2024},
   organization={IEEE},
   abbr={DATE},
-  label={AI for EDA}
+  label={AI for EDA},
+  abstract={Accurate prediction of static IR drop in power delivery networks (PDN) is crucial for ensuring reliable chip operation. However, existing learning-based methods require large amounts of training data, which is expensive to obtain through detailed simulation. This paper proposes a circuits physics constrained predictor that achieves highly accurate IR drop prediction with limited data. A pyramid scene parsing network with skip-connection architecture is employed to effectively utilize physical information that characterizes IR drop distribution, including current source locations, via locations, and asymmetric topological connections. The skip-connection architecture preserves the positional information of current sources, which often correlates with large IR drop, facilitating the identification of hotspots. Via locations are incorporated to effectively describe the topological connection distance between voltage sources and different nodes in the multi-layer PDN. Experimental results demonstrate that the proposed method achieves high prediction accuracy for PDN of varying scales even with a limited dataset.}
 }
 
 @inproceedings{zhao2024multiobj,
@@ -334,7 +346,8 @@
   year={2024},
   organization={IEEE},
   abbr={ASP-DAC},
-  label={AI for EDA}
+  label={AI for EDA},
+  abstract={For analog circuit sizing, constrained multi-objective optimization is an important and practical problem. With the popularity of multi-core machines and cloud computing, parallel batch computing can significantly improve the efficiency of optimization algorithms. This paper proposes an asynchronous batch constrained multi-objective Bayesian optimization algorithm (ABCMOBO) for analog circuit sizing. The algorithm adopts a dynamic reference point selection on the expected hypervolume improvement acquisition function for constraint handling. To save the time of waiting for all simulations in the same batch to complete, ABCMOBO asynchronously evaluates the next candidate point if there is an idle worker. Experimental results quantitatively demonstrate that the proposed algorithm can reach 3.49 to 8.18x speed-up with comparable optimization results compared to the state-of-the-art asynchronous and synchronous batch multi-objective optimization methods.}
 }
 @inproceedings{lv2024multiobj,
   title={A Study on Exploring and Exploiting the High-dimensional Design Space for Analog Circuit Design Automation},
@@ -344,7 +357,8 @@
   year={2024},
   organization={IEEE},
   abbr={ASP-DAC},
-  label={AI for EDA}
+  label={AI for EDA},
+  abstract={The escalated intricacy of analog circuits, compounded by the high-dimensional nature of the design space, introduces significant complexities in optimizing circuit performance. Since circuit evaluation through simulation is resource-intensive and time-consuming, the goal is to obtain a feasible design with a decent Figure of Merit (FOM) value within a limited simulation budget. This paper conducts an in-depth review and analysis of cutting-edge exploration and exploitation techniques developed to address the intricacies encountered in analog circuit design automation. We systematically examine methods for navigating the high-dimensional design space, including subspace decomposition, dimensionality reduction, and local search strategies, and discuss their effectiveness in balancing exploration of unknown regions with exploitation of promising areas for efficient analog circuit sizing.}
 }
 @inproceedings{zhao2022novel,
   title={A Novel and Efficient Bayesian Optimization Approach for Analog Designs with Multi-Testbench},
@@ -354,7 +368,8 @@
   year={2022},
   organization={IEEE},
   abbr={ASP-DAC},
-  label={AI for EDA}
+  label={AI for EDA},
+  abstract={Analog circuits are characterized by various circuit performances obtained from multiple testbenches which need to be simulated independently. This paper proposes a novel and efficient Bayesian optimization approach for analog designs with multi-testbench. Predictive Entropy Search with Constraints (PESC) is applied for selecting the suitable testbench to simulate, and time-weighted PESC (wPESC) is also proposed considering different analysis time. Furthermore, the Feasibility Expected Improvement (FEI) acquisition function for constraints and solving a multi-modal optimal problem of FEI are proposed to improve the efficiency of exploring feasible regions. Experimental results on real-world analog circuits demonstrate that the proposed approach can gain 2.7 to 3.8x speedup compared with the state-of-the-art method, and achieve better optimization results.}
 }
 @inproceedings{fu2022batch,
   title={A Batch Bayesian Optimization Approach For Analog Circuit Synthesis Based On Multi-Points Selection Criterion},
@@ -364,7 +379,8 @@
   year={2022},
   organization={IEEE},
   abbr={ISCAS},
-  label={AI for EDA}
+  label={AI for EDA},
+  abstract={This paper proposes an efficient batch Bayesian optimization algorithm for analog circuit synthesis based on the multi-points selection criterion. Simplex evolution operator and Niching Migratory Multi-Swarm Optimizer (NMMSO) are used to generate candidates. The multi-point selection criterion is adopted to select multiple points from the candidates for parallel evaluation, which can make full use of the computing resources. The experimental results demonstrate that this method can reduce the simulation time effectively while achieving better optimization results. Compared with the Multi-objective Acquisition function Ensemble (MACE) and the weighted expected improvement based Bayesian optimization (WEIBO), the proposed approach can accelerate the optimization process by up to 3x and 27x respectively.}
 }
 @inproceedings{iseda1,
   title={HD-MCTS: An Analog Circuit Optimization Algorithm Based on High-dimensional Monte Carlo Tree Search},
@@ -373,7 +389,8 @@
   year={2024},
   organization={IEEE},
   abbr={ISEDA},
-  label={AI for EDA}
+  label={AI for EDA},
+  abstract={With the development of semiconductor technology, the design of analog circuits still relies heavily on manual effort, creating an urgent need for automated design tools. This paper proposes HD-MCTS, an analog circuit optimization algorithm based on high-dimensional Monte Carlo tree search. The method combines the advantages of Bayesian optimization and dynamic Monte Carlo tree search to obtain the feasible solution space through adaptive clustering, thereby narrowing the search range of the Bayesian optimization algorithm and improving optimization efficiency. For the Ackley test function, low-noise transconductance amplifier and bandgap voltage reference experiments, compared with Trust Region Bayesian Optimization (TuRBO), the optimization outcomes are enhanced by 20.4 percent to 46.5 percent, leading to a speedup of 0.95 to 2.62 times.}
 }
 @inproceedings{iseda2,
   title={High-Dimensional Analog Circuit Sizing via Bayesian Optimization in the Variational Autoencoder Enhanced Latent Space },
@@ -382,7 +399,8 @@
   year={2024},
   organization={IEEE},
   abbr={ISEDA},
-  label={AI for EDA}
+  label={AI for EDA},
+  abstract={High-dimensional analog circuit sizing is a challenging optimization problem due to the curse of dimensionality and expensive circuit simulations. This paper proposes a method for high-dimensional analog circuit sizing via Bayesian optimization in a variational autoencoder (VAE) enhanced latent space. The VAE is trained on circuit design data to learn a compact, continuous latent representation that captures meaningful relationships between design parameters. Bayesian optimization is then performed in this lower-dimensional latent space, enabling more efficient exploration of the design space. The approach effectively reduces the dimensionality of the optimization problem while preserving the essential structure of the design space, leading to improved optimization efficiency and solution quality for large-scale analog circuit sizing.}
 }
 @inproceedings{iseda3,
   title={Automated Design of Analog Circuits Based on Parallel Trust Region Bayesian Optimization},
@@ -391,7 +409,8 @@
   year={2024},
   organization={IEEE},
   abbr={ISEDA},
-  label={AI for EDA}
+  label={AI for EDA},
+  abstract={Automated analog circuit design requires efficient optimization methods that can handle the complex, multi-dimensional parameter spaces of modern circuits. This paper proposes an automated design approach for analog circuits based on parallel trust region Bayesian optimization. The algorithm operates in parallel on different trust regions, utilizing a Multi-Armed Bandit algorithm for intelligent sampling to accelerate parameter optimization. By maintaining multiple trust regions simultaneously, the method effectively balances local exploitation within promising regions and global exploration of the design space. Circuit experimental results demonstrate the advantages of this algorithm in achieving faster convergence and better optimization outcomes compared to existing approaches.}
 }
 @inproceedings{iseda4,
   title={Topology Optimization of Operational Amplifiers Using A Performance-aware Representation},
@@ -400,7 +419,8 @@
   year={2024},
   organization={IEEE},
   abbr={ISEDA},
-  label={AI for EDA}
+  label={AI for EDA},
+  abstract={Automated topology synthesis of operational amplifiers is a fundamental challenge in analog circuit design automation. This paper proposes a performance-aware representation for topology optimization of operational amplifiers that encodes circuit topologies in a way that captures their performance characteristics. The representation enables efficient search over the discrete topology space by embedding performance-relevant structural information, allowing optimization algorithms to effectively navigate the vast space of possible amplifier configurations. Experimental results demonstrate that the proposed performance-aware representation leads to more efficient topology optimization and the discovery of high-quality operational amplifier designs.}
 }
 @inproceedings{iseda5,
   title={On  Accelerating  Domain-Specific  MC-TS  with  Knowledge  Retention  and  Efficient  Parallelization  for  Logic Optimization},
@@ -409,7 +429,8 @@
   year={2024},
   organization={IEEE},
   abbr={ISEDA},
-  label={AI for EDA}
+  label={AI for EDA},
+  abstract={Logic synthesis optimization is a critical step in the electronic design automation flow, where the quality of the synthesis recipe significantly impacts the Quality-of-Result (QoR). This paper proposes a method for accelerating domain-specific Monte Carlo tree search (MC-TS) with knowledge retention and efficient parallelization for logic optimization. The approach incorporates a knowledge retention mechanism that preserves and reuses valuable search experiences across different optimization runs, avoiding redundant exploration. Furthermore, an efficient parallelization strategy is designed to enable concurrent evaluation of multiple synthesis recipes, significantly reducing the total optimization time. Experimental results demonstrate that the proposed method achieves superior QoR compared to existing approaches while substantially reducing the computational overhead.}
 }
 @inproceedings{li2015analog,
   title={Analog circuit performance bound estimation based on extreme value theory},
@@ -419,7 +440,8 @@
   year={2015},
   organization={IEEE},
   abbr={MWSCAS},
-  label={AI for EDA}
+  label={AI for EDA},
+  abstract={Performance bound estimation is an important task in analog circuit design, as it provides designers with critical information about the achievable performance limits under process variations. This paper proposes a novel performance bound estimation method for analog circuits based on extreme value theory. The method generates a generalized extreme value (GEV) distribution of performance parameters through sampling, enabling accurate estimation of the worst-case and best-case performance bounds without exhaustive Monte Carlo simulations. The approach provides a statistically rigorous framework for bounding circuit performance and offers significant computational savings compared to traditional methods.}
 }
 
 @inproceedings{bi2013mixed,
@@ -430,7 +452,8 @@
   year={2013},
   organization={IEEE},
   abbr={ASCION},
-  label={AI for EDA}
+  label={AI for EDA},
+  abstract={This paper presents a verification methodology for mixed-signal systems by combining SystemC/SystemC-AMS and HSIM-VCS verification platforms. The methodology is applied to design a Near Field Communication (NFC) tag and verify its function under certain noise conditions. SystemC-AMS is used for high-level behavioral modeling of the analog and mixed-signal components, while HSIM-VCS provides transistor-level simulation accuracy for critical circuit blocks. The combined approach enables efficient system-level verification of the NFC tag design, balancing simulation speed and accuracy across different levels of abstraction.}
 }
 
 @article{lu2024risk,
