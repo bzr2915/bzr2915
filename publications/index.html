@@ -84,8 +84,14 @@
               <li class="nav-item ">
                 <a class="nav-link" href="/bzr2915/cv/">Curriculum Vitae</a>
               </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/bzr2915/projects/">Research</a>
+              </li>
               <li class="nav-item active">
                 <a class="nav-link" href="/bzr2915/publications/">Publications<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/bzr2915/courses/">Teaching</a>
               </li>
 
               <!-- Toogle theme mode -->
@@ -95,6 +101,9 @@
                   <i class="fas fa-sun"></i>
                 </button>
               </li>
+
+              <!-- Language toggle -->
+              <li class="nav-item"><a class="nav-link" href="/bzr2915/publications_zh/">中</a></li>
             </ul>
           </div>
         </div>
@@ -150,6 +159,7 @@
 
           <!-- Links/Buttons -->
           <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
           </div>
           
           <div class="badges">
@@ -157,7 +167,10 @@
               <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
           </div>
 
-          
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Numeric optimization methods are widely utilized to tackle complex analog circuit sizing problems, where the challenges include expensive simulations, non-linearity, and high parameter dimensionality. However, the diverse characteristics exhibited by different circuits result in varied optimization landscapes, making it difficult to identify a single algorithm that consistently outperforms others across all problems. This paper proposes MARIO, a multi-algorithm interworking optimization framework that achieves optimization superadditivity based on a pool of member algorithms and a powerful algorithm-interworking protocol. A computing resource reallocation method is proposed, which employs multi-task Gaussian process regression and portfolio optimization techniques, leading to flexible and prudent online adaption of member algorithms. Furthermore, a cooperative local refinement feature is introduced, allowing algorithms to share evaluation data and leverage each other’s strengths for local search. Experimental results on both synthetic benchmarks and real-world analog circuits demonstrate that MARIO surpasses existing algorithm-combining tools and standard optimization methods.</p>
+          </div>
         </div>
       </div>
 </li>
@@ -187,6 +200,7 @@
 
           <!-- Links/Buttons -->
           <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
           </div>
           
           <div class="badges">
@@ -194,7 +208,10 @@
               <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
           </div>
 
-          
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>High-dimensional constrained optimization poses significant challenges in analog circuit design automation, where expensive simulations and complex design spaces hinder efficient exploration. This paper proposes a self-review Bayesian optimization method that integrates a teacher-student paradigm within a local Bayesian optimization framework to reduce model errors and enhance exploration efficiency in constrained high-dimensional design spaces. The method employs deep ensembles for effective constraint handling, enabling reliable identification of feasible regions. Experimental results on both synthetic benchmarks and real-world analog circuits demonstrate that the proposed approach achieves superior performance compared to state-of-the-art methods for constrained high-dimensional design space exploration.</p>
+          </div>
         </div>
       </div>
 </li>
@@ -224,6 +241,7 @@
 
           <!-- Links/Buttons -->
           <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
           </div>
           
           <div class="badges">
@@ -231,7 +249,10 @@
               <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
           </div>
 
-          
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>This study presents a novel high-dimensional multi-objective optimization method via adaptive gradient-based subspace sampling for analog circuit sizing. To handle constrained multi-objective optimization, we exploit promising regions from a non-crowded Pareto front, with lightweight Bayesian optimization (BO) based on a novel approximate constrained expected hypervolume improvement. This lightweight BO is computational efficient with constant complexity concerning simulation numbers. To tackle high-dimensional challenges, we reduce the effective dimensionality around promising regions by sampling candidates in an adaptive subspace. The subspace is constructed with gradients and previous success steps with their significance decaying over iterations. The gradients are approximated by sparse regression without additional simulations. The experiments on synthetic benchmarks and analog circuits illustrate advantages of the proposed method over Bayesian and evolutionary baselines.</p>
+          </div>
         </div>
       </div>
 </li>
@@ -261,6 +282,7 @@
 
           <!-- Links/Buttons -->
           <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
           </div>
           
           <div class="badges">
@@ -268,7 +290,10 @@
               <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
           </div>
 
-          
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Automated analog circuit design migration significantly alleviates the burden on designers in circuit sizing under various operating conditions. Conventional methods model the migration problem as black-box optimization, requiring excessive iterations of costly simulations to converge. Reinforcement learning exhibits significant promise in transfer learning, as it enables the generation of circuits that fulfill specifications efficiently. This paper proposes EVDMARL, a novel value decomposition-based multi-agent reinforcement learning framework that models complex analog circuits and eliminates the need for manually defined specifications of sub-circuits for new operating conditions. Furthermore, domain randomization is incorporated to efficiently generate circuits that meet unforeseen scenarios with minimal simulations. Experimental results on real-world analog circuits demonstrate the effectiveness of the proposed framework for complex analog circuit design migration.</p>
+          </div>
         </div>
       </div>
 </li>
@@ -298,6 +323,7 @@
 
           <!-- Links/Buttons -->
           <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
           </div>
           
           <div class="badges">
@@ -305,7 +331,10 @@
               <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
           </div>
 
-          
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>A constrained Voronoi tree-based domain decomposition method for high-dimensional Bayesian optimization is proposed to solve large scale analog circuit synthesis problems, which can be formulated as high-dimensional heterogeneous black-box optimization. The hierarchical Voronoi tree progressively breaks down the design space into partitions with implicit performance boundaries such that promising regions are efficiently explored. Combined with a local Bayesian optimization strategy within each partition, the method effectively balances exploration and exploitation in high-dimensional spaces. Experimental results on both synthetic benchmarks and real-world analog circuits demonstrate that the proposed method significantly outperforms state-of-the-art methods in terms of optimization quality and convergence speed.</p>
+          </div>
         </div>
       </div>
 </li>
@@ -335,6 +364,7 @@
 
           <!-- Links/Buttons -->
           <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
           </div>
           
           <div class="badges">
@@ -342,7 +372,10 @@
               <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
           </div>
 
-          
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>SRAM yield analysis in post-layout simulation is critical for ensuring reliable memory designs under process variations. This paper proposes BAGNet, a boundary-aware graph neural network that captures the complex relationships between layout parasitics and SRAM yield metrics. By incorporating boundary-aware attention mechanisms and graph-based representations of the SRAM post-layout structure, BAGNet effectively models the spatial dependencies and boundary effects that significantly impact yield. Experimental results demonstrate that BAGNet achieves highly accurate SRAM yield predictions in post-layout simulation, outperforming existing methods while providing valuable insights for yield-driven design optimization.</p>
+          </div>
         </div>
       </div>
 </li>
@@ -372,6 +405,7 @@
 
           <!-- Links/Buttons -->
           <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
           </div>
           
           <div class="badges">
@@ -379,7 +413,10 @@
               <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
           </div>
 
-          
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Modern processor microarchitectures face increasing complexity with larger search spaces and lengthy design-to-silicon validation flows. While reusing design knowledge across architectures offers efficiency gains, the common practice remains specific-architecture search due to discrepancies in power, performance, and area metrics. This paper proposes an attention-based microarchitecture search framework for effective cross-architecture knowledge transfer. A cross-attention network is designed to capture interdependencies between microarchitectural topology and design tool configurations, enabling knowledge adaptation across architectures with minimal fine-tuning. Complemented by an uncertainty-guided optimization strategy, the framework efficiently navigates the design space based on specific user preferences. Experimental results demonstrate that the proposed method achieves significant speedup in microarchitecture design space exploration while maintaining high-quality design outcomes.</p>
+          </div>
         </div>
       </div>
 </li>
@@ -409,6 +446,7 @@
 
           <!-- Links/Buttons -->
           <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
           </div>
           
           <div class="badges">
@@ -416,7 +454,10 @@
               <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
           </div>
 
-          
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Current state-of-the-art analog circuit sizing methods predominantly rely on derivative-free algorithms, but these methods struggle with sample efficiency due to the lack of derivative information, acting as a bottleneck for further advancements. Classic sensitivity analysis computes partial derivatives of circuit performance with respect to design parameters, enabling efficient first-order optimization. However, sensitivity-driven analog sizing has seen limited use due to accumulated numerical errors from nonlinear devices and the complex, non-convex nature of circuit optimization problems, which makes local search methods like gradient descent ineffective for global optimization. This paper proposes DarBO, a derivative-aware Bayesian optimization method that uses derivatives from error-suppressed adjoint sensitivity analysis to improve Gaussian process posteriors in local optimization, enhancing convergence with fewer circuit simulations. Experimental results on both synthetic benchmarks and real-world analog circuits demonstrate the effectiveness of the proposed approach.</p>
+          </div>
         </div>
       </div>
 </li>
@@ -446,6 +487,7 @@
 
           <!-- Links/Buttons -->
           <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
           </div>
           
           <div class="badges">
@@ -453,7 +495,10 @@
               <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
           </div>
 
-          
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Recent advances in machine learning for automating analog circuit synthesis have been significant, yet challenges remain. A critical gap is the lack of a standardized evaluation framework, compounded by various process design kits, simulation tools, and a limited variety of circuit topologies. These factors hinder direct comparisons and the validation of algorithms. To address these shortcomings, we introduce AnalogGym, an open-source testing suite designed to provide fair and comprehensive evaluations. AnalogGym includes 30 circuit topologies in five categories: sensing front ends, voltage references, low dropout regulators, amplifiers, and phase-locked loops. It supports several technology nodes for academic and commercial applications and is compatible with commercial simulators such as Cadence Spectre, Synopsys HSPICE, and the open-source simulator Ngspice. AnalogGym standardizes the assessment of ML algorithms in analog circuit synthesis and promotes reproducibility with its open datasets and detailed benchmark specifications. We also conduct a comprehensive comparison of various analog sizing methods on the proposed platform.</p>
+          </div>
         </div>
       </div>
 </li>
@@ -483,6 +528,7 @@
 
           <!-- Links/Buttons -->
           <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
           </div>
           
           <div class="badges">
@@ -490,7 +536,10 @@
               <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
           </div>
 
-          
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Design space exploration of RISC-V processors faces significant challenges due to the vastness of the high-dimensional design space and associated expensive simulation costs. This paper proposes ROI-HIT, a region of interest (ROI)-driven method for high-dimensional microarchitecture design space exploration, which focuses on the promising ROIs to reduce the over-exploration on the huge design space and improve the optimization efficiency. The method identifies and prioritizes regions of interest based on historical evaluation data, enabling efficient allocation of simulation resources to the most promising design configurations. Experimental results on RISC-V BOOM processor design demonstrate that ROI-HIT achieves superior Pareto-optimal designs with significantly fewer simulations compared to state-of-the-art methods.</p>
+          </div>
         </div>
       </div>
 </li>
@@ -520,6 +569,7 @@
 
           <!-- Links/Buttons -->
           <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
           </div>
           
           <div class="badges">
@@ -527,7 +577,10 @@
               <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
           </div>
 
-          
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Yield optimization is a critical task in analog circuit design automation, where the goal is to maximize the probability that a circuit meets its performance specifications under process variations. However, the high dimensionality of the design space poses significant challenges for efficient yield optimization. This paper proposes a high-dimensional yield optimization method for analog circuits that combines Monte Carlo tree search (MCTS) with a self-regressive auto-encoder promoted subspace decomposed Gaussian process. The MCTS quickly identifies promising local regions within the design space, while the self-regressive auto-encoder learns a compact latent representation to enable effective subspace decomposition. The subspace decomposed Gaussian process then performs efficient Bayesian optimization within the identified regions. Experimental results on real-world analog circuits demonstrate that the proposed method significantly outperforms state-of-the-art yield optimization approaches in both efficiency and solution quality.</p>
+          </div>
         </div>
       </div>
 </li>
@@ -557,6 +610,7 @@
 
           <!-- Links/Buttons -->
           <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
           </div>
           
           <div class="badges">
@@ -564,7 +618,10 @@
               <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
           </div>
 
-          
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>The design of analog circuits requires substantial domain-specific knowledge and extensive manual effort, yet data scarcity limits the application of machine learning techniques in this field. This paper presents Atelier, a large language model (LLM)-based framework for analog circuit design that integrates general-purpose LLMs with a high-quality, compact knowledge base to fulfill the considerable knowledge requirements, obviating the need for extensive domain-specific training or fine-tuning. The framework comprises several LLM agents, structured in a graph-of-thoughts architecture, with each agent specialized in a distinct task including circuit analysis, topology selection, topology modification, parameter tuning, and design decision. The collaborative multi-agent system, enriched with access to the compact knowledge base and advanced mechanisms such as self-reflection, backtracking, and tool integration, automates the analog circuit design process and significantly enhances design quality and efficiency while ensuring interpretability. Experimental results highlight Atelier’s superiority over state-of-the-art black-box methods, general-purpose LLMs, and LLM-based methods, demonstrating notable improvements in success rates, design quality, and runtime.</p>
+          </div>
         </div>
       </div>
 </li>
@@ -594,6 +651,7 @@
 
           <!-- Links/Buttons -->
           <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
           </div>
           
           <div class="badges">
@@ -601,7 +659,10 @@
               <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
           </div>
 
-          
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Multi-objective optimization with constraints is an important and practical problem in high-dimensional analog circuit synthesis. This paper proposes VTSMOC, an efficient Voronoi tree search boosted multi-objective Bayesian optimization method with constraints for high-dimensional analog circuit synthesis. VTSMOC decomposes the design space into Voronoi cells, dynamically constructing a hierarchical Voronoi tree through clustering observations with dominance relationships. The hierarchical Voronoi tree progressively partitions the design space to identify promising regions with implicit performance boundaries, enabling efficient exploration of the high-dimensional multi-objective optimization landscape. Combined with a local Bayesian optimization strategy within each partition that accounts for multiple objectives and constraints, the method effectively balances exploration and exploitation. Experimental results on both synthetic benchmarks and real-world analog circuits demonstrate that VTSMOC significantly outperforms state-of-the-art multi-objective optimization methods in terms of optimization quality and convergence speed for high-dimensional constrained analog circuit synthesis.</p>
+          </div>
         </div>
       </div>
 </li>
@@ -631,6 +692,7 @@
 
           <!-- Links/Buttons -->
           <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
           </div>
           
           <div class="badges">
@@ -638,7 +700,10 @@
               <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
           </div>
 
-          
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>The synthesizable and parameterizable RISC-V microarchitecture, combined with multi-objective optimization-based design space exploration (DSE), facilitates agile adaptation to various microprocessor designs for customized applications. However, to enhance design quality, DSE must consider both architecture parameters and EDA tool parameters, resulting in exponentially increased optimization complexity with the dimensionality of parameters. Exhaustively exploring the whole design space is impossible, and due to the time-consuming nature of microprocessor simulation, minimizing the number of simulations is imperative. This paper proposes APPLE-DSE, an asynchronous parallel Pareto set learning method for microarchitecture DSE. APPLE-DSE utilizes the Pareto Set Learning (PSL) technique to obtain an approximate Pareto front with a light-weight evaluation. PSL captures the structural characteristics of the Pareto set guided by surrogate models, enabling exploration of any trade-off area in the approximate Pareto set. Employing the Probabilistic Reparameterization (PR) technique, APPLE-DSE adapts PSL to handle discrete variables. Furthermore, APPLE-DSE incorporates a simulation time-aware asynchronous parallel scheduling strategy to further enhance optimization efficiency. Experimental results show that APPLE-DSE achieves a maximum improvement of 16.81% in hypervolume within the same time budget and a 127.73x speedup in algorithm run time per iteration compared to state-of-the-art methods.</p>
+          </div>
         </div>
       </div>
 </li>
@@ -668,6 +733,7 @@
 
           <!-- Links/Buttons -->
           <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
           </div>
           
           <div class="badges">
@@ -675,7 +741,10 @@
               <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
           </div>
 
-          
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Conventional deterministic thermal analysis methods have difficulties in obtaining local temperature solutions efficiently, and the existing stochastic method is inaccurate when dealing with thermal analysis problems involving Robin boundary conditions (BCs). This paper proposes a highly parallelized path integral random walk (PIRW) solver for steady-state thermal analysis with mixed boundary conditions, especially Robin BCs. The rigorous calculation of the local time and the Feynman-Kac functional are adopted to accurately handle Neumann and Robin boundary conditions for the first time. Based on the PIRW, an accurate and microsecond-level pre-calculation PIRW (pPIRW) predictor is proposed, which pre-calculates time-consuming random walks, obtains temperatures by simple vector multiplication, and is suitable for proactive thermal management. Compared with 3D-ICE, the PIRW solver maintains high accuracy with a negligible error within 0.5 degrees Celsius, achieves 136-209x speedup and 8.53-11.1x storage space reduction with all three kinds of boundary conditions. The pPIRW has speed improvement of 2.5e4-6.7e6x and memory reduction of 36.6-42.5x over PIRW without loss of accuracy.</p>
+          </div>
         </div>
       </div>
 </li>
@@ -705,6 +774,7 @@
 
           <!-- Links/Buttons -->
           <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
           </div>
           
           <div class="badges">
@@ -712,7 +782,10 @@
               <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
           </div>
 
-          
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Automated topology synthesis of operational amplifiers is a fundamental yet challenging task in analog circuit design automation. The design space for behavior-level opamp topologies involves numerous connections that are difficult to comprehend, and evaluating each topology incurs substantial computational costs. This paper proposes ATOM, an automatic opamp topology synthesis framework that constructs a concise design space for behavior-level opamp topologies consisting of topologies designers can easily understand, and proposes an opamp topology optimization method incorporating freeze-thaw Bayesian optimization that efficiently explores the design space and expedites the evaluation process. Experimental studies demonstrate that ATOM outperforms state-of-the-art topology synthesis methods in terms of success rate and optimization results while reducing the number of required simulations by up to 8.15 times.</p>
+          </div>
         </div>
       </div>
 </li>
@@ -742,6 +815,7 @@
 
           <!-- Links/Buttons -->
           <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
           </div>
           
           <div class="badges">
@@ -749,7 +823,10 @@
               <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
           </div>
 
-          
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>High-dimensional analog circuit synthesis is a challenging simulation-expensive optimization problem. This paper proposes BBGP-sDFO, a novel batch Bayesian and Gaussian process enhanced subspace derivative free optimization method to solve high-dimensional and simulation-expensive analog circuit optimization problems. The method includes a batch Bayesian querying strategy for exploring the global design space and a Gaussian process enhanced subspace derivative free optimization method for exploiting promising regions in effective low-dimensional subspace. By combining global exploration with local exploitation in reduced subspaces, BBGP-sDFO efficiently handles the curse of dimensionality while maintaining high optimization quality. Experimental results on both synthetic benchmarks and real-world analog circuits demonstrate that BBGP-sDFO significantly outperforms state-of-the-art methods in terms of optimization efficiency and solution quality for high-dimensional analog circuit synthesis.</p>
+          </div>
         </div>
       </div>
 </li>
@@ -779,6 +856,7 @@
 
           <!-- Links/Buttons -->
           <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
           </div>
           
           <div class="badges">
@@ -786,7 +864,10 @@
               <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
           </div>
 
-          
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Dummy filling is widely applied to significantly improve the planarity of topographic patterns for the chemical mechanical polishing (CMP) process in VLSI manufacturing, with dummy synthesis serving as the key step to adjust the post-CMP profile height. However, existing dummy synthesis optimization approaches usually fail to balance the filling quality and efficiency. This paper proposes pNeurFill, an enhanced neural network model-based dummy filling synthesis framework with perimeter adjustment, integrated with a multiple starting points-sequential quadratic programming (MSP-SQP) optimization solver. Inside this framework, a full-chip CMP simulator is first migrated to the neural network, achieving 8134x speedup on gradient calculation by backward propagation. An improved version with perimeter adjustment (pNeurFill) is further implemented to alleviate the post-CMP height variation caused by dummy perimeter. The extra perimeter adjustment strategy in pNeurFill achieves an average 66.97 Angstrom decrease in height variation and 8.92% quality improvement compared to the baseline NeurFill.</p>
+          </div>
         </div>
       </div>
 </li>
@@ -816,6 +897,7 @@
 
           <!-- Links/Buttons -->
           <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
           </div>
           
           <div class="badges">
@@ -823,7 +905,10 @@
               <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
           </div>
 
-          
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Despite the effort of analog circuit design automation, complex analog circuit design still requires extensive manual iterations, making it labor intensive and time-consuming. Recently, reinforcement learning (RL) algorithms have been demonstrated successfully for analog circuit design optimization. However, a robust and highly efficient RL method to design analog circuits with complex design space has not been fully explored yet. In this work, inspired by multiagent planning theory as well as human expert design practice, a multiagent-based RL (MA-RL) framework is proposed. The framework partitions complex analog circuits into several subblocks based on topology information and effectively reduces the complexity of the design search space. It leverages MA-RL for circuit optimization, where each agent corresponds to a single subblock, and the interactions between agents delicately mimic the design tradeoffs between circuit subblocks by human experts. Three different multiagent RL algorithms and corresponding frameworks are introduced and compared to demonstrate the effectiveness of the MA-RL method, with twin-delayed techniques and proximal policy employed to further boost training stability and accomplish higher performances. Experiments on three different complex analog circuit topologies (gain boost amplifier, delay-locked loop, and SAR ADC) and knowledge transfer demonstrate the advantages of the proposed approach.</p>
+          </div>
         </div>
       </div>
 </li>
@@ -853,6 +938,7 @@
 
           <!-- Links/Buttons -->
           <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
           </div>
           
           <div class="badges">
@@ -860,7 +946,10 @@
               <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
           </div>
 
-          
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Analog circuit design automation and determining design parameters can be formulated as a constrained nonlinear optimization problem, with the design goal of optimizing circuit performances such as power consumption, bandwidth, and gain to meet specifications. This paper proposes a constrained batch Bayesian optimization approach for analog circuit synthesis via multi-fidelity modeling. The batch Bayesian optimization exploits parallel computing and selects promising parameters by multiple acquisition function ensemble. The multi-fidelity model combines information from low and high fidelity simulations to reduce the number of time-consuming high-fidelity simulations required. A well-designed batch selection policy improves hardware resource utilization and convergence rate. Experimental results on real-world analog circuits demonstrate that the proposed method achieves superior optimization results with significantly reduced simulation costs compared to state-of-the-art methods.</p>
+          </div>
         </div>
       </div>
 </li>
@@ -890,6 +979,7 @@
 
           <!-- Links/Buttons -->
           <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
           </div>
           
           <div class="badges">
@@ -897,7 +987,10 @@
               <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
           </div>
 
-          
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Automated analog circuit design is promising for increasing the design productivity and narrowing the time-to-market, but is facing the bottleneck of tremendous design complexity. In this paper, a simulation-based optimization approach named smart-multiple starting point (MSP) is proposed for analog circuit synthesis. The proposed smart-MSP is based on the framework of MSP optimization, which is shown to be much more efficient than other global optimization methods like simulated annealing, genetic algorithm, particle swarm optimization, etc. Efficient techniques including heuristic-biased starting point selection, sparse regression and probabilistic TABU are developed in smart-MSP and make the algorithm self-adaptive by learning from the previous local searches and can efficiently produce optimal results to approximate the global optimum. Experimental results on real-world analog circuits demonstrate that smart-MSP achieves significant improvements in optimization efficiency and solution quality compared to existing approaches.</p>
+          </div>
         </div>
       </div>
 </li>
@@ -927,6 +1020,7 @@
 
           <!-- Links/Buttons -->
           <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
           </div>
           
           <div class="badges">
@@ -934,7 +1028,10 @@
               <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
           </div>
 
-          
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Design automation of complex analog circuits (CAC) with multiple sub-blocks is challenging mainly due to large design search space, uncertain intermediate subgoal creation, and lengthy CAC simulation runtime. This paper proposes a hierarchical and heterogeneous integration framework as a fully automated and time-efficient CAC design optimization solution. The framework decomposes CAC into two levels hierarchically and for the first time introduces hierarchical reinforcement learning agents with hindsight and subgoal testing to automate the subgoal creation between these two levels. The subgoal converges to the optimal value through algorithm interactions. At each level, optimization algorithms are integrated to efficiently search the design space within the constraints defined by the hierarchical subgoals. Experimental results on complex analog circuits demonstrate that the proposed framework achieves significant improvements in both design quality and optimization time compared to state-of-the-art methods.</p>
+          </div>
         </div>
       </div>
 </li>
@@ -964,6 +1061,7 @@
 
           <!-- Links/Buttons -->
           <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
           </div>
           
           <div class="badges">
@@ -971,7 +1069,10 @@
               <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
           </div>
 
-          
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Large-scale analog circuit sizing is a challenging optimization problem due to the high dimensionality and expensive simulation costs. This paper proposes D3PBO, a dynamic domain decomposition-based parallel Bayesian optimization method for large-scale analog circuit sizing. D3PBO introduces the dynamic domain decomposition method based on maximum variance between clusters, where the search space is decomposed into subdomains progressively to limit the maximal number of observations in each domain. The time complexity of D3PBO is constant for each iteration, enabling scalable optimization. Multiple Bayesian optimization instances run in parallel across the decomposed subdomains, efficiently utilizing computational resources while maintaining effective exploration of the design space. Experiments demonstrate that D3PBO obtains better results with significantly less runtime consumption compared to state-of-the-art methods, achieving up to 10x runtime speedup compared to TuRBO with better solutions for circuit optimization experiments.</p>
+          </div>
         </div>
       </div>
 </li>
@@ -1001,6 +1102,7 @@
 
           <!-- Links/Buttons -->
           <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
           </div>
           
           <div class="badges">
@@ -1008,7 +1110,10 @@
               <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
           </div>
 
-          
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Analog circuit design optimization can be formulated as a global optimization problem, where the objective is to find optimal design parameters that satisfy performance specifications. This paper proposes a random region covering method for optimization and quality estimation of circuit design. The method introduces multiple random regions to cover the design space and employs local optimization solvers initiated from random starting points within each region to explore the optimization landscape. A quality estimation framework is developed to assess the quality of obtained solutions without exhaustive enumeration, providing statistical guarantees on the optimality of the design. Experimental results on analog circuit design problems demonstrate that the proposed method achieves efficient global optimization with reliable quality estimation, outperforming conventional optimization approaches.</p>
+          </div>
         </div>
       </div>
 </li>
@@ -1038,6 +1143,7 @@
 
           <!-- Links/Buttons -->
           <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
           </div>
           
           <div class="badges">
@@ -1045,7 +1151,10 @@
               <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
           </div>
 
-          
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>The optimization of RISC-V designs, encompassing both microarchitecture and CAD tool parameters, is a great challenge due to an extensive and high-dimensional search space. To achieve optimal results across various RISC-V designs, this paper proposes a cooperative optimization framework (COF) that integrates multiple black-box optimizers, each specializing in different optimization problems, based on hybrid strategies. The COF introduces the landscape knowledge exchange mechanism (LKEM) to direct the optimizers to share their knowledge of the optimization problem, and employs the dynamic computational resource allocation (DCRA) strategies to dynamically allocate computational resources to the optimizers. By fusing PPA (power, performance, and area) objectives, the framework enables comprehensive cooperative optimization of RISC-V processor designs. Experimental results demonstrate that the proposed framework achieves superior PPA trade-offs compared to state-of-the-art design space exploration methods.</p>
+          </div>
         </div>
       </div>
 </li>
@@ -1075,6 +1184,7 @@
 
           <!-- Links/Buttons -->
           <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
           </div>
           
           <div class="badges">
@@ -1082,7 +1192,10 @@
               <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
           </div>
 
-          
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Technology migration for mixed-signal circuits from one process node to another is a critical but labor-intensive task in the semiconductor industry. This paper presents a hierarchical methodology for efficiently migrating mixed-signal circuit design from one technology node to another, while keeping the same circuit and layout topologies. The multistart global optimization technique is applied to resize the transistor-level block in systematic connection, which provides a good initial point for next system-level refinement. For obtaining a process and parasitic closure solution, both parasitic and process variation effects are explored and used to constrain the schematic migration. A representative mixed-signal system, charge-pump phase-locked loop, is used to validate the proposed methodology. The experimental results show that the proposed methodology efficiently generates quality designs in target technology with much less simulation iterations, when comparing with recent available approaches.</p>
+          </div>
         </div>
       </div>
 </li>
@@ -1112,6 +1225,7 @@
 
           <!-- Links/Buttons -->
           <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
           </div>
           
           <div class="badges">
@@ -1119,7 +1233,10 @@
               <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
           </div>
 
-          
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Bayesian optimization (BO) has emerged as a powerful tool for analog circuit sizing, yet its scalability to high-dimensional design spaces remains a critical challenge. This paper proposes tSS-BO, a novel scalable Bayesian optimization method with truncated subspace sampling for large-scale analog circuit sizing. The method addresses the curse of dimensionality by performing optimization in truncated subspaces that capture the most important design variable interactions, thereby reducing the effective dimensionality of the problem while preserving optimization quality. The truncated subspace is adaptively constructed based on observed data to focus the search on the most influential dimensions. Experimental results on both synthetic benchmarks and real-world analog circuits demonstrate that tSS-BO significantly outperforms existing high-dimensional Bayesian optimization methods in terms of optimization efficiency and solution quality.</p>
+          </div>
         </div>
       </div>
 </li>
@@ -1149,6 +1266,7 @@
 
           <!-- Links/Buttons -->
           <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
           </div>
           
           <div class="badges">
@@ -1156,7 +1274,10 @@
               <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
           </div>
 
-          
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Accurate prediction of static IR drop in power delivery networks (PDN) is crucial for ensuring reliable chip operation. However, existing learning-based methods require large amounts of training data, which is expensive to obtain through detailed simulation. This paper proposes a circuits physics constrained predictor that achieves highly accurate IR drop prediction with limited data. A pyramid scene parsing network with skip-connection architecture is employed to effectively utilize physical information that characterizes IR drop distribution, including current source locations, via locations, and asymmetric topological connections. The skip-connection architecture preserves the positional information of current sources, which often correlates with large IR drop, facilitating the identification of hotspots. Via locations are incorporated to effectively describe the topological connection distance between voltage sources and different nodes in the multi-layer PDN. Experimental results demonstrate that the proposed method achieves high prediction accuracy for PDN of varying scales even with a limited dataset.</p>
+          </div>
         </div>
       </div>
 </li>
@@ -1186,6 +1307,7 @@
 
           <!-- Links/Buttons -->
           <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
           </div>
           
           <div class="badges">
@@ -1193,7 +1315,10 @@
               <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
           </div>
 
-          
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>For analog circuit sizing, constrained multi-objective optimization is an important and practical problem. With the popularity of multi-core machines and cloud computing, parallel batch computing can significantly improve the efficiency of optimization algorithms. This paper proposes an asynchronous batch constrained multi-objective Bayesian optimization algorithm (ABCMOBO) for analog circuit sizing. The algorithm adopts a dynamic reference point selection on the expected hypervolume improvement acquisition function for constraint handling. To save the time of waiting for all simulations in the same batch to complete, ABCMOBO asynchronously evaluates the next candidate point if there is an idle worker. Experimental results quantitatively demonstrate that the proposed algorithm can reach 3.49 to 8.18x speed-up with comparable optimization results compared to the state-of-the-art asynchronous and synchronous batch multi-objective optimization methods.</p>
+          </div>
         </div>
       </div>
 </li>
@@ -1223,6 +1348,7 @@
 
           <!-- Links/Buttons -->
           <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
           </div>
           
           <div class="badges">
@@ -1230,7 +1356,10 @@
               <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
           </div>
 
-          
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>The escalated intricacy of analog circuits, compounded by the high-dimensional nature of the design space, introduces significant complexities in optimizing circuit performance. Since circuit evaluation through simulation is resource-intensive and time-consuming, the goal is to obtain a feasible design with a decent Figure of Merit (FOM) value within a limited simulation budget. This paper conducts an in-depth review and analysis of cutting-edge exploration and exploitation techniques developed to address the intricacies encountered in analog circuit design automation. We systematically examine methods for navigating the high-dimensional design space, including subspace decomposition, dimensionality reduction, and local search strategies, and discuss their effectiveness in balancing exploration of unknown regions with exploitation of promising areas for efficient analog circuit sizing.</p>
+          </div>
         </div>
       </div>
 </li>
@@ -1260,6 +1389,7 @@
 
           <!-- Links/Buttons -->
           <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
           </div>
           
           <div class="badges">
@@ -1267,7 +1397,10 @@
               <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
           </div>
 
-          
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Analog circuits are characterized by various circuit performances obtained from multiple testbenches which need to be simulated independently. This paper proposes a novel and efficient Bayesian optimization approach for analog designs with multi-testbench. Predictive Entropy Search with Constraints (PESC) is applied for selecting the suitable testbench to simulate, and time-weighted PESC (wPESC) is also proposed considering different analysis time. Furthermore, the Feasibility Expected Improvement (FEI) acquisition function for constraints and solving a multi-modal optimal problem of FEI are proposed to improve the efficiency of exploring feasible regions. Experimental results on real-world analog circuits demonstrate that the proposed approach can gain 2.7 to 3.8x speedup compared with the state-of-the-art method, and achieve better optimization results.</p>
+          </div>
         </div>
       </div>
 </li>
@@ -1297,6 +1430,7 @@
 
           <!-- Links/Buttons -->
           <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
           </div>
           
           <div class="badges">
@@ -1304,7 +1438,10 @@
               <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
           </div>
 
-          
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>This paper proposes an efficient batch Bayesian optimization algorithm for analog circuit synthesis based on the multi-points selection criterion. Simplex evolution operator and Niching Migratory Multi-Swarm Optimizer (NMMSO) are used to generate candidates. The multi-point selection criterion is adopted to select multiple points from the candidates for parallel evaluation, which can make full use of the computing resources. The experimental results demonstrate that this method can reduce the simulation time effectively while achieving better optimization results. Compared with the Multi-objective Acquisition function Ensemble (MACE) and the weighted expected improvement based Bayesian optimization (WEIBO), the proposed approach can accelerate the optimization process by up to 3x and 27x respectively.</p>
+          </div>
         </div>
       </div>
 </li>
@@ -1334,6 +1471,7 @@
 
           <!-- Links/Buttons -->
           <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
           </div>
           
           <div class="badges">
@@ -1341,7 +1479,10 @@
               <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
           </div>
 
-          
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>With the development of semiconductor technology, the design of analog circuits still relies heavily on manual effort, creating an urgent need for automated design tools. This paper proposes HD-MCTS, an analog circuit optimization algorithm based on high-dimensional Monte Carlo tree search. The method combines the advantages of Bayesian optimization and dynamic Monte Carlo tree search to obtain the feasible solution space through adaptive clustering, thereby narrowing the search range of the Bayesian optimization algorithm and improving optimization efficiency. For the Ackley test function, low-noise transconductance amplifier and bandgap voltage reference experiments, compared with Trust Region Bayesian Optimization (TuRBO), the optimization outcomes are enhanced by 20.4 percent to 46.5 percent, leading to a speedup of 0.95 to 2.62 times.</p>
+          </div>
         </div>
       </div>
 </li>
@@ -1371,6 +1512,7 @@
 
           <!-- Links/Buttons -->
           <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
           </div>
           
           <div class="badges">
@@ -1378,7 +1520,10 @@
               <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
           </div>
 
-          
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>High-dimensional analog circuit sizing is a challenging optimization problem due to the curse of dimensionality and expensive circuit simulations. This paper proposes a method for high-dimensional analog circuit sizing via Bayesian optimization in a variational autoencoder (VAE) enhanced latent space. The VAE is trained on circuit design data to learn a compact, continuous latent representation that captures meaningful relationships between design parameters. Bayesian optimization is then performed in this lower-dimensional latent space, enabling more efficient exploration of the design space. The approach effectively reduces the dimensionality of the optimization problem while preserving the essential structure of the design space, leading to improved optimization efficiency and solution quality for large-scale analog circuit sizing.</p>
+          </div>
         </div>
       </div>
 </li>
@@ -1408,6 +1553,7 @@
 
           <!-- Links/Buttons -->
           <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
           </div>
           
           <div class="badges">
@@ -1415,7 +1561,10 @@
               <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
           </div>
 
-          
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Automated analog circuit design requires efficient optimization methods that can handle the complex, multi-dimensional parameter spaces of modern circuits. This paper proposes an automated design approach for analog circuits based on parallel trust region Bayesian optimization. The algorithm operates in parallel on different trust regions, utilizing a Multi-Armed Bandit algorithm for intelligent sampling to accelerate parameter optimization. By maintaining multiple trust regions simultaneously, the method effectively balances local exploitation within promising regions and global exploration of the design space. Circuit experimental results demonstrate the advantages of this algorithm in achieving faster convergence and better optimization outcomes compared to existing approaches.</p>
+          </div>
         </div>
       </div>
 </li>
@@ -1445,6 +1594,7 @@
 
           <!-- Links/Buttons -->
           <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
           </div>
           
           <div class="badges">
@@ -1452,7 +1602,10 @@
               <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
           </div>
 
-          
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Automated topology synthesis of operational amplifiers is a fundamental challenge in analog circuit design automation. This paper proposes a performance-aware representation for topology optimization of operational amplifiers that encodes circuit topologies in a way that captures their performance characteristics. The representation enables efficient search over the discrete topology space by embedding performance-relevant structural information, allowing optimization algorithms to effectively navigate the vast space of possible amplifier configurations. Experimental results demonstrate that the proposed performance-aware representation leads to more efficient topology optimization and the discovery of high-quality operational amplifier designs.</p>
+          </div>
         </div>
       </div>
 </li>
@@ -1482,6 +1635,7 @@
 
           <!-- Links/Buttons -->
           <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
           </div>
           
           <div class="badges">
@@ -1489,7 +1643,10 @@
               <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
           </div>
 
-          
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Logic synthesis optimization is a critical step in the electronic design automation flow, where the quality of the synthesis recipe significantly impacts the Quality-of-Result (QoR). This paper proposes a method for accelerating domain-specific Monte Carlo tree search (MC-TS) with knowledge retention and efficient parallelization for logic optimization. The approach incorporates a knowledge retention mechanism that preserves and reuses valuable search experiences across different optimization runs, avoiding redundant exploration. Furthermore, an efficient parallelization strategy is designed to enable concurrent evaluation of multiple synthesis recipes, significantly reducing the total optimization time. Experimental results demonstrate that the proposed method achieves superior QoR compared to existing approaches while substantially reducing the computational overhead.</p>
+          </div>
         </div>
       </div>
 </li>
@@ -1519,6 +1676,7 @@
 
           <!-- Links/Buttons -->
           <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
           </div>
           
           <div class="badges">
@@ -1526,7 +1684,10 @@
               <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
           </div>
 
-          
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Performance bound estimation is an important task in analog circuit design, as it provides designers with critical information about the achievable performance limits under process variations. This paper proposes a novel performance bound estimation method for analog circuits based on extreme value theory. The method generates a generalized extreme value (GEV) distribution of performance parameters through sampling, enabling accurate estimation of the worst-case and best-case performance bounds without exhaustive Monte Carlo simulations. The approach provides a statistically rigorous framework for bounding circuit performance and offers significant computational savings compared to traditional methods.</p>
+          </div>
         </div>
       </div>
 </li>
@@ -1556,6 +1717,7 @@
 
           <!-- Links/Buttons -->
           <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
           </div>
           
           <div class="badges">
@@ -1563,7 +1725,10 @@
               <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
           </div>
 
-          
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>This paper presents a verification methodology for mixed-signal systems by combining SystemC/SystemC-AMS and HSIM-VCS verification platforms. The methodology is applied to design a Near Field Communication (NFC) tag and verify its function under certain noise conditions. SystemC-AMS is used for high-level behavioral modeling of the analog and mixed-signal components, while HSIM-VCS provides transistor-level simulation accuracy for critical circuit blocks. The combined approach enables efficient system-level verification of the NFC tag design, balancing simulation speed and accuracy across different levels of abstraction.</p>
+          </div>
         </div>
       </div>
 </li>
@@ -1593,6 +1758,7 @@
 
           <!-- Links/Buttons -->
           <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
           </div>
           
           <div class="badges">
@@ -1600,7 +1766,10 @@
               <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
           </div>
 
-          
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>This PhD dissertation investigates efficient computational methods and quality-assurance frameworks for automating the sizing and optimization of analog integrated circuits. The work addresses core challenges in analog circuit design automation including managing process variation, improving yield estimation efficiency, and guaranteeing solution quality through novel optimization techniques tailored for the analog design domain.</p>
+          </div>
         </div>
       </div>
 </li>
@@ -1630,6 +1799,7 @@
 
           <!-- Links/Buttons -->
           <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
           </div>
           
           <div class="badges">
@@ -1637,7 +1807,10 @@
               <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
           </div>
 
-          
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>This thesis presents a NFC (Near Field Communication) card/reader system design based on ISO/IEC 18092 NFCIP-1 standard with a circuit implementation. Together with functional verification of RF, digital, analog circuit blocks, the problem of power noise is also taken into consideration. The system is based on a systemC/systemC-AMS behavior model and modified to transistor level design by HSPICE/Modelsim simulation under IBM 0.13um process.</p>
+          </div>
         </div>
       </div>
 </li></ol>
@@ -1669,6 +1842,7 @@
 
           <!-- Links/Buttons -->
           <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
           </div>
           
           <div class="badges">
@@ -1676,7 +1850,10 @@
               <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
           </div>
 
-          
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>The concordance rate between conization and colposcopy-directed biopsy (CDB) proven cervical high-grade squamous intraepithelial lesion (HSIL) were 64-85%. We aimed to identify the risk factors associated with pathological upgrading or downgrading after conization in patients with cervical HSIL and to provide risk-stratified management based on a machine learning predictive model. This retrospective study included patients who visited the Obstetrics and Gynecology Hospital of Fudan University from January 1 to December 31, 2019, were diagnosed with cervical HSIL by CDB, and subsequently underwent conization. Machine learning prediction models were established, evaluated, and subsequently verified using external testing data. In total, 1585 patients were included, of whom 65 (4.1%) were upgraded to cervical cancer after conization, 1147 (72.4%) remained having HSIL, and 373 (23.5%) were downgraded to LSIL or below. Among the six machine learning prediction models, the back propagation (BP) neural network model demonstrated the highest and most uniform predictive performance in the downgrading, HSIL, and upgrading groups, with areas under the curve (AUCs) of 0.90, 0.84, and 0.69. In the external testing set, the BP neural network model showed a higher predictive performance than the logistic regression model, with an overall AUC of 0.91. BP neural network prediction model has excellent predictive performance and can be used for the risk stratification of patients with CDB-diagnosed HSIL.</p>
+          </div>
         </div>
       </div>
 </li>
@@ -1706,6 +1883,7 @@
 
           <!-- Links/Buttons -->
           <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
           </div>
           
           <div class="badges">
@@ -1713,7 +1891,10 @@
               <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
           </div>
 
-          
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Knee osteoarthritis (OA) is a chronic disease that considerably reduces patients’ quality of life. Preventive therapies require early detection and lifetime monitoring of OA progression. In the clinical environment, the severity of OA is classified by the Kellgren and Lawrence (KL) grading system, ranging from KL-0 to KL-4. Recently, deep learning methods were applied to OA severity assessment to improve accuracy and efficiency. However, this task is still challenging due to the ambiguity between adjacent grades, especially in early-stage OA. Targeting the uncertainty in the OA dataset, we propose a novel learning scheme that dynamically separates the data into two sets according to their reliability. Besides, we design a hybrid loss function to help CNN learn from the two sets accordingly. With the proposed approach, we emphasize the typical samples and control the impacts of low confident cases. Our method achieves a mean accuracy of 70.13% on the five-class OA assessment task, which outperforms all other state-of-art methods. Moreover, we design an experiment to validate large-scale automatic data refining during training. The dataset used in this paper was obtained from the Osteoarthritis Initiative.</p>
+          </div>
         </div>
       </div>
 </li>
@@ -1743,6 +1924,7 @@
 
           <!-- Links/Buttons -->
           <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
           </div>
           
           <div class="badges">
@@ -1750,7 +1932,10 @@
               <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
           </div>
 
-          
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Our research group has previously reported a noninvasive model that estimates phosphate removal within a 4-h hemodialysis (HD) treatment. The aim of this study was to modify the original model and validate the accuracy of the new model of phosphate removal for HD and hemodiafiltration (HDF) treatment. A total of 109 HD patients from 3 HD centers were enrolled. The actual phosphate removal amount was calculated using the area under the dialysate phosphate concentration time curve. Model modification was executed using second-order multivariable polynomial regression analysis to obtain a new parameter for dialyzer phosphate clearance. Internal validation indicated that the new model was superior to the original model with a significantly smaller bias and higher accuracy. External validation showed that R2, bias, and accuracy were not significantly different than those of internal validation. A new model was generated to quantify phosphate removal by 4-h HD and HDF with a dialyzer surface area of 1.3-1.8 m2. This modified model would contribute to the evaluation of phosphate balance and individualized therapy of hyperphosphatemia.</p>
+          </div>
         </div>
       </div>
 </li>
@@ -1780,6 +1965,7 @@
 
           <!-- Links/Buttons -->
           <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
           </div>
           
           <div class="badges">
@@ -1787,7 +1973,10 @@
               <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
           </div>
 
-          
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Estimation of phosphate load in hemodialysis patients is always controversial in clinical practice. The aim of this study was to verify individual achievement rate of serum phosphate as the evaluation of phosphate load through investigating its impact on cardiovascular mortality in hemodialysis patients. This was a single-center, retrospective cohort study. A total of 251 maintenance hemodialysis patients were enrolled. The individual achievement rate of serum phosphate was defined as the times of tests within the target range divided by total times of tests over a period of time. Multivariable Cox analysis showed that one-year serum phosphate achievement rate of 0% and 25% increased the risk of cardiovascular mortality while the achievement rate of 50% and 75% did not, compared to the rate of 100%. Keeping one-year achievement rate of serum phosphate higher than 50% provides significant clinical benefits in reducing cardiovascular mortality.</p>
+          </div>
         </div>
       </div>
 </li>
@@ -1817,6 +2006,7 @@
 
           <!-- Links/Buttons -->
           <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
           </div>
           
           <div class="badges">
@@ -1824,7 +2014,10 @@
               <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
           </div>
 
-          
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>This study investigated whether high-phosphorus diets alter gut microbiota in healthy rats and chronic kidney disease (CKD) rats. In a 4-week randomized controlled trial, healthy rats and CKD rats were divided into four groups with regular-phosphorus or high-phosphorus diets. Researchers sequenced the V3-V4 region of the 16S rRNA gene to examine microbiota changes. High-phosphorus intervention increased systolic blood pressure and parathyroid hormone in both groups but did not change serum creatinine and 25(OH)D levels. The gut microbiota was significantly altered after intervention with a high-phosphorus diet. A high-phosphorus diet reduced the Shannon index values of gut microbiota in all rats. Some microbial genera were elevated significantly after high-phosphorus dietary intervention, such as Blautia and Allobaculum. High-phosphorus diets were associated with adverse changes in gut microbiota and elevated systolic blood pressure, which may have adverse consequences for long-term health outcomes.</p>
+          </div>
         </div>
       </div>
 </li>
@@ -1854,6 +2047,7 @@
 
           <!-- Links/Buttons -->
           <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
           </div>
           
           <div class="badges">
@@ -1861,7 +2055,10 @@
               <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
           </div>
 
-          
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>The purpose of this study was to explore the contribution of each factor of the phosphorus metabolism network following phosphorus diet intervention via Granger causality analysis. Six healthy male volunteers sequentially received regular, low-, and high-phosphorus diets. Blood and urinary samples were collected for measurements of serum levels of phosphate, calcium, PTH, FGF23, BALP, alpha-Klotho, 1,25 D and urinary phosphorus excretion. The alpha-Klotho level had the strongest connection with and played a key role in influencing the other variables during regular phosphorus intake. Under low-phosphorus conditions, serum phosphate affected the other factors the most. After high-phosphorus diet intervention, FGF23 and 1,25 D played a more critical role in active regulation and passive regulation in the Granger causality analysis. Variations in dietary phosphorus intake led to changes in the central factors involved in phosphorus metabolism.</p>
+          </div>
         </div>
       </div>
 </li>
@@ -1891,6 +2088,7 @@
 
           <!-- Links/Buttons -->
           <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
           </div>
           
           <div class="badges">
@@ -1898,7 +2096,10 @@
               <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
           </div>
 
-          
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Dry Weight (DW) is a typical hemodialysis (HD) prescription for End-Stage Renal Disease (ESRD) patients. However, an accurate DW assessment is difficult due to the complication of body components and individual variations. We proposed a time series-based regression method to evaluate the weight fluctuation of HD patients according to Electronic Health Record (EHR). A total of 34 patients with 5100 HD sessions data were selected and partitioned into three groups: HD-stabilized, HD-intolerant, and near-death. Within a 0.5 kg absolute error margin, our model achieved 95.44%, 91.95%, and 83.12% post-dialysis weight prediction accuracies for the three groups respectively. For HD-stabilized patients, the Mean Absolute Error of the proposed method was 0.17 kg. The outcome of this research indicates that the proposed model could potentially automate the clinical weight management for HD patients and aid physicians to monitor and estimate DW.</p>
+          </div>
         </div>
       </div>
 </li>
@@ -1928,6 +2129,7 @@
 
           <!-- Links/Buttons -->
           <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
           </div>
           
           <div class="badges">
@@ -1935,7 +2137,10 @@
               <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
           </div>
 
-          
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Hearing loss is one of the most common modifiable factors associated with cognitive and functional decline in geriatric populations. An accurate, easy-to-apply, and inexpensive hearing screening method is needed to detect hearing loss in community-dwelling elderly people. In total, 1793 participants aged 60 years and above were recruited to undertake a standard audiometric air conduction pure tone test at 4 frequencies. The decision tree analysis identified 2 kHz as the most important frequency for moderate-to-profound hearing loss screening in elderly people. The tree model suggested a simple two-step screening procedure in which a 42 dB HL tone at 2 kHz is presented first, followed by a 47 dB HL tone at 0.5 kHz, depending on the individual’s response to the first tone. This approach achieved an accuracy of 91.20%, a sensitivity of 95.35% and a specificity of 86.85% in the training dataset. The two-tone screening procedure provides an effective and practical method for identifying moderate-to-profound hearing loss in community-dwelling older adults.</p>
+          </div>
         </div>
       </div>
 </li></ol>
