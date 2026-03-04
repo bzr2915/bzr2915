@@ -1,0 +1,81 @@
+- title: 研究方向
+  type: time_table
+  contents:
+    - year: AI EDA
+      items:
+        - 黑盒优化方法
+        - 电路行为建模
+        - 自动化尺寸调优与版图设计
+    - year: AI 医疗
+      items:
+        - 人工智能医疗应用
+
+- title: 科研基金
+  type: time_table
+  contents:
+    - title: 上海市"扬帆计划" 19YF1405600（20万元）
+      institution: 上海市科学技术委员会
+      year: 2019 - 2022
+    - title: 重点实验室面上研究项目基金（40万元）
+      institution: 集成芯片与系统全国重点实验室
+      year: 2023 - 2024
+    - title: 青年科学基金 62304052（30万元）
+      institution: 国家自然科学基金委员会
+      year: 2024 - 2026
+
+- title: 工作经历
+  type: time_table
+  contents:
+    - title: 助理研究员
+      institution: 集成电路与微纳电子创新学院，复旦大学，上海
+      year: 2021 - 至今
+    - title: 助理研究员
+      institution: 国家老年疾病临床医学研究中心，华山医院，复旦大学，上海
+      year: 2018 - 2021
+    - title: 设计自动化工程师实习
+      institution: AMS-AG，美国德克萨斯州普莱诺
+      year: 2016
+    - title: 助教
+      institution: 德克萨斯大学达拉斯分校
+      year: 2013 - 2017
+
+- title: 教育背景
+  type: time_table
+  contents:
+    - title: 博士
+      institution: 德克萨斯大学达拉斯分校，美国
+      year: 2017年12月
+      description:
+        - 计算机工程
+        - 论文"Efficient and Quality Assured Techniques for Analog Circuit Design Automation"
+    - title: 硕士
+      institution: 德克萨斯大学达拉斯分校，美国
+      year: 2013年5月
+      description:
+        - 电气工程
+        - 论文"Near Field Communication System Design with A Circuit Implementation"
+    - title: 学士（第二学位）
+      institution: 华中科技大学，武汉
+      year: 2011年6月
+      description:
+        - 英语语言文学
+    - title: 工学学士
+      institution: 武汉理工大学，武汉
+      year: 2011年6月
+      description:
+        - 电子信息工程
+
+- title: 荣誉与奖项
+  type: time_table
+  contents:
+    - year: 2024
+      items:
+        - EDA²青年科技奖
+        - ISEDA 最佳论文奖
+        - CODES+ISSS 最佳论文提名
+        - 中国研究生创新实践系列大赛"华大九天杯"EDA精英挑战赛 三等奖
+        - 全国大学生集成电路创新创业大赛（华东赛区）二等奖
+    - year: 2023
+      items:
+        - IEEE ICCAD CAD 2023 Problem C 荣誉提名奖
+        - OpenDACs 2023 竞赛 一等奖

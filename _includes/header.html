@@ -40,12 +40,13 @@
               {%- for page in site.pages -%}
                 {% if page.permalink == '/' %}
                   {% assign about_title = page.title %}
+                  {% assign about_title_zh = page.nav_title_zh %}
                 {% endif %}
               {% endfor %}
 
               <!-- About -->
-              <li class="nav-item {% if page.permalink == '/' %}active{% endif %}">
-                <a class="nav-link" href="{{ '/' | relative_url }}">{{ about_title }}
+              <li class="nav-item {% if page.permalink == '/' or page.permalink == '/zh/' %}active{% endif %}">
+                <a class="nav-link" href="{% if page.lang == 'zh' %}{{ '/zh/' | relative_url }}{% else %}{{ '/' | relative_url }}{% endif %}">{% if page.lang == 'zh' and about_title_zh %}{{ about_title_zh }}{% else %}{{ about_title }}{% endif %}
                   {%- if page.permalink == '/' -%}
                   <span class="sr-only">(current)</span>
                   {%- endif -%}
@@ -85,7 +86,7 @@
               </li>
               {%- else %}
               <li class="nav-item {% if page.title == p.title %}active{% endif %}">
-                <a class="nav-link" href="{{ p.url | relative_url }}">{{ p.title }}
+                <a class="nav-link" href="{% if page.lang == 'zh' and p.permalink_zh %}{{ p.permalink_zh | relative_url }}{% else %}{{ p.url | relative_url }}{% endif %}">{% if page.lang == 'zh' and p.nav_title_zh %}{{ p.nav_title_zh }}{% else %}{{ p.title }}{% endif %}
                   {%- if page.title == p.title -%}
                   <span class="sr-only">(current)</span>
                   {%- endif -%}
