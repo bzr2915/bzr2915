@@ -29,6 +29,7 @@ jobs:
       run: |
         npm install -g mermaid.cli
         bundle exec jekyll build
+        touch _site/.nojekyll
     - name: Deploy 🚀
       if: github.event_name != 'pull_request'
       uses: JamesIves/github-pages-deploy-action@v4
