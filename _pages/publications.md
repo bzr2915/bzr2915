@@ -7,6 +7,10 @@ title: Publications
 label: [AI for EDA, AI for Medical]
 nav: true
 nav_order: 2
+nav_title_zh: 论文
+permalink_zh: /publications_zh/
+lang: en
+lang_alternate: /publications_zh/
 ---
 <!-- _pages/publications.md -->
 <div class="publications">

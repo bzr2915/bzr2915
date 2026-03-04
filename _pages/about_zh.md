@@ -2,7 +2,7 @@
 layout: about
 title: 简介
 permalink: /zh/
-subtitle: <a href='#'>助理教授</a>，复旦大学，上海，zhaori_bi AT fudan.edu.cn
+subtitle: <a href='#'>助理研究员</a>，复旦大学，上海，zhaori_bi AT fudan.edu.cn
 lang: zh
 lang_alternate: /
 
@@ -16,4 +16,4 @@ latest_posts: true
 selected_papers: true
 social: true
 ---
-毕朝日，博士，复旦大学助理教授。他于2013年5月和2017年12月分别在美国德克萨斯大学达拉斯分校获得电气工程与计算机工程硕士和博士学位。2017年，他在奥地利微电子（Austria Mikro Systeme）美国普莱诺研发部门担任实习CAD工程师。2018年加入复旦大学。他的研究方向包括融合电路设计、电路性能优化和医学人工智能应用。他是Integration, The VLSI Journal的副编辑。
+毕朝日，博士，复旦大学集成电路与微纳电子创新学院，助理研究员，从事集成电路设计自动化方向研究。主持国家自然科学基金青年项目，作为骨干参与国家自然科学基金重点项目2项。近5年来，申请人以通讯作者在国内外重要学术会议和期刊发表论文60余篇，包括：EDA领域顶级会议DAC（CCF-A）、ICCAD(CCF-B)、旗舰期刊IEEE TCAD(CCF-A)等。入选上海市扬帆计划，提出的电路设计参数最优化方法，获得2024年、2025年中国主办最具影响力EDA领域会议ISEDA最佳论文奖；提出的求解RISC-V架构参数最优化方法获得2024年嵌入式领域顶级会议ESWEEK最佳论文提名；研究的集成电路智能优化设计方法，获得中国最大EDA团体组织评选的2024年度青年科技奖。

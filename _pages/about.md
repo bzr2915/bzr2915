@@ -3,6 +3,7 @@ layout: about
 title: About
 permalink: /
 subtitle: <a href='#'>Assistant Professor</a>. Fudan University, Shanghai, zhaori_bi AT fudan.edu.cn
+nav_title_zh: 简介
 lang: en
 lang_alternate: /zh/
 
