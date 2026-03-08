@@ -2,7 +2,7 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://bzr2915.github.io/bzr2915//bzr2915/courses/eda_software/</loc>
-<lastmod>2026-03-04T10:04:31+00:00</lastmod>
+<lastmod>2026-03-08T13:59:36+00:00</lastmod>
 </url>
 <url>
 <loc>https://bzr2915.github.io/bzr2915//bzr2915/news/A_1/</loc>
@@ -109,8 +109,12 @@
 <lastmod>2025-05-20T20:11:00+00:00</lastmod>
 </url>
 <url>
-<loc>https://bzr2915.github.io/bzr2915//bzr2915/blog/2023/DAC-paper/</loc>
-<lastmod>2023-07-12T00:00:00+00:00</lastmod>
+<loc>https://bzr2915.github.io/bzr2915//bzr2915/opinions/2026/liquid-chips-zh/</loc>
+<lastmod>2026-03-08T00:00:00+00:00</lastmod>
+</url>
+<url>
+<loc>https://bzr2915.github.io/bzr2915//bzr2915/opinions/2026/liquid-chips/</loc>
+<lastmod>2026-03-08T00:00:00+00:00</lastmod>
 </url>
 <url>
 <loc>https://bzr2915.github.io/bzr2915//bzr2915/</loc>
@@ -140,6 +144,12 @@
 <loc>https://bzr2915.github.io/bzr2915//bzr2915/news/</loc>
 </url>
 <url>
+<loc>https://bzr2915.github.io/bzr2915//bzr2915/opinions/</loc>
+</url>
+<url>
+<loc>https://bzr2915.github.io/bzr2915//bzr2915/opinions_zh/</loc>
+</url>
+<url>
 <loc>https://bzr2915.github.io/bzr2915//bzr2915/projects/</loc>
 </url>
 <url>
@@ -158,12 +168,12 @@
 <loc>https://bzr2915.github.io/bzr2915//bzr2915/teaching/</loc>
 </url>
 <url>
-<loc>https://bzr2915.github.io/bzr2915//bzr2915/blog/category/paper/</loc>
+<loc>https://bzr2915.github.io/bzr2915//bzr2915/opinions/tag/causal-analysis/</loc>
 </url>
 <url>
-<loc>https://bzr2915.github.io/bzr2915//bzr2915/blog/category/accepted/</loc>
+<loc>https://bzr2915.github.io/bzr2915//bzr2915/opinions/tag/chip-design/</loc>
 </url>
 <url>
-<loc>https://bzr2915.github.io/bzr2915//bzr2915/blog/2023/</loc>
+<loc>https://bzr2915.github.io/bzr2915//bzr2915/opinions/2026/</loc>
 </url>
 </urlset>
