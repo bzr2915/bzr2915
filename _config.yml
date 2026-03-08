@@ -261,7 +261,7 @@ jekyll-archives:
     tag: '/opinions/tag/:name/'
     category: '/opinions/category/:name/'
 
-display_tags: ['AI', 'EDA', 'academia'] # these tags will be displayed on the opinions index page
+display_tags: ['AI', 'EDA', 'academia', 'causal analysis', 'chip design'] # these tags will be displayed on the opinions index page
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar
