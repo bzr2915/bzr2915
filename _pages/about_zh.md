@@ -8,7 +8,7 @@ lang_alternate: /
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: prof_pic.png
   image_circular: false
 
 news: true
