@@ -119,10 +119,10 @@ google_analytics: G-VD3DPZCL7J # your Google Analytics measurement ID (format: G
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: al-folio # blog_name will be displayed in your blog page
-blog_nav_title: blog # your blog must have a title for it to be displayed in the nav bar
-blog_description: a simple whitespace theme for academics
-permalink: /blog/:year/:title/
+blog_name: Opinions # blog_name will be displayed in your blog page
+blog_nav_title: Opinions # your blog must have a title for it to be displayed in the nav bar
+blog_description: Signed opinions on AI, chip design, and academia
+permalink: /opinions/:year/:title/
 
 # Pagination
 pagination:
@@ -257,11 +257,11 @@ jekyll-archives:
     tag: archive-tag
     category: archive-category
   permalinks:
-    year: '/blog/:year/'
-    tag: '/blog/tag/:name/'
-    category: '/blog/category/:name/'
+    year: '/opinions/:year/'
+    tag: '/opinions/tag/:name/'
+    category: '/opinions/category/:name/'
 
-display_tags: ['formatting', 'images', 'links', 'math', 'code'] # these tags will be displayed on the front page of your blog
+display_tags: ['AI', 'EDA', 'academia'] # these tags will be displayed on the opinions index page
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar
