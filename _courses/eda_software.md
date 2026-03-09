@@ -14,6 +14,7 @@ importance: 1
 ## 课件下载
 
 - [第一讲：软件质量与人机关系 (PDF)]({{ '/assets/pdf/lecture1_software_quality.pdf' | relative_url }})
+- [第二讲：软件设计平台 (PDF)]({{ '/assets/pdf/lecture2_software_design_platform.pdf' | relative_url }})
 
 ## 课程大纲
 
