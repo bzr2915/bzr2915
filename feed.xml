@@ -1,4 +1,306 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://bzr2915.github.io/bzr2915//bzr2915/feed.xml" rel="self" type="application/atom+xml" /><link href="https://bzr2915.github.io/bzr2915//bzr2915/" rel="alternate" type="text/html" hreflang="en" /><updated>2026-03-14T18:48:11+00:00</updated><id>https://bzr2915.github.io/bzr2915//bzr2915/feed.xml</id><title type="html">blank</title><subtitle></subtitle><entry xml:lang="zh"><title type="html">液态的芯片</title><link href="https://bzr2915.github.io/bzr2915//bzr2915/opinions/2026/liquid-chips-zh/" rel="alternate" type="text/html" title="液态的芯片" /><published>2026-03-08T00:00:00+00:00</published><updated>2026-03-08T00:00:00+00:00</updated><id>https://bzr2915.github.io/bzr2915//bzr2915/opinions/2026/liquid-chips-zh</id><content type="html" xml:base="https://bzr2915.github.io/bzr2915//bzr2915/opinions/2026/liquid-chips-zh/"><![CDATA[<h2 id="一">一</h2>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://bzr2915.github.io/bzr2915//bzr2915/feed.xml" rel="self" type="application/atom+xml" /><link href="https://bzr2915.github.io/bzr2915//bzr2915/" rel="alternate" type="text/html" hreflang="en" /><updated>2026-03-14T19:02:12+00:00</updated><id>https://bzr2915.github.io/bzr2915//bzr2915/feed.xml</id><title type="html">blank</title><subtitle></subtitle><entry xml:lang="zh"><title type="html">漫天飞舞的小龙虾</title><link href="https://bzr2915.github.io/bzr2915//bzr2915/opinions/2026/flying-crayfish-zh/" rel="alternate" type="text/html" title="漫天飞舞的小龙虾" /><published>2026-03-15T00:00:00+00:00</published><updated>2026-03-15T00:00:00+00:00</updated><id>https://bzr2915.github.io/bzr2915//bzr2915/opinions/2026/flying-crayfish-zh</id><content type="html" xml:base="https://bzr2915.github.io/bzr2915//bzr2915/opinions/2026/flying-crayfish-zh/"><![CDATA[<h2 id="一">一</h2>
+
+<p>2025年11月的某个深夜，奥地利格拉茨，Peter Steinberger往GitHub推送了一段代码之后关掉了笔记本电脑。他给这个项目取名Clawdbot——一个能接入大语言模型、在即时通讯工具上自主执行任务的AI代理。推送完成时格拉茨是凌晨两点。他没有发推文，没有写博客，关灯睡了。</p>
+
+<p>没有人预料到接下来发生的事。</p>
+
+<p>同一个月，在上海张江的某栋写字楼里，一支十二人的芯片设计团队正在为一颗面向AIoT市场的RISC-V SoC做最后的时序收敛。团队负责人老陈是个干了二十年后端的老兵。他的工位与其他人不同——显示器旁边贴着一张泛黄的手写检查清单，综合约束、时钟树策略、布线拥塞阈值，字迹已经模糊，但每一条都是从过去十几次流片中用真金白银换来的。新来的应届生小王每天跟在老陈身后，看他怎么读时序报告，怎么判断一条关键路径到底是setup violation还是工具的悲观估计。午饭时老陈用搪瓷杯泡浓茶，茶叶在杯底堆成一座小丘。小王坐在他对面，听他讲十年前某次流片因为hold margin不足导致全批次报废的故事。</p>
+
+<p>这种传承方式笨拙、低效，没有任何一家管理咨询公司会推荐它。但它有一个没人注意到的好处：知识在传递过程中被反复检验。老陈说”这条路径的hold margin留太少了”，小王问”为什么”，老陈解释物理原因，小王下次遇到类似情况自己判断，判断错了，老陈纠正。知识在师徒之间的往返中逐渐凝固为可靠的工程直觉——一种Michael Polanyi所说的”缄默知识”<sup id="fnref:polanyi"><a href="#fn:polanyi" class="footnote" rel="footnote" role="doc-noteref">1</a></sup>：老陈能从版图上”看出”哪些走线会出问题，就像一个经验丰富的医生能从X光片上看出常人看不见的阴影。这种知识无法被写成规则手册，因为连老陈自己都无法完全说清楚他到底”看”到了什么。</p>
+
+<p>两个世界各自运转，彼此不知道对方的存在。</p>
+
+<h2 id="二">二</h2>
+
+<p>2026年2月2日，Anthropic的法务部门犯了一个战略性错误。他们向Steinberger发出了商标侵权警告——Clawdbot的名字与Claude太过相似。Steinberger将项目更名为OpenClaw，并把这封律师函公之于众。</p>
+
+<p>互联网的记忆是短暂的，但它的愤怒是爆炸性的。Streisand效应在七十二小时内为OpenClaw带来了九万一千颗新星标。到二月底，这个数字突破了二十四万七千——打破了React用十年积累的GitHub纪录<sup id="fnref:react"><a href="#fn:react" class="footnote" rel="footnote" role="doc-noteref">2</a></sup>。五千四百多个技能插件在社区中涌现，从自动化客服到代码审查，从投资分析到学术论文检索。</p>
+
+<p>这些数字需要一个比喻才能被真正理解。小龙虾——学名克氏原螯虾——在二十世纪初作为入侵物种进入中国水域。它们繁殖极快，适应力惊人，几乎没有天敌。更重要的是，它们没有脊椎骨——没有内在的刚性结构，全靠外骨骼支撑。OpenClaw及其衍生的Agent生态，正是技术世界里的小龙虾：繁殖惊人，无处不在，但没有骨骼。龙虾开始漫天飞舞。</p>
+
+<p>张江的老陈也注意到了这场风暴——不是因为他刷GitHub，而是因为公司的技术VP在周会上提了一句：”业界有团队在用AI Agent串联EDA工具链，据说效率提升了三到五倍。我们要不要调研一下？”</p>
+
+<p>调研的任务落在了小王头上。三周后，小王交出了一个原型：用一个类OpenClaw的Agent框架，连接Synopsys的Design Compiler、IC Compiler II和PrimeTime，让Agent根据综合报告自动调整约束、重新跑布局布线、再做时序分析，循环往复直到收敛。</p>
+
+<p>效果立竿见影。过去需要工程师花两天手动迭代的模块级综合-布局-时序循环，Agent在八小时内跑了十四轮。时序收敛的速度提升了将近四倍。小王在团队内部演示时，所有人都沉默了几秒，然后开始鼓掌。</p>
+
+<p>老陈也鼓了掌。但他在散会后多问了一句：”Agent在某条关键路径上插了三级buffer来修setup，但它知不知道这样做会增加上游逻辑的fanout loading，可能在另一个corner引出新的violation？”</p>
+
+<p>小王愣了一下：”它不需要知道为什么。它只需要知道改什么能让timing clean。”</p>
+
+<p>老陈端起搪瓷杯喝了口茶，没有再说话。</p>
+
+<h2 id="三">三</h2>
+
+<p>龙虾的繁殖速度超出了所有人的想象。</p>
+
+<p>2026年2月14日，Steinberger加入OpenAI，OpenClaw被移交给一个开源基金会<sup id="fnref:openai"><a href="#fn:openai" class="footnote" rel="footnote" role="doc-noteref">3</a></sup>。两周后，Nvidia宣布NemoClaw——一个基于OpenClaw架构的企业级AI Agent平台，专门面向工程设计自动化场景。三月初，Meta以未披露的价格收购了Moltbook——一个用OpenClaw构建的AI Agent社交网络，尽管这个平台上大部分”用户”是AI生成的虚拟人格<sup id="fnref:moltbook"><a href="#fn:moltbook" class="footnote" rel="footnote" role="doc-noteref">4</a></sup>。</p>
+
+<p>上海有一家EDA初创公司的创始人后来回忆，他在融资PPT里加上”AI Agent驱动的芯片设计自动化”之后，同一份技术方案的估值翻了一倍。”不是因为我们想通了Agent该怎么用，”他说，”是因为不写这四个字就拿不到下一轮。”三个月内，”AI Agent”在EDA领域融资材料中的出现频率增长了七倍。</p>
+
+<p>张江团队的故事也在加速。小王的原型被升级为正式项目，公司投入了三个人全职开发。Agent的能力不断扩展——从时序收敛延伸到功耗优化，从单模块迭代扩展到全芯片流程。年轻工程师们开始习惯一种新的工作方式：描述目标，启动Agent，审查结果。过去需要理解每一步原理才能做出的决策，现在Agent替你做了——更快、更稳定、不知疲倦。</p>
+
+<p>老陈发现了一个令他不安的趋势。新来的工程师越来越少问”为什么”。他们问的是”怎么让Agent跑得更快”、”怎么写更好的prompt”、”怎么让Agent少报false violation”。工具链的黑箱从EDA工具本身延伸到了Agent层——一个黑箱之上又叠了一个黑箱。</p>
+
+<p>三个月前，团队里任何一个工程师都能解释为什么某条路径的setup slack是负的。现在，当Agent自动修复了一条timing violation时，大多数人的反应是”fixed”，而不是”我理解它为什么fix了以及这个fix有没有副作用”。所谓的”审查结果”在实践中退化为”检查报告是否全部显示pass”——那不是审查，那是签字。</p>
+
+<p>1983年，英国认知科学家Lisanne Bainbridge发表了一篇名为《自动化的讽刺》的论文<sup id="fnref:bainbridge"><a href="#fn:bainbridge" class="footnote" rel="footnote" role="doc-noteref">5</a></sup>，指出了一个至今仍未被充分消化的悖论：设计自动化系统的目的是消除人类操作员的错误，但自动化把人类的角色从主动执行者变成了被动监控者——而人类恰恰不擅长长时间被动监控。更讽刺的是，最难自动化的任务——应对罕见的、前所未见的异常——恰恰是在自动化失败时需要人类接管的任务。Agent越可靠，工程师越少练习独立判断；工程师越少练习独立判断，Agent失败时的后果就越严重。</p>
+
+<p>知识没有消失。它转移了——从人的大脑转移到了Agent的决策链路中。但Agent的决策链路是液态的：它基于统计模式做出选择，不理解物理因果，不知道自己在什么条件下会失败。这种转移是单向的——一旦工程师丧失了独立判断能力，他就再也无法校验Agent的输出是否可靠。</p>
+
+<h2 id="四">四</h2>
+
+<p>2026年秋天——如果按照当前的轨迹外推——某个团队会遇到这样一个场景。</p>
+
+<p>一颗芯片流片回来，功能验证全部通过，但实测性能比仿真预期低了百分之十八。不是某个模块的问题，而是一种弥漫性的性能衰减——每条关键路径都差一点点，累积起来就是百分之十八。</p>
+
+<p>团队开始排查。Agent的决策日志显示，在布局布线阶段，它为了解决某个区域的拥塞问题，将几个关键模块的placement做了微调。每一次微调都是”合理”的——拥塞降低了，DRC clean了，时序报告也是met的。但这些微调的累积效应改变了全局的互连拓扑结构，使最终的物理实现系统性地偏离了架构团队最初的floorplan意图。每一步的signoff提取都是准确的——工具没有撒谎——但最终拿到的那颗芯片，已经不是设计团队原本想要的那颗芯片了。</p>
+
+<p>Agent不知道这件事。它的每一步决策都基于当前工具报告的反馈，而工具报告在每一步都是”通过”的。问题出在步骤之间的耦合效应——一种Agent的统计决策框架天然看不见的东西。Charles Perrow在研究核电站和化工厂事故时提出过一个概念：”正常事故”<sup id="fnref:perrow"><a href="#fn:perrow" class="footnote" rel="footnote" role="doc-noteref">6</a></sup>——在紧密耦合的复杂系统中，每个组件都正常运作，但组件之间的交互产生了不可预见的故障。Agent辅助的芯片设计流程，正在成为这种”正常事故”的温床。</p>
+
+<p>更令人不安的是排查过程本身。两年前，老陈可以在半天内定位这类问题。他的判断力不是来自某条规则，而是来自二十年间”亲手做决策、观察后果、修正理解”的循环——一种只有在实践中才能积累的缄默知识。他能从版图上”看出”哪些信号的走线被意外拉长了，就像一个老中医把脉时能感知到年轻医生无法感知的东西。但老陈去年退休了。现在的团队面对Agent的决策日志，能看到每一步做了什么，但不知道为什么这些”正确”的步骤组合在一起会产生一个”错误”的结果。</p>
+
+<p>他们看到了树，但看不见森林。而森林的形状，是由他们已经不再传承的那种工程直觉所定义的。</p>
+
+<p>有人提议给老陈打个电话。老陈来了，看了半天版图，指着几条走线说：”这里，这里，还有这里——Agent把这些模块往北推了，省了拥塞，但把clock mesh和data path的相对位置改了，interconnect delay的分布整个偏了。”他花了四个小时完成了年轻工程师花一周都无法完成的诊断。</p>
+
+<p>但老陈不可能每次都来。下一次他不来的时候呢？</p>
+
+<p>龙虾的成功之日，就是安全网消失之日。</p>
+
+<h2 id="五">五</h2>
+
+<p>问题的根源不是OpenClaw，不是AI Agent，甚至不是任何一种具体的技术。问题是态度——整个行业对待”AI+芯片设计”这个命题的态度。</p>
+
+<p>2009年6月1日凌晨，法航447航班从里约热内卢飞往巴黎，在大西洋上空遭遇高空结冰。皮托管被冰晶堵塞，自动驾驶断开。三名飞行员面对一个他们已经很少手动处理的场景——失速。在接下来的三分二十秒里，他们做出了一系列矛盾的操作，飞机坠入大西洋，228人遇难<sup id="fnref:af447"><a href="#fn:af447" class="footnote" rel="footnote" role="doc-noteref">7</a></sup>。</p>
+
+<p>事故调查之后，航空工业没有拆掉自动驾驶。他们做的是另一件事：用了数十年时间系统性地设计人机协作的方法论——飞行员在什么情况下应该信任自动系统？在什么情况下必须接管？如何确保飞行员在长期依赖自动系统后仍然保持手动飞行的能力？Jens Rasmussen提出的”技能-规则-知识”框架<sup id="fnref:rasmussen"><a href="#fn:rasmussen" class="footnote" rel="footnote" role="doc-noteref">8</a></sup>为这种方法论提供了理论基础：自动化可以接管基于技能和规则的决策层次，但基于知识的推理——面对未预见情况的判断能力——必须保留在人类手中。</p>
+
+<p>芯片设计领域正在跳过这一步。浏览过去一年的会议论文、技术博客和融资新闻稿，你会发现一个令人沮丧的模式：几乎所有工作都止步于”我们用Agent/LLM做了X，效率提升了Y倍”。很少有人追问下一层：Agent的决策边界在哪里？它在什么条件下会系统性地犯错？当Agent的能力提升导致人类知识退化时，整个系统的可靠性是在提高还是降低？</p>
+
+<p>这不是学术上的吹毛求疵。这些是工程方法论的核心。而且这些问题在先进制程节点上尤其致命——7纳米以下，物理效应的非线性和跨步骤耦合远比成熟制程严重，Agent的局部最优决策与全局结果之间的鸿沟更深。对于成熟制程上的简单设计，Agent或许已经”够用”。但行业的前沿——也是价值和风险集中的地方——恰恰是Agent最容易出错、而人类最难以校验的区域。</p>
+
+<p>当前的工作几乎都是浅尝辄止。把Agent接入工具链，跑几个案例，报告提速倍数，发一篇论文或写一份融资材料。没有人讨论底层的方法论问题，因为这些问题不性感，不容易变成数字，不能写在PPT的第一页。</p>
+
+<p>这就是浮躁的本质：不是技术的浮躁，是态度的浮躁。追逐龙虾的热闹，回避方法论的沉闷。</p>
+
+<h2 id="六">六</h2>
+
+<p>但如果就此得出”龙虾是坏的”这个结论，那和盲目拥抱龙虾一样肤浅。</p>
+
+<p>OpenClaw在六十天内积累了二十四万七千颗星标，这个数字不是泡沫能解释的。五千四百多个技能插件不是凭空产生的。Nvidia、Meta、OpenAI——这些不是容易被忽悠的玩家——都在押注Agent生态。龙虾的力量是真实的，否认它只是另一种形式的浮躁。</p>
+
+<p>芯片设计的知识同样是真实的。一颗芯片从构想到流片，涉及的因果链条比任何软件系统都更深、更刚性。时序约束背后是电磁波的传播速度，功耗模型背后是晶体管的物理开关特性，可靠性要求背后是材料的疲劳极限。这些不是统计模式，而是物理定律——它们是真正固态的知识，不会因为你换了一个数据集或重新训练了一个模型就消失。</p>
+
+<p>真正的问题不是”龙虾还是芯片”，而是”液态的龙虾如何与固态的物理共存”。</p>
+
+<p>在《液态的芯片》中，我讨论了三种知识形态：液态的统计关联、正在凝固的因果推理、固态的物理定律。AI Agent——包括OpenClaw及其一切后继者——本质上是液态知识的放大器。它们以前所未有的规模和速度调用\(P(Y\vert X)\)，在统计模式的海洋中高效冲浪。但它们无法自行完成从液态到固态的相变。\(P(Y\vert X)\)——”观察到X时Y的概率”——乘以一百万倍的算力，仍然是\(P(Y\vert X)\)，不会自动变成\(P(Y\vert do(X))\)——”主动干预X后Y的概率”。</p>
+
+<p>有人会反驳：Agent和工程师构成了一个耦合认知系统——知识不是从人”转移”到机器，而是”分布”在人机之间。整个系统的认知能力也许提升了，个体工程师的知识退化又何妨？这个反驳有哲学上的合理性<sup id="fnref:clark"><a href="#fn:clark" class="footnote" rel="footnote" role="doc-noteref">9</a></sup>，但它忽略了一个关键事实：芯片设计是一个安全关键领域。飞机的自动驾驶系统也与飞行员构成耦合认知系统，但没有人会因此取消飞行员的手动飞行训练。在耦合系统中，当自动化组件出现超出设计预期的行为时——而在紧密耦合的复杂系统中这是必然的——人类组件必须具备独立诊断和干预的能力。这种能力不是从系统中”涌现”的，它必须在人身上被刻意培养和维持。</p>
+
+<p>这意味着Agent在芯片设计中的正确角色不是”替代工程师做决策”，而是”在工程师的因果框架约束下高效探索”。Agent负责速度，工程师负责方向。但这种说法仍然过于干净。诚实地讲，速度本身会改变方向——当Agent在八小时内跑十四轮迭代时，它生成的中间结果会重新定义工程师感知到的设计空间。工程师的”方向感”不是在真空中独立存在的，它依赖于他对设计空间地形的理解，而这个地形正在被Agent的快速探索所重塑。速度和方向不是可以简单分离的——它们之间存在一种不可消解的认识论纠缠。</p>
+
+<p>也许这就是我们真正面对的处境：不是一个可以被方法论完美解决的工程问题，而是一种需要在张力中持续工作的认知状态。Agent的液态力量与人类的固态知识之间，不存在一条一劳永逸的边界。边界本身是动态的——随着工艺节点演进、设计复杂度增加、Agent能力提升，哪些决策可以安全委托、哪些必须人类把关，这个划分会不断变化。而维护这条动态边界所需要的知识，恰恰是我们正在担心会消失的那种知识。</p>
+
+<h2 id="七">七</h2>
+
+<p>让我们回到张江。</p>
+
+<p>假设老陈没有退休。假设他在看到小王的Agent原型时，没有只问一句”它知道为什么吗”然后沉默，而是坐下来，和小王一起做了一件更困难的事：为Agent的决策划定因果边界。</p>
+
+<p>不是一张一劳永逸的清单——他们都知道不存在这样的清单。而是一种持续校准的工作纪律。比如：时钟树综合中，buffer的大小选择可以交给Agent，因为这是一个在给定约束下的凸优化问题；但时钟拓扑结构的选择——mesh还是tree还是混合——必须由人类决定，因为拓扑变化对全芯片时序的影响是非线性的、跨模块的，Agent的局部反馈信号无法捕捉这种全局耦合。再比如：标准单元的placement refinement可以交给Agent在给定窗口内自由调整；但涉及关键模块相对位置的floorplan级决策，必须有人类基于对数据通路和时钟域关系的因果理解来审查。</p>
+
+<p>这不是一个下午能完成的工作。这需要对芯片设计流程中每一个决策节点的因果结构进行系统性的梳理。这项工作不性感，不容易发论文，不能写在融资PPT的第一页。而且它有一个内在的悖论——它需要老陈这样的人来做，但做这件事的目的之一是让未来的工程师不必成为老陈。这个悖论不能被解决，只能被承认，然后在承认中持续工作。</p>
+
+<p>小龙虾确实在漫天飞舞。它们的数量会继续增长，能力会继续增强，生态会继续繁荣。这是不可逆转的趋势，也不应该被逆转。但龙虾没有脊椎——它们在统计模式的水流中自如游弋，没有内骨骼，没有固态的支撑结构。芯片设计需要的是骨骼。</p>
+
+<p>真正的工作不是抓龙虾，也不是拒绝龙虾。而是为龙虾建造一副骨架——一套严肃的方法论，让Agent的液态力量在因果推理和物理约束的固态框架中凝固为可靠的工程能力。这副骨架不会是完美的，不会是永恒的，它本身也会随技术演进而变化。但没有骨架的龙虾，只能在水里游；有了骨架，它才有可能站到陆地上。</p>
+
+<p>这项工作几乎还没有开始。</p>
+
+<p>小王最近养成了一个习惯。每天下班前，他会花二十分钟手动跑一遍Agent当天做过的某个关键决策——不用Agent，用他自己。有时候他的结果和Agent一样，有时候不一样。不一样的时候，他会去查为什么。他从没对任何人提起过这件事。老陈离开之后，办公室里再没有人用搪瓷杯泡浓茶了。但小王的桌上最近多了一只马克杯。杯子上印着一只卡通龙虾。</p>
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:polanyi">
+      <p>Michael Polanyi在《个人知识》（1958）中提出”缄默知识”（tacit knowledge）的概念：我们知道的远比我们能说出来的多。一个骑自行车的人知道如何保持平衡，但无法将这种知识完全用规则表述——芯片设计中资深工程师的”直觉”具有同样的性质。 <a href="#fnref:polanyi" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:react">
+      <p>React是Meta开发的前端JavaScript框架，长期占据GitHub星标数榜首。OpenClaw在约六十天内超越了它十年积累的记录。 <a href="#fnref:react" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:openai">
+      <p>Steinberger于2026年2月14日宣布加入OpenAI，并承诺OpenClaw将继续保持开源，移交至独立基金会运营。但业界对这一承诺的可持续性普遍持怀疑态度。 <a href="#fnref:openai" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:moltbook">
+      <p>Moltbook在被Meta收购前因大量AI生成的虚假帖子引发争议。一个由AI Agent构建、充斥AI生成内容的平台被一家社交媒体巨头收购——这个事实本身就是对”真实性”概念的一次压力测试。 <a href="#fnref:moltbook" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:bainbridge">
+      <p>Lisanne Bainbridge, “Ironies of Automation,” <em>Automatica</em>, 1983. 这篇论文被广泛认为是人因工程领域最具影响力的文献之一，其核心洞察在四十多年后依然尖锐。 <a href="#fnref:bainbridge" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:perrow">
+      <p>Charles Perrow, <em>Normal Accidents: Living with High-Risk Technologies</em>, Basic Books, 1984. Perrow认为，在紧密耦合且交互复杂的系统中，事故不是异常，而是系统特性的必然结果。 <a href="#fnref:perrow" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:af447">
+      <p>法航447航班事故（2009年）是自动化依赖导致灾难的经典案例。事故调查报告（BEA, 2012）指出，飞行员未能识别失速状态并采取正确的俯冲改出动作，核心原因之一是长期依赖自动驾驶导致的手动飞行能力退化。 <a href="#fnref:af447" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:rasmussen">
+      <p>Jens Rasmussen, “Skills, Rules, and Knowledge; Signals, Signs, and Symbols, and Other Distinctions in Human Performance Models,” <em>IEEE Transactions on Systems, Man, and Cybernetics</em>, 1983. Rasmussen的框架至今仍是人因工程和安全关键系统设计的基石。 <a href="#fnref:rasmussen" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:clark">
+      <p>Andy Clark和David Chalmers在1998年提出的”延伸心智假说”（Extended Mind Thesis）认为，认知过程不限于颅内，可以延伸到外部工具和环境。这一框架在解释人机协作时有启发意义，但在安全关键领域的适用性需要审慎评估。 <a href="#fnref:clark" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>]]></content><author><name>Zhaori Bi</name></author><category term="AI" /><category term="EDA" /><category term="chip design" /><summary type="html"><![CDATA[当AI Agent闯入芯片设计]]></summary></entry><entry xml:lang="en"><title type="html">Flying Crayfish Everywhere</title><link href="https://bzr2915.github.io/bzr2915//bzr2915/opinions/2026/flying-crayfish/" rel="alternate" type="text/html" title="Flying Crayfish Everywhere" /><published>2026-03-15T00:00:00+00:00</published><updated>2026-03-15T00:00:00+00:00</updated><id>https://bzr2915.github.io/bzr2915//bzr2915/opinions/2026/flying-crayfish</id><content type="html" xml:base="https://bzr2915.github.io/bzr2915//bzr2915/opinions/2026/flying-crayfish/"><![CDATA[<h2 id="i">I</h2>
+
+<p>Late one night in November 2025, in Graz, Austria, Peter Steinberger pushed some code to GitHub and closed his laptop. He called the project Clawdbot — an AI agent that could plug into large language models and autonomously execute tasks through messaging platforms. It was two in the morning in Graz. He didn’t tweet about it, didn’t write a blog post. He turned off the lights and went to sleep.</p>
+
+<p>No one anticipated what would happen next.</p>
+
+<p>That same month, in an office building in Shanghai’s Zhangjiang district, a twelve-person chip design team was grinding through final timing closure on a RISC-V SoC for the AIoT market. The team lead, a veteran backend engineer everyone called Old Chen, had been doing this for twenty years. His workstation stood apart from the others — taped to the side of his monitor was a yellowed, handwritten checklist: synthesis constraints, clock tree strategies, routing congestion thresholds. The ink had faded, but every item had been paid for with real silicon across more than a dozen tapeouts. A fresh graduate named Xiao Wang followed Old Chen around each day, watching him read timing reports, learning to tell the difference between a genuine setup violation and a pessimistic estimate from the tools. At lunch, Old Chen brewed strong tea in an enamel mug, the leaves piling into a small hill at the bottom. Xiao Wang sat across from him, listening to the story of a tapeout ten years ago where insufficient hold margin scrapped an entire batch.</p>
+
+<p>This mode of knowledge transfer was clumsy, inefficient — no management consultancy would recommend it. But it had an advantage no one noticed: knowledge was repeatedly tested in the process of transmission. Old Chen said “the hold margin on this path is too thin.” Xiao Wang asked “why.” Old Chen explained the physics. Next time Xiao Wang encountered a similar situation, he made his own judgment. When he got it wrong, Old Chen corrected him. Knowledge gradually solidified through these back-and-forth exchanges into reliable engineering intuition — what Michael Polanyi called “tacit knowledge”<sup id="fnref:polanyi"><a href="#fn:polanyi" class="footnote" rel="footnote" role="doc-noteref">1</a></sup>: Old Chen could “see” which routes on a layout would cause problems, the way an experienced physician can spot shadows on an X-ray that others cannot. This knowledge resisted codification into rule books, because even Old Chen himself could not fully articulate what he was “seeing.”</p>
+
+<p>Two worlds, each running on its own axis, unaware of the other’s existence.</p>
+
+<h2 id="ii">II</h2>
+
+<p>On February 2, 2026, Anthropic’s legal department made a strategic error. They sent Steinberger a trademark infringement warning — Clawdbot sounded too much like Claude. Steinberger renamed the project OpenClaw and published the cease-and-desist letter for the world to see.</p>
+
+<p>The internet’s memory is short, but its outrage is explosive. The Streisand effect delivered ninety-one thousand new GitHub stars in seventy-two hours. By the end of February, the count had passed two hundred and forty-seven thousand — breaking the record React had built over ten years<sup id="fnref:react"><a href="#fn:react" class="footnote" rel="footnote" role="doc-noteref">2</a></sup>. More than five thousand four hundred skill plugins sprouted across the community, covering everything from automated customer service to code review, from investment analysis to academic paper retrieval.</p>
+
+<p>These numbers need a metaphor to be truly understood. The red swamp crayfish — <em>Procambarus clarkii</em> — entered Chinese waterways in the early twentieth century as an invasive species. They breed prodigiously, adapt to almost anything, and have virtually no natural predators. Most importantly, they have no spine — no internal rigid structure, supported only by an exoskeleton. OpenClaw and its derivative agent ecosystem are the tech world’s crayfish: astonishingly prolific, everywhere at once, but boneless. The crayfish had taken flight.</p>
+
+<p>Old Chen in Zhangjiang noticed the storm too — not from browsing GitHub, but because the company’s VP of Technology mentioned it at the weekly meeting: “Some teams in the industry are using AI agents to chain EDA tools together. Reportedly three-to-five-x efficiency gains. Should we look into it?”</p>
+
+<p>The assignment fell to Xiao Wang. Three weeks later, he delivered a prototype: an OpenClaw-like agent framework wired to Synopsys’s Design Compiler, IC Compiler II, and PrimeTime. The agent read synthesis reports, automatically adjusted constraints, re-ran place-and-route, performed timing analysis, and looped until convergence.</p>
+
+<p>The results were immediate. A module-level synthesis-placement-timing loop that used to take engineers two days of manual iteration — the agent ran fourteen rounds in eight hours. Timing closure sped up nearly fourfold. When Xiao Wang demonstrated it to the team, everyone went quiet for a few seconds, then began to applaud.</p>
+
+<p>Old Chen applauded too. But after the meeting, he asked one more question: “When the agent inserted three levels of buffers on a critical path to fix setup, did it know that doing so increases the fanout loading on the upstream logic and might trigger a new violation at a different corner?”</p>
+
+<p>Xiao Wang paused. “It doesn’t need to know why. It just needs to know what to change to make timing clean.”</p>
+
+<p>Old Chen picked up his enamel mug, took a sip of tea, and said nothing.</p>
+
+<h2 id="iii">III</h2>
+
+<p>The crayfish bred faster than anyone imagined.</p>
+
+<p>On February 14, 2026, Steinberger joined OpenAI, and OpenClaw was handed over to an open-source foundation<sup id="fnref:openai"><a href="#fn:openai" class="footnote" rel="footnote" role="doc-noteref">3</a></sup>. Two weeks later, Nvidia announced NemoClaw — an enterprise AI agent platform built on the OpenClaw architecture, aimed squarely at engineering design automation. In early March, Meta acquired Moltbook at an undisclosed price — an AI agent social network built with OpenClaw, despite the fact that most of its “users” were AI-generated virtual personas<sup id="fnref:moltbook"><a href="#fn:moltbook" class="footnote" rel="footnote" role="doc-noteref">4</a></sup>.</p>
+
+<p>A founder of a Shanghai EDA startup later recalled that after adding “AI Agent-driven chip design automation” to his pitch deck, the valuation for the same technical proposal doubled. “It wasn’t because we’d figured out how to use agents,” he said. “It was because you couldn’t raise the next round without those four words.” Within three months, the phrase “AI Agent” appeared seven times more frequently in EDA funding materials.</p>
+
+<p>The story in Zhangjiang accelerated too. Xiao Wang’s prototype was promoted to a formal project; the company assigned three people to it full-time. The agent’s capabilities kept expanding — from timing closure to power optimization, from single-module iteration to full-chip flows. Young engineers settled into a new way of working: describe the objective, launch the agent, review the results. Decisions that once required understanding the underlying principles at each step were now made by the agent — faster, more consistent, tireless.</p>
+
+<p>Old Chen noticed a trend that unsettled him. New engineers asked “why” less and less. They asked “how to make the agent run faster,” “how to write better prompts,” “how to reduce the agent’s false violations.” The black box of the EDA tools had extended upward into the agent layer — one black box stacked on top of another.</p>
+
+<p>Three months earlier, any engineer on the team could explain why a given path had negative setup slack. Now, when the agent automatically fixed a timing violation, most people’s reaction was “fixed” — not “I understand why it fixed that and whether the fix has side effects.” What passed for “reviewing results” had in practice degenerated into “checking whether all the reports say pass.” That isn’t review. That is rubber-stamping.</p>
+
+<p>In 1983, British cognitive scientist Lisanne Bainbridge published a paper called “Ironies of Automation”<sup id="fnref:bainbridge"><a href="#fn:bainbridge" class="footnote" rel="footnote" role="doc-noteref">5</a></sup>, identifying a paradox that remains underdigested to this day: the purpose of designing automated systems is to eliminate human operator errors, but automation transforms the human’s role from active executor to passive monitor — and humans are precisely bad at prolonged passive monitoring. More ironically still, the tasks hardest to automate — responding to rare, unforeseen anomalies — are exactly the tasks that require human takeover when automation fails. The more reliable the agent becomes, the less engineers practice independent judgment; the less they practice, the more catastrophic the consequences when the agent does fail.</p>
+
+<p>Knowledge had not vanished. It had migrated — from human minds into the agent’s decision chain. But the agent’s decision chain is liquid: it makes choices based on statistical patterns, without understanding physical causality, without knowing the conditions under which it will fail. This migration is one-way — once engineers lose the capacity for independent judgment, they can no longer verify whether the agent’s output is reliable.</p>
+
+<h2 id="iv">IV</h2>
+
+<p>Autumn 2026 — if we extrapolate the current trajectory — some team will encounter this scenario.</p>
+
+<p>A chip comes back from the fab. Functional verification passes across the board, but measured performance falls eighteen percent below simulation expectations. Not a single-module problem, but a diffuse performance degradation — every critical path a little slower than predicted, accumulating to eighteen percent.</p>
+
+<p>The team begins to investigate. The agent’s decision log shows that during place-and-route, it made a series of placement adjustments to relieve congestion in a particular region. Each adjustment was “reasonable” — congestion went down, DRC came out clean, timing reports showed met. But the cumulative effect of these adjustments altered the global interconnect topology, causing the final physical implementation to diverge systematically from the architecture team’s original floorplan intent. Every step’s signoff extraction was accurate — the tools did not lie — yet the chip that came back was no longer the chip the design team had meant to build.</p>
+
+<p>The agent did not know this. Each of its decisions was based on current tool feedback, and at every step that feedback said “pass.” The problem lay in the coupling effects between steps — something the agent’s statistical decision framework is constitutionally blind to. Charles Perrow, studying accidents at nuclear plants and chemical factories, coined a concept: “normal accidents”<sup id="fnref:perrow"><a href="#fn:perrow" class="footnote" rel="footnote" role="doc-noteref">6</a></sup> — in tightly coupled complex systems, every component operates correctly, but interactions between components produce unforeseen failures. Agent-assisted chip design flows are becoming fertile ground for exactly this kind of normal accident.</p>
+
+<p>What was more disturbing was the debugging process itself. Two years earlier, Old Chen could have localized this problem in half a day. His judgment came not from any rule but from twenty years of the cycle “make a decision by hand, observe the consequences, revise understanding” — tacit knowledge that can only be accumulated through practice. He could “see” on a layout which signal routes had been inadvertently stretched, the way a veteran traditional doctor can feel things while taking a pulse that a younger physician cannot. But Old Chen had retired the previous year. The current team could see in the agent’s log what was done at each step, but could not understand why these individually “correct” steps, combined, produced an “incorrect” result.</p>
+
+<p>They could see the trees but not the forest. And the shape of the forest was defined by the kind of engineering intuition they had stopped transmitting.</p>
+
+<p>Someone suggested calling Old Chen. He came in, studied the layout for half a day, and pointed at several routes: “Here, here, and here — the agent pushed these modules north to save on congestion, but that shifted the relative positions of the clock mesh and the data paths. The distribution of interconnect delay is off across the board.” He completed in four hours a diagnosis the younger engineers could not have managed in a week.</p>
+
+<p>But Old Chen cannot come every time. What happens next time, when he doesn’t?</p>
+
+<p>The day the crayfish succeed is the day the safety net disappears.</p>
+
+<h2 id="v">V</h2>
+
+<p>The root of the problem is not OpenClaw, not AI agents, not any specific technology. The problem is attitude — the attitude with which the entire industry approaches the proposition “AI + chip design.”</p>
+
+<p>On June 1, 2009, in the early hours of the morning, Air France Flight 447 from Rio de Janeiro to Paris encountered high-altitude icing over the Atlantic. Ice crystals blocked the pitot tubes; the autopilot disconnected. Three pilots faced a scenario they had rarely handled manually — a stall. Over the next three minutes and twenty seconds, they made a series of contradictory inputs. The aircraft plunged into the Atlantic. Two hundred and twenty-eight people died<sup id="fnref:af447"><a href="#fn:af447" class="footnote" rel="footnote" role="doc-noteref">7</a></sup>.</p>
+
+<p>After the investigation, the aviation industry did not rip out the autopilot. They did something else: they spent decades systematically designing the methodology for human-machine collaboration — under what circumstances should pilots trust the automated system? Under what circumstances must they take over? How do you ensure that pilots retain manual flying skills after years of automation dependency? Jens Rasmussen’s “skills-rules-knowledge” framework<sup id="fnref:rasmussen"><a href="#fn:rasmussen" class="footnote" rel="footnote" role="doc-noteref">8</a></sup> provided the theoretical foundation: automation can take over decisions at the skill-based and rule-based levels, but knowledge-based reasoning — the capacity to judge in unforeseen situations — must remain in human hands.</p>
+
+<p>The chip design industry is skipping this step. Browse the past year’s conference papers, technical blogs, and fundraising press releases and you find a dispiriting pattern: almost all the work stops at “we used an Agent/LLM to do X and achieved Y-times speedup.” Hardly anyone pursues the next layer: where are the boundaries of the agent’s decision competence? Under what conditions will it systematically err? When improvements in agent capability cause human knowledge to atrophy, is the overall system becoming more reliable or less?</p>
+
+<p>These are not academic quibbles. They are the core of engineering methodology. And they are especially lethal at advanced process nodes — below 7nm, the nonlinearity of physical effects and the cross-step coupling are far more severe than at mature nodes. The gap between the agent’s locally optimal decisions and globally optimal results grows wider. For simple designs on mature processes, the agent may well be “good enough.” But the frontier of the industry — where both value and risk concentrate — is precisely the zone where agents are most likely to err and humans least able to verify.</p>
+
+<p>Current work is almost entirely superficial. Hook an agent into the tool chain, run a few test cases, report the speedup factor, publish a paper or draft a funding pitch. No one is discussing the methodological foundations, because those questions are not glamorous, not easily reduced to numbers, and cannot go on the first slide of a deck.</p>
+
+<p>This is the nature of the superficiality: not a superficiality of technology, but a superficiality of attitude. Chasing the spectacle of the crayfish, avoiding the dullness of methodology.</p>
+
+<h2 id="vi">VI</h2>
+
+<p>But if we conclude from all this that “crayfish are bad,” we are being as shallow as those who embrace them blindly.</p>
+
+<p>OpenClaw accumulated two hundred and forty-seven thousand GitHub stars in sixty days. That number cannot be explained by hype alone. Five thousand four hundred skill plugins did not materialize from nothing. Nvidia, Meta, OpenAI — these are not players easily taken in — are all betting on the agent ecosystem. The crayfish’s power is real; denying it is just another form of superficiality.</p>
+
+<p>The knowledge of chip design is equally real. The causal chains involved in taking a chip from concept to tapeout run deeper and more rigidly than those of any software system. Timing constraints are backed by the speed of electromagnetic wave propagation. Power models are grounded in the physical switching characteristics of transistors. Reliability requirements rest on the fatigue limits of materials. These are not statistical patterns but physical laws — truly solid knowledge that does not disappear when you swap a dataset or retrain a model.</p>
+
+<p>The real question is not “crayfish or chips” but “how does the liquid crayfish coexist with solid physics.”</p>
+
+<p>In <em>Liquid Chips</em>, I discussed three forms of knowledge: liquid statistical correlation, solidifying causal reasoning, and solid physical laws. AI agents — OpenClaw and all its successors — are fundamentally amplifiers of liquid knowledge. They invoke \(P(Y\vert X)\) at unprecedented scale and speed, surfing efficiently through oceans of statistical patterns. But they cannot on their own accomplish the phase transition from liquid to solid. \(P(Y\vert X)\) — “the probability of Y given that X is observed” — multiplied by a million times the compute is still \(P(Y\vert X)\). It will not spontaneously become \(P(Y\vert do(X))\) — “the probability of Y after actively intervening on X.”</p>
+
+<p>One might object: the agent and the engineer together form a coupled cognitive system — knowledge is not “transferred” from human to machine but “distributed” across the pair. Perhaps the overall system’s cognitive capacity has improved; why worry about individual engineers’ knowledge atrophy? This objection has philosophical merit<sup id="fnref:clark"><a href="#fn:clark" class="footnote" rel="footnote" role="doc-noteref">9</a></sup>, but it overlooks a critical fact: chip design is a safety-critical domain. An airliner’s autopilot also forms a coupled cognitive system with its pilots, but no one uses that as grounds to eliminate manual flight training. In coupled systems, when the automated component behaves in ways beyond design expectations — and in tightly coupled complex systems this is inevitable — the human component must possess the capacity for independent diagnosis and intervention. This capacity does not “emerge” from the system. It must be deliberately cultivated and maintained in the human.</p>
+
+<p>This means the correct role for agents in chip design is not “replacing engineers in making decisions” but “exploring efficiently under the causal constraints set by engineers.” Agents handle speed; engineers handle direction. But even this formulation is too clean. Honestly, speed itself changes direction — when the agent runs fourteen rounds of iteration in eight hours, its intermediate results redefine the design space as perceived by the engineer. The engineer’s “sense of direction” does not exist in a vacuum; it depends on his understanding of the design space’s terrain, and that terrain is being reshaped by the agent’s rapid exploration. Speed and direction cannot be neatly separated — between them lies an irreducible epistemological entanglement.</p>
+
+<p>Perhaps this is the situation we truly face: not an engineering problem that methodology can perfectly solve, but a cognitive condition that requires working continuously within tension. Between the agent’s liquid power and the human’s solid knowledge, there is no boundary that can be drawn once and for all. The boundary itself is dynamic — shifting as process nodes advance, design complexity grows, and agent capabilities improve. The knowledge needed to maintain this dynamic boundary is precisely the knowledge we are worried about losing.</p>
+
+<h2 id="vii">VII</h2>
+
+<p>Let us return to Zhangjiang.</p>
+
+<p>Suppose Old Chen had not retired. Suppose that when he saw Xiao Wang’s agent prototype, instead of asking one question and falling silent, he sat down and did something far harder together with Xiao Wang: drawing causal boundaries for the agent’s decisions.</p>
+
+<p>Not a once-and-for-all checklist — they both knew no such checklist exists. Rather, a discipline of continuous calibration. For example: in clock tree synthesis, buffer sizing can be handed to the agent, since it is essentially a convex optimization problem under given constraints; but the choice of clock topology — mesh versus tree versus hybrid — must be made by a human, because the impact of topology changes on full-chip timing is nonlinear, cross-module, and invisible to the agent’s local feedback signals. Similarly: standard cell placement refinement can be delegated to the agent within a given window; but floorplan-level decisions about the relative positions of critical modules must be reviewed by a human with causal understanding of the data path and clock domain relationships.</p>
+
+<p>This is not an afternoon’s work. It demands a systematic audit of the causal structure at every decision node in the chip design flow. This work is not glamorous. It does not lend itself to publications. It cannot go on the first slide of a pitch deck. And it contains an internal paradox — it requires people like Old Chen to carry it out, yet one of its purposes is to ensure that future engineers need not become Old Chen. This paradox cannot be resolved. It can only be acknowledged, and then worked within.</p>
+
+<p>The crayfish are indeed flying everywhere. Their numbers will keep growing, their capabilities will keep strengthening, their ecosystem will keep flourishing. This is an irreversible trend, and it should not be reversed. But crayfish have no spine — they swim freely in the currents of statistical patterns, with no endoskeleton, no solid support structure. What chip design needs is a skeleton.</p>
+
+<p>The real work is not catching crayfish, nor refusing them. It is building a skeleton for the crayfish — a rigorous methodology that lets the agent’s liquid power solidify within the solid framework of causal reasoning and physical constraints into reliable engineering capability. This skeleton will not be perfect. It will not be eternal. It will itself evolve as technology advances. But a crayfish without a skeleton can only swim; with a skeleton, it might just stand on land.</p>
+
+<p>This work has barely begun.</p>
+
+<p>Xiao Wang has recently developed a habit. Before leaving the office each day, he spends twenty minutes manually re-running one of the key decisions the agent made that day — without the agent, using only himself. Sometimes his result matches the agent’s. Sometimes it doesn’t. When it doesn’t, he goes to find out why. He has never mentioned this to anyone. After Old Chen left, no one in the office brews strong tea in an enamel mug anymore. But a new mug has appeared on Xiao Wang’s desk. Printed on it is a cartoon crayfish.</p>
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:polanyi">
+      <p>Michael Polanyi introduced the concept of “tacit knowledge” in <em>Personal Knowledge</em> (1958): we know far more than we can tell. A cyclist knows how to balance but cannot fully express this knowledge in rules — the “intuition” of senior chip designers shares this nature. <a href="#fnref:polanyi" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:react">
+      <p>React, Meta’s frontend JavaScript framework, had long held the top spot for GitHub stars. OpenClaw surpassed its decade-long record in roughly sixty days. <a href="#fnref:react" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:openai">
+      <p>Steinberger announced his move to OpenAI on February 14, 2026, and pledged that OpenClaw would remain open source under an independent foundation. Industry skepticism about the sustainability of this pledge was widespread. <a href="#fnref:openai" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:moltbook">
+      <p>Before its acquisition by Meta, Moltbook had drawn controversy over massive volumes of AI-generated fake posts. A platform built by AI agents, filled with AI-generated content, purchased by a social media giant — the fact itself was a stress test on the concept of “authenticity.” <a href="#fnref:moltbook" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:bainbridge">
+      <p>Lisanne Bainbridge, “Ironies of Automation,” <em>Automatica</em>, 1983. Widely regarded as one of the most influential papers in human factors engineering; its core insight remains as sharp four decades later. <a href="#fnref:bainbridge" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:perrow">
+      <p>Charles Perrow, <em>Normal Accidents: Living with High-Risk Technologies</em>, Basic Books, 1984. Perrow argued that in tightly coupled, interactively complex systems, accidents are not aberrations but inevitable consequences of the system’s architecture. <a href="#fnref:perrow" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:af447">
+      <p>The Air France Flight 447 disaster (2009) is a canonical case of automation dependency leading to catastrophe. The accident investigation report (BEA, 2012) found that the pilots’ failure to recognize the stall and execute proper nose-down recovery was fundamentally attributable to degraded manual flying skills caused by prolonged reliance on the autopilot. <a href="#fnref:af447" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:rasmussen">
+      <p>Jens Rasmussen, “Skills, Rules, and Knowledge; Signals, Signs, and Symbols, and Other Distinctions in Human Performance Models,” <em>IEEE Transactions on Systems, Man, and Cybernetics</em>, 1983. Rasmussen’s framework remains a cornerstone of human factors engineering and safety-critical system design. <a href="#fnref:rasmussen" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:clark">
+      <p>Andy Clark and David Chalmers proposed the “Extended Mind Thesis” in 1998, arguing that cognitive processes need not be confined to the skull but can extend to external tools and environments. The framework is illuminating for understanding human-machine collaboration, but its applicability in safety-critical domains requires careful evaluation. <a href="#fnref:clark" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>]]></content><author><name>Zhaori Bi</name></author><category term="AI" /><category term="EDA" /><category term="chip design" /><summary type="html"><![CDATA[When AI agents invade chip design]]></summary></entry><entry xml:lang="zh"><title type="html">液态的芯片</title><link href="https://bzr2915.github.io/bzr2915//bzr2915/opinions/2026/liquid-chips-zh/" rel="alternate" type="text/html" title="液态的芯片" /><published>2026-03-08T00:00:00+00:00</published><updated>2026-03-08T00:00:00+00:00</updated><id>https://bzr2915.github.io/bzr2915//bzr2915/opinions/2026/liquid-chips-zh</id><content type="html" xml:base="https://bzr2915.github.io/bzr2915//bzr2915/opinions/2026/liquid-chips-zh/"><![CDATA[<h2 id="一">一</h2>
 
 <p>一块芯片从构想到流片，中间要经历的事情，比大多数工程师愿意承认的更像一场赌博。</p>
 
