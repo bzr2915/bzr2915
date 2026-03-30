@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "最后一颗通用芯片"
+title: "模型即芯片，芯片即电脑"
 date: 2026-03-30
 description: "GPU是通用计算的巅峰，也是终点。当模型凝固为硅片，产业链正在倒转。"
 tags: [AI, chip design]
