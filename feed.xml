@@ -1,4 +1,366 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://bzr2915.github.io/bzr2915//bzr2915/feed.xml" rel="self" type="application/atom+xml" /><link href="https://bzr2915.github.io/bzr2915//bzr2915/" rel="alternate" type="text/html" hreflang="en" /><updated>2026-03-30T04:36:14+00:00</updated><id>https://bzr2915.github.io/bzr2915//bzr2915/feed.xml</id><title type="html">blank</title><subtitle></subtitle><entry xml:lang="zh"><title type="html">漫天飞舞的小龙虾</title><link href="https://bzr2915.github.io/bzr2915//bzr2915/opinions/2026/flying-crayfish-zh/" rel="alternate" type="text/html" title="漫天飞舞的小龙虾" /><published>2026-03-15T00:00:00+00:00</published><updated>2026-03-15T00:00:00+00:00</updated><id>https://bzr2915.github.io/bzr2915//bzr2915/opinions/2026/flying-crayfish-zh</id><content type="html" xml:base="https://bzr2915.github.io/bzr2915//bzr2915/opinions/2026/flying-crayfish-zh/"><![CDATA[<h2 id="一">一</h2>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://bzr2915.github.io/bzr2915//bzr2915/feed.xml" rel="self" type="application/atom+xml" /><link href="https://bzr2915.github.io/bzr2915//bzr2915/" rel="alternate" type="text/html" hreflang="en" /><updated>2026-03-30T06:03:52+00:00</updated><id>https://bzr2915.github.io/bzr2915//bzr2915/feed.xml</id><title type="html">blank</title><subtitle></subtitle><entry xml:lang="zh"><title type="html">最后一颗通用芯片</title><link href="https://bzr2915.github.io/bzr2915//bzr2915/opinions/2026/last-general-purpose-chip-zh/" rel="alternate" type="text/html" title="最后一颗通用芯片" /><published>2026-03-30T00:00:00+00:00</published><updated>2026-03-30T00:00:00+00:00</updated><id>https://bzr2915.github.io/bzr2915//bzr2915/opinions/2026/last-general-purpose-chip-zh</id><content type="html" xml:base="https://bzr2915.github.io/bzr2915//bzr2915/opinions/2026/last-general-purpose-chip-zh/"><![CDATA[<h2 id="一">一</h2>
+
+<p>2025年秋天，旧金山South of Market区一间不起眼的办公室里，一个工程师做了一件看似平常的事：他把Meta开源的Llama 3.1 8B模型权重文件拖进了一个编译器窗口，点击了\u201C提交\u201D。</p>
+
+<p>没有RTL设计，没有Verilog仿真，没有长达十八个月的流片周期。两个月后，一张PCIe加速卡从台积电的封装线上下来，寄到了他的桌上。</p>
+
+<p>他把卡插进服务器，跑了第一条推理请求。17,000 tokens/s。</p>
+
+<p>卡上没有GPU，没有HBM内存颗粒，没有风扇呼啸的散热模组。只有一颗安静的芯片。这颗芯片不是用来\u201C运行\u201D模型的——它本身<strong>就是</strong>那个模型。Llama的每一个权重，都被刻进了芯片顶部的金属互连层，变成了铜线的宽窄与走向。</p>
+
+<p>这家公司叫Taalas，创始人来自Google TPU团队。他们的口号只有六个字：<strong>The Model is The Computer。</strong></p>
+
+<p>这个故事之所以值得讲，不是因为它快，不是因为它省电，而是因为它指向一个更大的判断——</p>
+
+<p><strong>GPU，是人类造出的最后一代通用计算芯片。</strong></p>
+
+<p>此后的世界里，每个模型都将拥有属于自己的硅片。通用性不再是美德，而是一笔越来越昂贵的税。</p>
+
+<h2 id="二">二</h2>
+
+<p>要理解这个判断，先得理解\u201C通用\u201D二字的代价。</p>
+
+<p>NVIDIA的GPU是过去十五年AI革命的基石，这一点毫无争议。从AlexNet到GPT-4，每一次里程碑式的突破背后，都站着成千上万块绿色的计算卡。Jensen Huang穿着皮夹克站在GTC舞台上的样子，几乎成了这个时代的图腾。</p>
+
+<p>但GPU的伟大，恰恰也是它的宿命。</p>
+
+<figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/bzr2915/assets/img/posts/last-chip-gpu-swiss-knife-480.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/bzr2915/assets/img/posts/last-chip-gpu-swiss-knife-800.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/bzr2915/assets/img/posts/last-chip-gpu-swiss-knife-1400.webp" />
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/bzr2915/assets/img/posts/last-chip-gpu-swiss-knife.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" alt="GPU如同瑞士军刀——90%的刀片在空转" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+
+  </picture>
+
+</figure>
+
+<p>GPU是一把瑞士军刀。它能做图形渲染，能做科学计算，能训练大模型，也能跑推理。它什么都能干，但正因为什么都能干，它在干每一件具体的事时，都在为\u201C其他所有可能性\u201D付出代价。</p>
+
+<p>这笔代价的名字叫\u201C数据搬运\u201D。</p>
+
+<p>一颗现代GPU在执行大模型推理时，80%到90%的能耗不是花在乘法和加法上，而是花在把数据从HBM内存搬到计算核心、再把结果搬回去的过程中。冯·诺依曼在1945年画下的那条线——存储与计算分离——在八十年后依然是整个体系结构的紧箍咒。芯片越做越快，内存墙却越垒越高。</p>
+
+<p>这像极了二十年前互联网行业的一幕。2005年前后，门户网站是互联网的主流形态。新浪、搜狐、雅虎，它们把新闻、邮箱、搜索、社区、游戏全部塞进一个首页。\u201C大而全\u201D是那个时代的信仰。但后来呢？垂直应用一个一个地把门户的功能拆走了：搜索归了Google，社交归了Facebook，短视频归了TikTok。用户不需要一个什么都能做的入口，他们需要的是一个把一件事做到极致的工具。</p>
+
+<p>芯片世界正在经历同样的拆分。</p>
+
+<p>一个关键的数据节点是：到2025年，AI推理负载已经占到全球AI计算总量的三分之二以上，而且这个比例还在加速上升。训练是一次性的，推理是永久性的。一个模型训练一次，却要被调用数十亿次。当推理成为主场景，一个本质性的问题就浮出了水面——</p>
+
+<p>如果我们事先就知道模型的每一个权重、每一层结构长什么样，为什么还要造一颗\u201C什么都能算\u201D的芯片？</p>
+
+<h2 id="三">三</h2>
+
+<p>这个问题的答案，正在三条截然不同的技术路径上同时浮现。</p>
+
+<p><strong>Taalas——把权重刻进金属</strong></p>
+
+<p>Taalas的创始团队做了一个反直觉的决定：模型的权重根本不需要被\u201C存储\u201D，它们应该直接成为芯片的物理结构。</p>
+
+<p>传统芯片的制造流程需要设计几十层掩膜版，从晶体管到金属互连，每一层都要重新定制。Taalas只动最顶部的两层金属层。底层的逻辑电路——乘法器、加法器、控制单元——是标准化的、可复用的；而模型的权重信息，则被编码进顶层金属线的几何形状中。铜线的宽度、间距、走向，就是权重的数值。</p>
+
+<p>这意味着什么？意味着换一个模型，只需要重新生成两层掩膜版，而不是从头设计一颗芯片。台积电6nm工艺，从提交模型到拿到芯片，两个月。传统ASIC的流片周期是一年半到两年。</p>
+
+<p>他们的第一颗芯片HC1，跑Llama 3.1 8B，推理速度17,000 tok/s，能效比同等GPU高出三个数量级。不是快一点点，是快一千倍的效率。</p>
+
+<p><strong>Mythic——让电流替你算</strong></p>
+
+<p>如果说Taalas的思路是把权重变成金属线，那么Mythic的思路更加激进：把权重变成电阻。</p>
+
+<p>Mythic的芯片里没有传统的数字乘法器。模型的权重被写入NOR Flash存储单元，每个单元的电导值代表一个权重数值，精度可达256级。当输入信号以电压的形式进入芯片，欧姆定律——电流等于电压乘以电导——自动完成了矩阵乘法。基尔霍夫电流定律沿着列线把所有乘积累加起来。</p>
+
+<p>整个过程没有数据搬运，没有时钟周期的概念，没有冯·诺依曼瓶颈。物理学本身就是计算引擎。</p>
+
+<p>结果是惊人的：120 TOPS/W的能效比，功耗不到1瓦。他们的Starlight产品线已经进入车规级验证，与Honda合作开发下一代自动驾驶AI SoC。在一个对功耗和延迟都极度敏感的场景里，模拟计算找到了自己的战场。</p>
+
+<p><strong>Sohu——第一颗Transformer芯片</strong></p>
+
+<p>第三条路径来自Sohu。与Taalas和Mythic不同，Sohu没有在存储层做文章，而是从计算架构本身下手：他们设计了第一颗原生为Transformer架构优化的数字芯片。</p>
+
+<p>传统GPU的计算核心是为通用矩阵运算设计的，Transformer的注意力机制、KV缓存管理、多头并行等特征只能通过软件层面的优化来适配。这就像用一把万能扳手去拧一个特定型号的螺丝——能拧，但永远不如专用套筒扳手贴合。Sohu把这些操作直接固化进了硬件数据通路，每一个晶体管都为注意力计算而生。</p>
+
+<p>8颗Sohu芯片组成的系统，推理吞吐量超过500,000 tok/s，是同等数量NVIDIA B200的十倍以上。更关键的是，延迟的确定性——每次推理的耗时几乎恒定，不像GPU那样受调度抖动影响。对于需要实时响应的应用场景来说，这种确定性本身就是一种硬通货。这不是软件调优能追回的差距，这是架构层面的碾压。</p>
+
+<p>三条路径，三种哲学：Taalas用金属线编码权重，Mythic用物理定律替代计算，Sohu用架构专用化压榨效率。方法迥异，方向一致——消除\u201C通用性税\u201D。</p>
+
+<h2 id="四">四</h2>
+
+<p>每当有人听到\u201C专用芯片\u201D这个词，第一反应往往是皱眉：\u201C这不就是回到ASIC时代了吗？上世纪八十年代搞过，后来被可编程芯片淘汰了。历史不是要开倒车吧？\u201D</p>
+
+<p>这个质疑值得认真回应。</p>
+
+<p>芯片产业确实有一个钟摆效应。1960年代，大型机时代，每一台计算机都有自己的专用处理器，IBM System/360是为特定任务量身定制的。1970年代，Intel推出通用微处理器，x86架构横扫一切，专用让位给通用。2007年，NVIDIA的CUDA让GPU从图形卡变成了通用并行计算平台，\u201C可编程的并行性\u201D成为新的范式。</p>
+
+<p>现在，钟摆似乎又要摆回专用化的一端。</p>
+
+<p>但历史不是简单的重复，马克·吐温说得好：\u201C历史不会重演，但会押韵。\u201D</p>
+
+<p>这一轮专用化与三十年前的ASIC有本质区别。</p>
+
+<p>第一，速度。传统ASIC从设计到流片需要一年半到两年，而Taalas只需两个月。这不是增量改进，是数量级的跨越。快到足以跟上模型迭代的节奏。</p>
+
+<p>第二，灵活性。Taalas的芯片上保留了SRAM区域，用于存放LoRA适配器。基础模型刻在金属层里不可更改，但微调层可以动态加载。这是\u201C可编程的专用化\u201D——骨架是固定的，肌肉是灵活的。</p>
+
+<p>第三，成本结构。只改两层金属层意味着底层逻辑电路可以跨模型复用，掩膜版成本大幅下降。这不是每次都从零开始的ASIC，而是一个标准化平台上的\u201C定制皮肤\u201D。</p>
+
+<p>所以，这不是倒退，而是螺旋上升。通用处理器花了六十年证明了一件事：冯·诺依曼架构的天花板是真实存在的。而新一代专用芯片则站在通用时代积累的工艺、EDA工具和设计方法论之上，用更聪明的方式回到了\u201C为任务而生\u201D的起点。</p>
+
+<h2 id="五">五</h2>
+
+<p>如果模型可以直接变成芯片，那么整条芯片产业链都将被倒转。</p>
+
+<p>过去四十年，半导体产业链的逻辑是这样的：下游应用提出需求→软件公司开发算法→芯片公司设计架构→Foundry制造→封测→系统集成。这条链条从需求端驱动，芯片是最终的执行层。</p>
+
+<p>但在\u201C模型即芯片\u201D的新范式下，链条变成了：模型权重→AI编译器→掩膜版→Foundry→系统集成。</p>
+
+<p>注意中间消失了什么：传统意义上的\u201C芯片设计\u201D环节被编译器替代了。RTL工程师、验证工程师、后端物理设计工程师——这些角色不会消失，但他们的工作被封装进了一个自动化的编译流程中。就像高级语言让程序员不再需要手写汇编一样，AI编译器让\u201C模型开发者\u201D不再需要懂芯片设计。</p>
+
+<p>这个变化动了谁的奶酪？</p>
+
+<p><strong>EDA公司</strong>需要重新定义自己。当芯片设计的核心流程从人工驱动变为编译器驱动，Synopsys和Cadence的工具链是否还能保持今天的定价权？还是说，它们会被降维成编译器的后端插件？</p>
+
+<p><strong>Foundry</strong>的角色反而可能强化。台积电在这个新世界里变成了\u201C模型打印机\u201D——客户提交的不再是GDS文件，而可能就是一个模型权重加上目标工艺节点的参数。制造的护城河依然深厚，甚至更深。</p>
+
+<p><strong>NVIDIA</strong>面临的挑战最为微妙。训练市场它依然是无可争议的王者，但推理市场——那个更大、增长更快、超过500亿美元的市场——正在被专用芯片蚕食。Jensen Huang当然看到了这一点，所以他在拼命拓展软件生态、云服务和系统级方案。但硬件层面的能效差距是物理定律决定的，不是软件优化能抹平的。</p>
+
+<p>旧世界的护城河是架构创新加软件生态。新世界的护城河是编译器能力加制造工艺。游戏规则变了。</p>
+
+<h2 id="六">六</h2>
+
+<p>抽象的产业分析容易让人失去方向感。让我们回到具体的场景，看看这些芯片正在改变什么。</p>
+
+<p>在日本枥木县的Honda研发中心，工程师们正在测试一辆下一代原型车的感知系统。车顶的激光雷达每秒产生数百万个点云数据，需要实时完成目标检测、轨迹预测和决策规划。过去，这套系统需要一个功耗超过200瓦的计算平台，塞在后备箱里，用液冷系统散热。现在，Mythic的模拟计算芯片把整个推理管线压缩到了一块信用卡大小的PCB上，功耗不到5瓦。没有风扇，没有液冷，没有后备箱里的服务器。自动驾驶的计算单元，第一次真正\u201C消失\u201D在了车辆的架构中。</p>
+
+<p>在深圳华强北，一家做消费级智能硬件的团队正在把一个70亿参数的中文语言模型塞进一个售价不到200元的智能音箱。传统方案需要一颗至少10瓦功耗的边缘AI芯片，电池续航和散热都是噩梦。但当模型权重被直接编码进芯片的物理结构后，推理功耗降到了0.5瓦以下。这意味着一块普通的锂电池就能让它连续对话八小时。大模型第一次真正走进了\u201C离线\u201D和\u201C低功耗\u201D的场景。</p>
+
+<p>而在弗吉尼亚州阿什本的数据中心走廊里，一场更安静但规模更大的变革正在发生。全球AI推理市场已经超过500亿美元，而且每年以超过40%的速度增长。一个大型云服务商的推理集群，电费占运营成本的30%以上。运维团队最头疼的不是算力不够，而是电力不够——每一瓦电都要经过变电站、UPS、冷却系统的层层损耗，最终只有不到40%变成了有效计算。</p>
+
+<p>如果专用推理芯片能把每token的能耗降低两到三个数量级，这不仅仅是技术进步，而是直接改变损益表的底线。同样一个机架，过去插满GPU跑推理，现在换成专用芯片，吞吐量提升十倍，电费降到原来的五分之一。CFO会比CTO更早做出换芯片的决定。数据中心不会变少，但数据中心里GPU的占比，可能已经过了历史峰值。</p>
+
+<h2 id="七">七</h2>
+
+<p>让我们把视线拉得更远一些。</p>
+
+<p>过去五十年，计算产业的主旋律是\u201C硬件变软\u201D。从专用硬件到通用处理器，从裸金属到虚拟机，从虚拟机到容器，从容器到Serverless——每一步都是在用软件抽象层把硬件的复杂性包裹起来，让开发者离物理世界越来越远。</p>
+
+<p>但现在，一个反向的运动正在发生：<strong>软件正在变硬。</strong></p>
+
+<p>当一个神经网络的权重被刻进芯片的金属层，\u201C软件\u201D和\u201C硬件\u201D之间的边界就模糊了。权重是数据，是代码，也是电路。推理不是在硅片上\u201C运行\u201D，而是电流通过特定物理结构时\u201C自然发生\u201D的结果。</p>
+
+<p>冯·诺依曼在1945年写下《关于EDVAC的报告初稿》时，划下了现代计算的那条基本线：存储程序、顺序执行、数据与指令分离。这条线支撑了八十年的计算机科学。但也许，这条线从一开始就不是计算的本质，而只是那个时代工程约束下的一个\u201C局部最优解\u201D。</p>
+
+<p>生物神经网络从来没有\u201C存储\u201D和\u201C计算\u201D的分离。你的大脑里没有一块区域专门\u201C存放\u201D记忆、另一块区域专门\u201C读取\u201D并处理它。突触的连接强度本身就是记忆，信号的传播本身就是推理。存储即计算，结构即功能。Taalas们正在做的事情，从某种意义上说，是让硅基计算第一次向碳基智慧的底层架构致敬。</p>
+
+<p><strong>The Model is The Computer。</strong></p>
+
+<p>权重即电路，推理即物理。当软件凝固为物质，计算回归为自然过程，我们也许正在见证一个时代的分水岭。</p>
+
+<p>GPU是通用计算时代的最后一座纪念碑。它的伟大无可置疑，但纪念碑的意义，恰恰在于它标记的是一个已经过去的时代。</p>
+
+<p>下一个时代属于那些把模型变成物质的人。</p>]]></content><author><name>Zhaori Bi</name></author><category term="AI" /><category term="chip design" /><summary type="html"><![CDATA[GPU是通用计算的巅峰，也是终点。当模型凝固为硅片，产业链正在倒转。]]></summary></entry><entry xml:lang="en"><title type="html">The Last General-Purpose Chip</title><link href="https://bzr2915.github.io/bzr2915//bzr2915/opinions/2026/last-general-purpose-chip/" rel="alternate" type="text/html" title="The Last General-Purpose Chip" /><published>2026-03-30T00:00:00+00:00</published><updated>2026-03-30T00:00:00+00:00</updated><id>https://bzr2915.github.io/bzr2915//bzr2915/opinions/2026/last-general-purpose-chip</id><content type="html" xml:base="https://bzr2915.github.io/bzr2915//bzr2915/opinions/2026/last-general-purpose-chip/"><![CDATA[<h2 id="i">I</h2>
+
+<p>On a Tuesday morning in late 2025, in a nondescript office park in Santa Clara, an engineer named David did something that would have seemed absurd to any chip designer born before 1990. He opened a browser window, dragged a file — the weight checkpoint of Meta’s Llama 3.1 8B model, several gigabytes of floating-point numbers — and dropped it into a compiler interface. Then he went to lunch.</p>
+
+<p>The compiler did not produce software. It produced a chip layout.</p>
+
+<p>Two months later, a PCIe card arrived at the same office. No GPU sat on it. No HBM memory towers flanked a processor die. There was just one piece of silicon — roughly the size of a postage stamp, fabricated on TSMC’s 6nm process — and that silicon was not a computer in any sense that Alan Turing or John von Neumann would have recognized. It did not execute instructions. It did not fetch data from memory. It did not run a program.</p>
+
+<p>It <em>was</em> the program.</p>
+
+<p>The weight values of Llama 3.1 8B — every one of the eight billion parameters that encode the model’s knowledge of language, reasoning, and pattern — had been etched directly into the chip’s metal interconnect layers. When electrical signals entered one side of the die, they passed through a physical topology that <em>was</em> the neural network. Inference was not computation in the traditional sense. It was physics: current flowing through a structure whose geometry embodied the mathematics of intelligence.</p>
+
+<p>The company behind this was Taalas, a startup that had been operating in semi-stealth mode. Their chip, the HC1, could process 17,000 tokens per second for a single user — roughly 100 times faster per user than an NVIDIA H100 running the same model. And it consumed a fraction of the power.</p>
+
+<p>But the speed was not the point. The point was the <em>category</em>. This was not a faster chip for running AI models. This was a chip that <em>was</em> an AI model. The distinction sounds semantic. It is not. It is the most consequential architectural shift in computing since the microprocessor.</p>
+
+<p>Here is the thesis of this essay, stated plainly: <strong>The GPU is the last general-purpose computing chip humanity will mass-produce for the AI era.</strong> Not because GPUs will disappear — they will remain essential for training, for research, for the unpredictable workloads of discovery. But for the vast and growing majority of AI computation — inference, the act of running a trained model — the future belongs to chips that are not general-purpose at all. Chips where the model’s mathematics have become the chip’s physical structure. Chips where software has, quite literally, turned to stone.</p>
+
+<h2 id="ii">II</h2>
+
+<p>To understand why, you need to understand the GPU’s original sin — which is also its greatest virtue.</p>
+
+<p>A modern NVIDIA GPU is a marvel of engineering. The H100, the chip that launched a thousand data centers, contains 80 billion transistors arranged into 132 streaming multiprocessors, each capable of executing thousands of threads simultaneously. It can perform matrix multiplications at rates that would have been classified as supercomputing a decade ago. It connects to 80 gigabytes of HBM3 memory through a bus that moves 3.35 terabytes per second. It is, by any measure, one of the most sophisticated artifacts ever manufactured by human beings.</p>
+
+<p>It is also, fundamentally, a Swiss Army knife.</p>
+
+<figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/bzr2915/assets/img/posts/last-chip-gpu-swiss-knife-480.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/bzr2915/assets/img/posts/last-chip-gpu-swiss-knife-800.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/bzr2915/assets/img/posts/last-chip-gpu-swiss-knife-1400.webp" />
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/bzr2915/assets/img/posts/last-chip-gpu-swiss-knife.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" alt="The GPU as Swiss Army knife — 90% of its blades are idle" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+
+  </picture>
+
+</figure>
+
+<p>The GPU was designed to do <em>anything</em> — render video games, train neural networks, simulate protein folding, mine cryptocurrency, run inference on any model architecture that might be invented next year. This generality is what made NVIDIA the most valuable semiconductor company on Earth. Jensen Huang’s genius was recognizing, earlier than anyone, that a programmable parallel processor could be repurposed from pixels to tensors, from graphics to gradients. CUDA, NVIDIA’s programming framework, became the lingua franca of scientific computing precisely because it imposed so few constraints on what the hardware could do.</p>
+
+<p>But generality has a price. And in inference — the workload that now consumes roughly two-thirds of all AI compute spending — that price has become ruinous.</p>
+
+<p>Here is the dirty secret of GPU-based inference: during a typical large language model inference pass, somewhere between 80 and 90 percent of the chip’s energy is spent not on arithmetic, but on <em>moving data</em>. Weights must be loaded from HBM memory into the compute cores. Activations must be shuttled between layers. Intermediate results must be written back and read again. The actual multiply-accumulate operations — the mathematical heart of neural network inference — occupy a sliver of the energy budget and an even smaller fraction of the time.</p>
+
+<p>This is not a bug in NVIDIA’s design. It is a consequence of the most fundamental architectural decision in the history of computing: the separation of memory and processing, proposed by John von Neumann in his 1945 <em>First Draft of a Report on the EDVAC</em>. In the von Neumann architecture, data lives in one place and computation happens in another. Everything — every instruction, every operand, every result — must travel between them. For eighty years, this separation has been the bedrock of computer design. And for eighty years, engineers have been fighting its consequences: the “memory wall,” the “bandwidth bottleneck,” the ever-widening gap between how fast processors can compute and how fast memory can feed them.</p>
+
+<p>GPUs mitigate the wall. They do not eliminate it.</p>
+
+<p>The analogy that clarifies this is the history of web portals. In the early 2000s, Yahoo!, AOL, and MSN tried to be everything to everyone — email, news, shopping, search, chat, horoscopes, all on one page. They were the general-purpose chips of the internet. Then demand patterns became legible. People did not want one site that did everything poorly; they wanted many sites that each did one thing superbly. Google for search. Amazon for shopping. Facebook for social. The portal model collapsed not because it was technically flawed, but because it was <em>economically</em> wasteful — it allocated resources to capabilities that most users, most of the time, did not need.</p>
+
+<p>The GPU is the portal of silicon. And inference is the workload whose demand pattern has now become legible enough to specialize against.</p>
+
+<p>Consider the numbers. In 2025, the global AI inference market surpassed $50 billion, growing at roughly 40 percent per year. Training — the workload that <em>requires</em> generality, because researchers need to experiment with novel architectures, loss functions, and data pipelines — accounts for the remaining third of AI compute spending and is growing more slowly. The crossover happened in 2024, and every projection shows the gap widening. By 2028, inference is expected to account for 75 to 80 percent of all AI chip demand.</p>
+
+<p>When you know what the model looks like — when Llama 3.1 8B has been downloaded forty million times, when GPT-4’s architecture is well-characterized, when the Transformer has dominated for eight years running — the question stops being <em>what can this chip compute?</em> and becomes <em>why are we building a chip that can compute anything?</em></p>
+
+<h2 id="iii">III</h2>
+
+<p>Three companies, working independently, arrived at the same answer from three different directions. Each story begins with a bet that most semiconductor veterans would have called reckless.</p>
+
+<p><strong>Taalas — Etching Weights into Metal</strong></p>
+
+<p>The founding insight at Taalas came not from a chip designer but from a compiler engineer. The realization was deceptively simple: in a trained neural network, the weights do not change during inference. They are constants. And in chip design, constants do not need to be <em>stored</em> — they can be <em>manufactured</em>.</p>
+
+<p>Every modern chip is built from two categories of structure: transistors at the bottom (which switch signals) and metal interconnect layers on top (which route signals between transistors). The metal layers are the chip’s wiring — copper traces etched into insulating dielectric, stacked six to fifteen layers high. Traditionally, these wires simply connect one transistor to another. But Taalas asked: what if the wires <em>are</em> the computation?</p>
+
+<p>Their approach: take a standard TSMC 6nm process. Keep the transistor layers fixed — these handle the mechanical business of signal amplification, clock distribution, input/output. But repurpose the top two metal layers as a physical encoding of the model’s weights. The specific pattern of copper traces, their widths, their spacing, their connections — all of it is generated automatically from the model’s weight file by a custom compiler. Different models produce different metal patterns. Same transistor base, different wiring. Same factory, different product.</p>
+
+<p>The result is the HC1 chip. When Taalas loaded Llama 3.1 8B’s weights onto it — or rather, <em>into</em> it — the chip achieved 17,000 tokens per second for a single user stream. For context, an NVIDIA H100 running the same model delivers roughly 150 to 200 tokens per second per user when serving many users simultaneously. The HC1’s advantage is not just speed; it is <em>efficiency</em>. Because the weights are physically present in the chip’s metal, there is no memory access. No HBM. No bandwidth bottleneck. The data does not move because the data is the circuit.</p>
+
+<p>The turnaround time is the second revolution. Traditional ASIC design — the process of creating a custom chip — takes eighteen months to two years from specification to silicon. Taalas does it in two months. The fixed transistor layers are pre-fabricated in bulk; only the top metal layers are customized per model. This is analogous to printing a book: the printing press (transistors) stays the same; only the typeset (metal) changes. TSMC already offers “metal-only” mask changes as a standard service, so no new manufacturing process was required.</p>
+
+<p>And the objection that immediately arises — <em>what about fine-tuning? What about updates?</em> — has an answer. The HC1 includes a small amount of conventional SRAM, reserved for LoRA (Low-Rank Adaptation) layers. LoRA is a technique that fine-tunes a model by adding small trainable matrices on top of frozen base weights. Because the base weights are in metal and the LoRA adapters are in SRAM, you can customize the model’s behavior without re-fabricating the chip. The base knowledge is permanent; the personality is programmable.</p>
+
+<p><strong>Mythic — Letting Current Do the Math</strong></p>
+
+<p>While Taalas was encoding weights into copper traces, a company called Mythic was encoding them into something even more fundamental: the electrical properties of memory cells.</p>
+
+<p>Mythic’s founding bet was on analog computation — a concept that most of the semiconductor industry had abandoned decades ago in favor of digital precision. Their approach uses NOR flash memory, the same technology found in USB drives and SSDs, but repurposed in a way its inventors never intended.</p>
+
+<p>Here is how it works. Each cell in a NOR flash array can be programmed to hold a specific charge level, which determines its electrical conductance — how easily current flows through it. Mythic programs each cell to a conductance value that represents a single model weight, using 256 discrete levels (8-bit precision). Now arrange millions of these cells into a crossbar array — rows and columns, like a spreadsheet in silicon.</p>
+
+<p>To perform a matrix-vector multiplication — the core operation of neural network inference — you apply the input vector as voltages to the rows. Current flows through each cell, and by Ohm’s Law (V = IR, or equivalently I = V/R = V × G, where G is conductance), the current through each cell is the product of the input voltage and the stored weight. The currents from each column sum together automatically — this is Kirchhoff’s Current Law, basic circuit physics — giving you the dot product. The entire matrix multiplication happens in one step, in the time it takes current to traverse the array. No clock cycles. No instruction fetch. No data movement. Physics does the math.</p>
+
+<p>The elegance is almost offensive to digital engineers. Where a GPU performs billions of individual multiply-accumulate operations sequentially (albeit in massive parallel streams), Mythic’s analog array performs them simultaneously, as a single physical event. The energy efficiency follows naturally: Mythic’s latest products achieve 120 TOPS per watt (trillion operations per second per watt), compared to roughly 1 to 3 TOPS per watt for a typical GPU in inference mode.</p>
+
+<p>The catch, historically, has been precision. Analog computation is inherently noisy — thermal fluctuations, manufacturing variations, and signal degradation limit the accuracy of each operation. But inference, it turns out, is remarkably tolerant of imprecision. Neural networks are statistical machines; they deal in approximations. Research over the past five years has shown that most inference workloads lose negligible accuracy when run at 8-bit or even 4-bit precision, far below the 32-bit or 16-bit arithmetic that GPUs typically provide. Mythic’s 8-bit analog precision sits in the sweet spot: good enough for the model, impossible to beat on power.</p>
+
+<p>Their sub-1-watt Starlight product — a complete inference accelerator that consumes less energy than a night-light — has attracted Honda as a partner for automotive-grade AI. The application is obvious: autonomous driving requires real-time neural network inference at the edge, in a vehicle, with strict power and latency constraints. You cannot send camera feeds to the cloud and wait for a response at highway speed. You need a chip that can run the model locally, continuously, at milliwatt power levels and millisecond latencies. Mythic’s analog approach delivers this naturally, because analog computation is fast (no clock overhead), efficient (no data movement), and compact (each flash cell is both memory and compute).</p>
+
+<p><strong>Sohu — The First Transformer Chip</strong></p>
+
+<p>If Taalas’s approach is “make the model into the chip” and Mythic’s is “let physics compute,” then Sohu’s is the most conceptually straightforward: build a chip that only runs Transformer models, and run them faster than anything else.</p>
+
+<p>The Transformer architecture — the “T” in GPT — has dominated AI since 2017. Attention mechanisms, feedforward layers, layer normalization, positional encoding: these operations account for over 90 percent of all AI inference workloads today. And yet, GPUs execute them using general-purpose matrix units that are equally capable of running convolutional networks, recurrent networks, graph neural networks, or any other architecture. The Transformer-specific optimizations happen in software (kernels, compilers, frameworks), not in hardware.</p>
+
+<p>Sohu’s bet was that this generality is waste. If 90 percent of the workload is Transformer, build a chip where every transistor, every wire, every memory cell is optimized for and only for the Transformer computation graph. Hardcode the attention mechanism. Hardcode the layer normalization. Hardcode the data flow between layers so that intermediate activations never leave the chip.</p>
+
+<p>The result: eight Sohu chips, working together, achieve over 500,000 tokens per second — more than 10 times the throughput of eight NVIDIA B200 GPUs running the same model. The power consumption is a fraction. The cost per token drops by an order of magnitude.</p>
+
+<p>The risk, of course, is architectural lock-in. If a post-Transformer architecture emerges — state-space models, mixture-of-experts with radically different routing, something not yet invented — a Sohu chip becomes an expensive paperweight. The company is betting that the Transformer’s dominance has at least five to ten more years of runway, and that the economics of 10x cost reduction will pay for the chip many times over within that window.</p>
+
+<p><strong>The Common Thread</strong></p>
+
+<p>Strip away the technical details and all three companies are doing the same thing: eliminating the “generality tax.”</p>
+
+<p>A GPU pays this tax on every operation. It maintains instruction decoders it does not need during inference. It reserves memory bandwidth for weight updates that will never come during deployment. It allocates silicon area to support architectures that the customer’s model will never use. This overhead is the price of being a Swiss Army knife, and for training — where the model <em>is</em> changing, where the architecture <em>might</em> be novel, where flexibility is survival — the price is worth paying.</p>
+
+<p>But for inference, the tax is pure waste. And all three approaches — weights in metal, weights in conductance, Transformer in logic — are methods of refusing to pay it. Different engineering, same economics. The model stops being a program that runs on a chip and becomes, in varying degrees, the chip itself.</p>
+
+<h2 id="iv">IV</h2>
+
+<p>At this point, the experienced chip architect raises a hand. “We’ve seen this before,” she says. “ASICs. Application-Specific Integrated Circuits. Custom chips for custom workloads. They dominated in the mainframe era, and the microprocessor killed them. What makes you think this time is different?”</p>
+
+<p>The objection deserves respect, because the history of computing is, in large part, a pendulum swinging between generality and specialization.</p>
+
+<p>In the 1960s and 1970s, every serious computer was a custom design. IBM’s System/360 mainframes, Cray’s supercomputers, the specialized signal processors in military radar systems — each was a bespoke piece of silicon (or, earlier, a bespoke arrangement of discrete transistors). They were fast, expensive, and inflexible. When the workload changed, you needed a new chip.</p>
+
+<p>Then came the microprocessor. Intel’s 4004 in 1971, the 8080, the x86 line — these were general-purpose chips that could run any program. They were slower than custom designs for any specific task, but they were cheap, mass-produced, and endlessly reprogrammable. Software ate the world because hardware became a commodity. The ASIC retreated to niches: networking, signal processing, cryptocurrency mining.</p>
+
+<p>The GPU represented a middle path — not fully general (it was optimized for parallel computation), but programmable enough to handle a wide range of workloads. CUDA made the GPU a platform, not just a chip. NVIDIA’s moat was not silicon; it was ecosystem.</p>
+
+<p>Now the pendulum swings again. But this time, the dynamics are fundamentally different from the mainframe-era ASIC, and the difference is <em>speed</em>.</p>
+
+<p>A traditional ASIC takes eighteen months to two years from design to fabrication. It requires a team of dozens of engineers, millions of dollars in EDA (Electronic Design Automation) tools, and a painful process of verification, tape-out, and yield optimization. If the target application changes during those two years — if a new model architecture emerges, if the market shifts — the entire investment is stranded.</p>
+
+<p>Taalas ships in two months. Two months from weight file to PCIe card. The transistor layers are pre-fabricated. The compiler generates the metal layers automatically. No human engineer designs the chip-specific layout; the model’s weight file <em>is</em> the design specification, and the compiler translates it directly into manufacturing instructions.</p>
+
+<p>This is not the ASIC of 1985. This is what you might call “programmable specialization” — a manufacturing process fast enough and cheap enough to produce a new custom chip for every major model release. When Meta publishes Llama 4, Taalas does not need to redesign their architecture. They run the new weight file through the same compiler, generate new metal masks, and ship new chips. The base silicon stays identical. The “programming” happens at the foundry, in copper and dielectric, at a cadence closer to software deployment than to traditional chip design.</p>
+
+<p>LoRA adapters in SRAM add another layer of flexibility. The base model is in metal, permanent and fast. Task-specific adaptations — chatbot personality, domain expertise, language preference — live in SRAM and can be swapped in milliseconds. The chip is specialized at the macro level (it runs one model architecture) but programmable at the micro level (its behavior can be tuned without re-fabrication).</p>
+
+<p>History does not repeat, the saying goes, but it rhymes. The mainframe ASIC rhymed with inflexibility and cost. The model-specific chip rhymes with speed and automation. Same meter, different poem.</p>
+
+<p>Perhaps the better analogy is not the ASIC at all, but the printed book. Before Gutenberg, every book was a custom artifact — hand-copied by monks, expensive, slow, unique. The printing press made books a commodity: one press, many titles, fast turnaround. Taalas’s pre-fabricated transistor base is the press. Each model’s metal layers are the movable type. The output is not a general-purpose computer but a specific, mass-produced crystallization of a specific intelligence.</p>
+
+<h2 id="v">V</h2>
+
+<p>If the chip becomes the model, what happens to everyone who sits between the model and the chip?</p>
+
+<p>The traditional semiconductor supply chain is a well-oiled sequence: an application defines requirements; software architects translate those requirements into chip specifications; chip designers implement the specifications using EDA tools; a foundry fabricates the design in silicon; the chip goes into a system; the system runs the application. Each step employs thousands of engineers and generates billions of dollars in revenue.</p>
+
+<p>The model-specific chip collapses this chain.</p>
+
+<p><strong>The new sequence looks like this:</strong> A model team trains a neural network. The trained weights go into a compiler — not a traditional EDA tool, but a new kind of software that translates weight matrices into physical layout. The compiler outputs manufacturing instructions. A foundry fabricates the chip. The chip goes into a PCIe card or an edge module. The system integrator plugs it in and starts serving inference.</p>
+
+<p>Notice what vanished: the chip design team. The RTL engineers, the verification engineers, the physical design engineers, the timing closure specialists — the entire human-intensive middle of the supply chain — are replaced by a compiler. This is not a future prediction; Taalas is doing it today, with real chips, on real foundry processes.</p>
+
+<p>The implications ripple outward in every direction.</p>
+
+<p><strong>For EDA companies</strong> — Synopsys, Cadence, Siemens EDA — the shift is existential. Their tools are built for human designers: schematic capture, logic synthesis, place-and-route, timing analysis, formal verification. If the design process becomes “model weights in, GDSII out” (GDSII being the file format foundries use for manufacturing), then the entire EDA workflow compresses into a single compiler pass. The EDA companies that survive will be the ones that build or acquire these compilers. The ones that do not will find their $15-billion-a-year industry hollowed out.</p>
+
+<p><strong>For foundries</strong> — TSMC, Samsung, Intel Foundry — the shift is a mixed blessing. On one hand, the demand for fabrication capacity increases: instead of one GPU design serving all customers, each major model could have its own chip, multiplying the number of tape-outs. On the other hand, the value shifts from manufacturing complexity (which foundries monetize through premium pricing on advanced nodes) to manufacturing <em>flexibility</em> (fast metal-layer changes, rapid mask turnarounds, small batch runs). TSMC becomes less like an artisanal workshop producing a few masterpiece designs and more like a high-speed printing press producing thousands of titles. The margins may compress even as volumes rise.</p>
+
+<p><strong>For fabless chip companies</strong> — the traditional model of Qualcomm, Broadcom, MediaTek, and yes, NVIDIA in its fabless capacity — the threat is direct. Their competitive advantage has always been design expertise: the ability to architect a chip that balances performance, power, area, and cost better than competitors. But if the design is generated by a compiler from a weight file, design expertise in the traditional sense becomes irrelevant. The moat moves upstream (to whoever trains the best model) or downstream (to whoever builds the best compiler and system integration).</p>
+
+<p><strong>For NVIDIA specifically</strong>, the picture is more nuanced. NVIDIA’s training business — the H100, the B200, the GB300, the endless procession of ever-larger GPU architectures for ever-larger models — remains secure for the foreseeable future. Training is the workload where generality is essential, where researchers need the flexibility to experiment with novel architectures, where the next breakthrough might require hardware capabilities that no one anticipated. The GPU is irreplaceable for training.</p>
+
+<p>But inference is where the money is going. And in inference, NVIDIA’s value proposition — pay a premium for a general-purpose chip, then use only the fraction relevant to your specific model — becomes harder to justify when a model-specific chip delivers 10x the performance at a fraction of the cost. NVIDIA’s software ecosystem (CUDA, TensorRT, Triton) is a powerful lock-in mechanism, but lock-in erodes when the alternative is not “a slightly better GPU” but “a fundamentally different category of chip that doesn’t use CUDA at all.”</p>
+
+<p>The GPU maker that sold shovels to every miner in the gold rush may find, one morning, that the miners have learned to grow gold directly from the soil.</p>
+
+<h2 id="vi">VI</h2>
+
+<p>Prediction is cheap; scene-setting is harder. But the technologies described above are not theoretical. They are shipping, or will ship within months. Here is what the near future looks like — not as a bullet-point forecast, but as a series of moments.</p>
+
+<p><strong>A car on a highway in Tochigi Prefecture, 2027.</strong> The Honda engineer riding in the passenger seat watches a dashboard display that shows the feed from eight cameras, four LiDAR units, and twelve ultrasonic sensors. The vehicle’s autonomous driving system processes all of this data locally — on the vehicle, with no cloud connection — using a chip the size of a thumbnail. Inside that chip, the weights of a perception neural network are stored as analog conductance values in 50 million flash cells. When a camera frame arrives, it becomes a pattern of voltages that flows through the flash array. In less than a millisecond — faster than the driver’s reflex to blink — the array outputs a complete scene understanding: pedestrian at two o’clock, cyclist at ten o’clock, traffic light transitioning from yellow to red. The chip consumes 800 milliwatts. There is no fan, no heatsink. Mythic’s analog approach makes the car’s AI system simpler, smaller, and cooler than the water-cooled GPU racks that powered the previous generation of autonomous prototypes.</p>
+
+<p><strong>A factory floor in Shenzhen, 2027.</strong> A contract manufacturer is assembling a new line of smartphones. Each phone contains a small die — 4mm by 4mm — that runs a complete 3-billion-parameter language model. Not a cloud API call. Not a compressed, crippled version of a real model. A full model, baked into silicon, capable of understanding natural language queries, composing emails, translating between languages, and reasoning about the user’s calendar — all locally, all privately, all at sub-watt power consumption. The phone’s “AI chip” was generated from the model’s weight file in six weeks and costs less than $3 per unit at volume. The user will never know or care that their phone’s intelligence is not software running on a processor but a physical structure etched into metal. They will only notice that it works without an internet connection, that it responds instantly, and that it never sends their private conversations to a server.</p>
+
+<p><strong>A data center in Council Bluffs, Iowa, 2027.</strong> A hyperscaler is decommissioning an entire rack of NVIDIA GPUs. In their place, a technician is installing sixteen PCIe cards, each containing a Taalas HC1 chip customized for a different model. One card runs Llama. Another runs a proprietary code-generation model. A third runs a medical diagnosis model trained on clinical notes. Each card delivers throughput that previously required an entire eight-GPU server. The rack’s power consumption drops from 40 kilowatts to 4 kilowatts. The cooling requirements drop proportionally. The facility’s operations manager calculates the savings: at current electricity prices and utilization rates, the model-specific cards will pay for themselves in eleven weeks.</p>
+
+<p>The data center’s total inference throughput — the number of user queries it can serve per second — increases tenfold. But the power bill decreases by 90 percent. This is not an incremental improvement. This is what happens when you stop paying the generality tax on every single computation.</p>
+
+<p>Across thousands of data centers, across millions of edge devices, across every application where a trained model must run repeatedly, reliably, and efficiently, the same economics apply. The general-purpose chip trades flexibility for waste. The model-specific chip trades flexibility for performance. And as inference becomes the dominant workload — as more users interact with more AI models more frequently — the economics tilt further and further toward specialization.</p>
+
+<h2 id="vii">VII</h2>
+
+<p>For fifty years, the trajectory of hardware has been toward softness. Programmable logic replaced fixed-function circuits. Virtual machines replaced physical servers. The cloud replaced the data center. At every step, hardware became more abstract, more flexible, more like software — configurable, updatable, deployable in minutes rather than months.</p>
+
+<p>Now, for the first time, the arrow reverses.</p>
+
+<p>Model weights — which are software, which are the product of gradient descent applied to data — are solidifying into transistor arrangements. Algorithms that were once Python scripts running on CUDA kernels are becoming physical structures: copper traces in Taalas’s metal layers, charge distributions in Mythic’s flash cells, hardwired data paths in Sohu’s Transformer engine. The mathematics of intelligence is crystallizing into matter.</p>
+
+<p>This raises a question that is more than philosophical. When a model’s parameters <em>are</em> a chip’s physical topology — when the weight matrix is not stored in memory but IS the circuit — do the words “software” and “hardware” still mean anything? The distinction has always been functional: hardware is the part that is fixed; software is the part that changes. But a LoRA adapter in SRAM changes. The base weights in metal do not. Is the metal “hardware”? It was generated by a compiler from a training run. Is the LoRA adapter “software”? It is electrically configuring the behavior of a physical circuit.</p>
+
+<p>Perhaps von Neumann’s 1945 line — the separation of storage and compute, of instructions and data — was never the essence of computation. Perhaps it was merely that era’s engineering compromise: a pragmatic response to the limited manufacturing technology of vacuum tubes and mercury delay lines. For eighty years, we built every computer on that compromise, not because it was optimal, but because it was the only architecture we knew how to fabricate cheaply.</p>
+
+<p>The model-specific chip suggests a different foundation. Not “storage here, compute there, bus between them,” but “structure IS function.” The chip does not process data about the model; the chip embodies the model. There is no instruction set because there are no instructions. There is no operating system because there is nothing to operate. Input enters; output emerges; in between, physics flows through a topology that is — in the most literal sense — a particular pattern of knowledge made solid.</p>
+
+<p>Taalas’s slogan is “The Model is The Computer.” This sounds like marketing copy. It is not. It is a precise ontological claim. It does not say that the model <em>defines</em> the computer’s design, the way an architect’s blueprint defines a building. It says the model <em>is</em> the computer, the way a river <em>is</em> its bed. The shape of the channel determines the flow, but the flow also determines the shape of the channel. In Taalas’s chip, the weight values determined the metal pattern (during fabrication), and the metal pattern determines the inference behavior (during operation). Model and chip are not two things connected by a relationship. They are one thing, described in two vocabularies.</p>
+
+<p>We have spent half a century making hardware behave like software: reconfigurable, abstract, general. Now software is becoming hardware: fixed, physical, specific. The GPU — programmable, flexible, universal — stands at the apex of the first trend. It is the last and greatest monument of the general-purpose computing era.</p>
+
+<p>After it, every intelligence gets its own silicon. Every chip becomes a complete mind. The general-purpose era does not end with a bang or a crash. It ends with an engineer dragging a file into a compiler, going to lunch, and coming back to find that the boundary between thought and matter has quietly dissolved.</p>]]></content><author><name>Zhaori Bi</name></author><category term="AI" /><category term="chip design" /><summary type="html"><![CDATA[The GPU is the pinnacle of general-purpose computing — and its endpoint. When models solidify into silicon, the entire supply chain inverts.]]></summary></entry><entry xml:lang="zh"><title type="html">漫天飞舞的小龙虾</title><link href="https://bzr2915.github.io/bzr2915//bzr2915/opinions/2026/flying-crayfish-zh/" rel="alternate" type="text/html" title="漫天飞舞的小龙虾" /><published>2026-03-15T00:00:00+00:00</published><updated>2026-03-15T00:00:00+00:00</updated><id>https://bzr2915.github.io/bzr2915//bzr2915/opinions/2026/flying-crayfish-zh</id><content type="html" xml:base="https://bzr2915.github.io/bzr2915//bzr2915/opinions/2026/flying-crayfish-zh/"><![CDATA[<h2 id="一">一</h2>
 
 <p>2025年11月的某个深夜，奥地利格拉茨，Peter Steinberger往GitHub推送了一段代码之后关掉了笔记本电脑。他给这个项目取名Clawdbot——一个能接入大语言模型、在即时通讯工具上自主执行任务的AI代理。推送完成时格拉茨是凌晨两点。他没有发推文，没有写博客，关灯睡了。</p>
 
