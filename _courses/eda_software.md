@@ -17,6 +17,7 @@ importance: 1
 - [第二讲：软件设计平台 (PDF)]({{ '/assets/pdf/lecture2_software_design_platform.pdf' | relative_url }})
 - [第三讲：软件工程方法 (PDF)]({{ '/assets/pdf/lecture3_software_engineering.pdf' | relative_url }})
 - [第四讲：软件错误与测试 (PDF)]({{ '/assets/pdf/lecture4_software_testing.pdf' | relative_url }})
+- [第五讲：编程语言与面向对象设计 (PDF)]({{ '/assets/pdf/lecture5_programming_languages_oop.pdf' | relative_url }})
 
 ## 课程大纲
 
