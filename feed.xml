@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://bzr2915.github.io/bzr2915//bzr2915/feed.xml" rel="self" type="application/atom+xml" /><link href="https://bzr2915.github.io/bzr2915//bzr2915/" rel="alternate" type="text/html" hreflang="en" /><updated>2026-03-30T06:37:04+00:00</updated><id>https://bzr2915.github.io/bzr2915//bzr2915/feed.xml</id><title type="html">blank</title><subtitle></subtitle><entry xml:lang="zh"><title type="html">最后一颗通用芯片</title><link href="https://bzr2915.github.io/bzr2915//bzr2915/opinions/2026/last-general-purpose-chip-zh/" rel="alternate" type="text/html" title="最后一颗通用芯片" /><published>2026-03-30T00:00:00+00:00</published><updated>2026-03-30T00:00:00+00:00</updated><id>https://bzr2915.github.io/bzr2915//bzr2915/opinions/2026/last-general-purpose-chip-zh</id><content type="html" xml:base="https://bzr2915.github.io/bzr2915//bzr2915/opinions/2026/last-general-purpose-chip-zh/"><![CDATA[<h2 id="一">一</h2>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://bzr2915.github.io/bzr2915//bzr2915/feed.xml" rel="self" type="application/atom+xml" /><link href="https://bzr2915.github.io/bzr2915//bzr2915/" rel="alternate" type="text/html" hreflang="en" /><updated>2026-03-30T06:44:28+00:00</updated><id>https://bzr2915.github.io/bzr2915//bzr2915/feed.xml</id><title type="html">blank</title><subtitle></subtitle><entry xml:lang="zh"><title type="html">最后一颗通用芯片</title><link href="https://bzr2915.github.io/bzr2915//bzr2915/opinions/2026/last-general-purpose-chip-zh/" rel="alternate" type="text/html" title="最后一颗通用芯片" /><published>2026-03-30T00:00:00+00:00</published><updated>2026-03-30T00:00:00+00:00</updated><id>https://bzr2915.github.io/bzr2915//bzr2915/opinions/2026/last-general-purpose-chip-zh</id><content type="html" xml:base="https://bzr2915.github.io/bzr2915//bzr2915/opinions/2026/last-general-purpose-chip-zh/"><![CDATA[<h2 id="一">一</h2>
 
 <p>Jensen Huang有一件皮夹克穿了十年。</p>
 
@@ -64,7 +64,7 @@
 
 <p>这像印书。印刷机不变，铅字排版变。所以Taalas能做到两个月从权重文件到实物芯片——传统ASIC要一年半到两年。</p>
 
-<p>HC1上没有HBM，因为权重已经\u201C长\u201D在了铜线里。没有数据搬运，因为数据就是电路本身。一万七千token每秒不是靠堆算力堆出来的，是靠把内存墙从物理上消灭掉换来的。</p>
+<p>HC1上没有HBM，因为权重已经“长”在了铜线里。没有数据搬运，因为数据就是电路本身。一万七千token每秒不是靠堆算力堆出来的，是靠把内存墙从物理上消灭掉换来的。</p>
 
 <p>有人会问：模型更新了怎么办？芯片上留了一小块SRAM，跑LoRA微调。基座知识刻在金属里，不可更改；个性化的微调层存在SRAM里，随时可换。骨架是死的，肌肉是活的。</p>
 
@@ -78,13 +78,13 @@
 
 <p><strong>Sohu最直接。</strong> 既然九成以上的AI推理负载都跑在Transformer上，那就造一颗只跑Transformer的芯片。注意力机制、KV缓存、多头并行——全部固化进硬件数据通路，每个晶体管都为注意力计算而生。八颗Sohu芯片组成的系统吞吐超过五十万token每秒，是同等数量英伟达B200的十倍。</p>
 
-<p>三条路径，三种哲学。金属线编码、物理定律替代、架构专用化。方法迥异，方向一致——都在拒绝为\u201C通用性\u201D交税。</p>
+<p>三条路径，三种哲学。金属线编码、物理定律替代、架构专用化。方法迥异，方向一致——都在拒绝为“通用性”交税。</p>
 
 <h2 id="四">四</h2>
 
 <p>老一辈芯片人听到这些会皱眉。</p>
 
-<p>\u201C专用芯片？八十年代搞过。叫ASIC。后来被通用处理器淘汰了。你们这是开历史倒车。\u201D</p>
+<p>“专用芯片？八十年代搞过。叫ASIC。后来被通用处理器淘汰了。你们这是开历史倒车。”</p>
 
 <p>芯片产业确实有个钟摆。六十年代大型机，每台机器一颗定制处理器。七十年代Intel出了通用微处理器，x86横扫一切。2007年NVIDIA用CUDA把GPU从显卡变成了通用并行计算平台。专用、通用、再通用。</p>
 
@@ -114,15 +114,15 @@
 
 <p>Synopsys和Cadence的工具链还能维持多久的定价权？当设计流程从人工驱动变成编译器驱动，EDA巨头是继续做主角，还是被降维成编译器的后端插件？没有人知道。但问题已经摆在桌上了。</p>
 
-<p>台积电的角色反而可能强化。这个新世界里Foundry变成了\u201C模型打印机\u201D。客户提交的不再是GDS文件，可能就是一个权重文件加上目标工艺节点。制造的护城河依然深，甚至更深——因为快速金属层切换的工艺能力本身就是壁垒。</p>
+<p>台积电的角色反而可能强化。这个新世界里Foundry变成了“模型打印机”。客户提交的不再是GDS文件，可能就是一个权重文件加上目标工艺节点。制造的护城河依然深，甚至更深——因为快速金属层切换的工艺能力本身就是壁垒。</p>
 
 <p>英伟达面临的局面最微妙。训练市场它依然是王。但推理市场——更大、增长更快、规模超过五百亿美元——正在被专用芯片一口一口地吃掉。Jensen Huang当然看到了，所以他在拼命拓展软件生态和系统级方案。但能效差距是物理定律决定的。软件优化追不上。</p>
 
-<p>那件皮夹克，过去十年代表\u201CGPU能做一切\u201D。现在，它开始代表\u201CGPU还能做一切，但别人做得更便宜\u201D。代表的东西变了，味道就变了。</p>
+<p>那件皮夹克，过去十年代表“GPU能做一切”。现在，它开始代表“GPU还能做一切，但别人做得更便宜”。代表的东西变了，味道就变了。</p>
 
 <h2 id="六">六</h2>
 
-<p>日本枥木县，Honda研发中心。一辆原型车正在做感知系统测试。车顶的激光雷达每秒吐出数百万个点云。过去，处理这些数据需要一个塞在后备箱里的计算平台，功耗两百瓦以上，液冷散热。现在这套东西缩到了一块信用卡大小的PCB上。Mythic的模拟芯片，功耗不到五瓦。没有风扇。自动驾驶的计算单元第一次真正\u201C消失\u201D在了车辆架构里。</p>
+<p>日本枥木县，Honda研发中心。一辆原型车正在做感知系统测试。车顶的激光雷达每秒吐出数百万个点云。过去，处理这些数据需要一个塞在后备箱里的计算平台，功耗两百瓦以上，液冷散热。现在这套东西缩到了一块信用卡大小的PCB上。Mythic的模拟芯片，功耗不到五瓦。没有风扇。自动驾驶的计算单元第一次真正“消失”在了车辆架构里。</p>
 
 <p>深圳华强北。一家做智能硬件的团队在把一个七十亿参数的中文语言模型塞进售价不到两百块的智能音箱。传统方案至少要十瓦功耗的边缘AI芯片，电池续航和散热都是噩梦。当权重被编码进芯片的物理结构后，推理功耗降到零点五瓦以下。一块普通锂电池撑八小时连续对话。大模型第一次走进了离线和低功耗的场景——不是阉割版，是完整版。</p>
 
@@ -138,9 +138,9 @@
 
 <p>现在反过来了。软件正在变硬。</p>
 
-<p>神经网络的权重被刻进金属层的那一刻，\u201C软件\u201D和\u201C硬件\u201D之间的线就模糊了。权重是数据，是代码，也是电路。推理不是在硅片上\u201C运行\u201D的东西——它是电流通过特定物理结构时自然发生的结果。</p>
+<p>神经网络的权重被刻进金属层的那一刻，“软件”和“硬件”之间的线就模糊了。权重是数据，是代码，也是电路。推理不是在硅片上“运行”的东西——它是电流通过特定物理结构时自然发生的结果。</p>
 
-<p>生物神经网络从来没有\u201C存储\u201D和\u201C计算\u201D的分离。突触的连接强度就是记忆，信号的传播就是推理。存储即计算，结构即功能。冯·诺依曼1945年画的那条线——存储与计算分家、指令与数据分家——也许从来就不是计算的本质。只是那个时代真空管和水银延迟线的工程妥协。我们在这个妥协上建了八十年的大厦，建到了GPU这一层，撞到了天花板。</p>
+<p>生物神经网络从来没有“存储”和“计算”的分离。突触的连接强度就是记忆，信号的传播就是推理。存储即计算，结构即功能。冯·诺依曼1945年画的那条线——存储与计算分家、指令与数据分家——也许从来就不是计算的本质。只是那个时代真空管和水银延迟线的工程妥协。我们在这个妥协上建了八十年的大厦，建到了GPU这一层，撞到了天花板。</p>
 
 <p>Taalas们正在做的事，从某种意义上说，是让硅基计算第一次向碳基智慧的底层架构低头。</p>
 
