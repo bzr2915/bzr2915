@@ -1,0 +1,214 @@
+/*******************************************************************************
+ * _custom.scss — site refresh layer (imported last so it overrides the theme).
+ * Refined accent palette, typography scale, card-styled news & publications,
+ * restyled hero, smoother interactions. Tuned for both light and dark themes.
+ ******************************************************************************/
+
+/* ---------------------------------------------------------------------------
+ * 1. Palette — refined azure/indigo accent with an in-family hover
+ *    (replaces the default blue->purple hover jump).
+ * ------------------------------------------------------------------------- */
+:root {
+  --global-theme-color: #2563eb;
+  --global-hover-color: #1d4ed8;
+  --global-hover-text-color: #ffffff;
+  --global-text-color-light: #5b6470;
+  --global-divider-color: rgba(15, 23, 42, 0.10);
+  --card-shadow: 0 6px 22px rgba(15, 23, 42, 0.09);
+  --card-shadow-hover: 0 12px 30px rgba(37, 99, 235, 0.14);
+}
+
+html[data-theme='dark'] {
+  --global-theme-color: #6ea8fe;
+  --global-hover-color: #9ec5ff;
+  --global-hover-text-color: #0b1220;
+  --global-text-color-light: #9aa4b2;
+  --global-divider-color: rgba(255, 255, 255, 0.12);
+  --card-shadow: 0 6px 22px rgba(0, 0, 0, 0.45);
+  --card-shadow-hover: 0 12px 30px rgba(0, 0, 0, 0.6);
+}
+
+/* ---------------------------------------------------------------------------
+ * 2. Base typography — crisper rendering, more comfortable rhythm.
+ * ------------------------------------------------------------------------- */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.6;
+}
+
+a {
+  transition: color 0.15s ease-in-out;
+}
+
+/* ---------------------------------------------------------------------------
+ * 3. Hero — larger, tighter name; refined subtitle; breathing room.
+ * ------------------------------------------------------------------------- */
+.post-header {
+  margin-bottom: 1.75rem;
+}
+
+.post-title {
+  font-size: clamp(2.3rem, 5.5vw, 3.1rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.08;
+  margin-bottom: 0.5rem;
+}
+
+.post-header .desc {
+  font-size: 1.05rem;
+  color: var(--global-text-color-light);
+  margin-bottom: 0;
+
+  a {
+    color: var(--global-theme-color);
+    font-weight: 600;
+  }
+}
+
+/* Profile photo — softer corners and a refined shadow. */
+.profile img {
+  border-radius: 14px;
+  box-shadow: var(--card-shadow);
+}
+
+/* ---------------------------------------------------------------------------
+ * 4. Section headings — stronger weight with a short accent underline.
+ *    Covers homepage sections (news / selected publications) and the
+ *    publications page category labels.
+ * ------------------------------------------------------------------------- */
+.post > article h2,
+.publications h2.label,
+.publications h2.year {
+  position: relative;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin-top: 2.75rem;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--global-divider-color);
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 44px;
+    height: 3px;
+    border-radius: 3px;
+    background: var(--global-theme-color);
+  }
+}
+
+/* ---------------------------------------------------------------------------
+ * 5. News — clean card list with accent dates and row hover.
+ * ------------------------------------------------------------------------- */
+.news {
+  .table {
+    margin-bottom: 0;
+
+    th,
+    td {
+      border: none;
+      padding: 0.7rem 0.9rem;
+      vertical-align: top;
+    }
+
+    tr {
+      border-radius: 10px;
+      transition: background-color 0.15s ease-in-out;
+    }
+
+    tr:hover td,
+    tr:hover th {
+      background-color: var(--global-code-bg-color);
+    }
+
+    tr:hover th[scope="row"] {
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+    }
+
+    tr:hover td:last-child {
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+
+    th[scope="row"] {
+      color: var(--global-theme-color);
+      font-weight: 600;
+      font-size: 0.85rem;
+      white-space: nowrap;
+      padding-top: 0.85rem;
+    }
+  }
+}
+
+/* ---------------------------------------------------------------------------
+ * 6. Publications — each entry becomes a hover-lift card.
+ * ------------------------------------------------------------------------- */
+.publications {
+  ol.bibliography > li {
+    background-color: var(--global-card-bg-color);
+    border: 1px solid var(--global-divider-color);
+    border-radius: 14px;
+    padding: 1.35rem 1.5rem;
+    margin-bottom: 1.25rem;
+    transition: box-shadow 0.2s ease, transform 0.2s ease,
+      border-color 0.2s ease;
+    box-shadow: var(--card-shadow);
+
+    &:hover {
+      transform: translateY(-3px);
+      border-color: var(--global-theme-color);
+      box-shadow: var(--card-shadow-hover);
+    }
+
+    /* Venue badge — rounded pill. */
+    .abbr abbr {
+      border-radius: 7px;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      padding-top: 0.15rem;
+      padding-bottom: 0.15rem;
+    }
+
+    .title {
+      font-weight: 700;
+      line-height: 1.35;
+    }
+
+    /* Action buttons (ABS, PDF, etc.) — subtle, accent on hover. */
+    .links a.btn {
+      border-radius: 7px;
+      font-size: 0.7rem;
+      transition: all 0.15s ease-in-out;
+
+      &:hover {
+        background-color: var(--global-theme-color);
+        border-color: var(--global-theme-color);
+        color: #fff;
+      }
+    }
+  }
+}
+
+/* ---------------------------------------------------------------------------
+ * 7. Social icons — smooth accent transition on hover.
+ * ------------------------------------------------------------------------- */
+.social .contact-icons a i::before {
+  transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.social .contact-icons a:hover i::before {
+  transform: translateY(-2px);
+}
+
+/* ---------------------------------------------------------------------------
+ * 8. Footer — now flows at page bottom (footer_fixed: false).
+ * ------------------------------------------------------------------------- */
+footer.sticky-bottom {
+  border-top: 1px solid var(--global-divider-color);
+}
