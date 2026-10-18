@@ -195,3 +195,8 @@ html[lang="zh-CN"] .panel-zh, html[lang="zh-CN"] .claim-zh { display: none; }
 /* ---------- seal logo ---------- */
 .brand-mark { width: 56px; display: block; margin-bottom: 2rem; }
 .footer-mark { width: 44px; display: block; margin-bottom: 1.2rem; }
+
+
+/* ---------- film hero on top ---------- */
+.film-hero { background: #000; padding: 0; }
+.film-hero video { display: block; width: 100%; max-width: 1600px; margin: 0 auto; }
