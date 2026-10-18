@@ -35,7 +35,14 @@ const I18N = {
   }
 };
 
-let LANG = localStorage.getItem("clayset-lang") || "en";
+let LANG = (function() {
+  const q = new URLSearchParams(location.search).get("lang");
+  if (q === "zh" || q === "en") {
+    localStorage.setItem("clayset-lang", q);
+    return q;
+  }
+  return localStorage.getItem("clayset-lang") || "en";
+})();
 
 function applyLang() {
   document.querySelectorAll("[data-i18n]").forEach(el => {
