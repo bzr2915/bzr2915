@@ -204,3 +204,8 @@ html[lang="zh-CN"] .panel-zh, html[lang="zh-CN"] .claim-zh { display: none; }
 
 /* ---------- zh minimal edition ---------- */
 html[lang="zh-CN"] .zh-hidden { display: none; }
+
+
+/* ---------- footer seal ---------- */
+footer p { display: flex; align-items: center; gap: 0.6rem; }
+.footer-seal { width: 26px; display: inline-block; }
