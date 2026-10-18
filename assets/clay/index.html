@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>clay — analog layout was never automatable, until now · 大智不工</title>
+<meta name="description" content="clay reads the why, keeps the why, and builds new circuits from the why. Alone.">
+<link rel="icon" href="assets/img/favicon.png" sizes="64x64">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="flow">
+
+<button id="lang-toggle" aria-label="切换语言">中文</button>
+
+<header class="hero">
+  <div class="hero-inner">
+    <img class="brand-mark" src="assets/img/logo.png" alt="clay seal logo">
+    <p class="hero-kicker" data-i18n="hero.kicker">A PREVIEW</p>
+    <h1>
+      <span class="h1-en">Analog layout was never automatable.<br>Until now.</span>
+      <span class="h1-zh">大智不工</span>
+    </h1>
+    <p class="hero-lede" data-i18n="hero.lede">A netlist describes structure. A layout embodies physics. clay reads the why, keeps the why, and builds new circuits from the why. Alone.</p>
+  </div>
+</header>
+
+<section class="claims">
+  <div class="claim">
+    <span class="claim-no">I</span>
+    <h3 data-i18n="claim1.h">clay learns.</h3>
+    <p data-i18n="claim1.p">Every good layout has its reasons. clay reads the reasons off the silicon and writes them down as declarations.</p>
+  </div>
+  <div class="claim">
+    <span class="claim-no">II</span>
+    <h3 data-i18n="claim2.h">clay builds.</h3>
+    <p data-i18n="claim2.p">Declarations in. Verified circuits out. Sized, placed, routed. Unattended.</p>
+  </div>
+  <div class="claim">
+    <span class="claim-no">III</span>
+    <h3 data-i18n="claim3.h">clay creates.</h3>
+    <p data-i18n="claim3.p">Learned once, a decision works forever. New sizes. New fabs. New circuits.</p>
+  </div>
+</section>
+
+<main class="waterfall">
+
+  <section class="drop">
+    <figure class="plate">
+      <video class="plate-video" autoplay muted loop playsinline preload="metadata" poster="assets/img/poster-primitive.png">
+        <source src="assets/video/v9_act3.mp4" type="video/mp4">
+      </video>
+      <figcaption data-i18n="a1.cap">A real amplifier assembling itself on real silicon.</figcaption>
+    </figure>
+  </section>
+
+  <section class="drop">
+    <div class="drop-text">
+      <h2><span data-i18n="a2.h">Extract once. Rebuild anything.</span></h2>
+      <p class="panel-lede" data-i18n="a2.lede">The declarations hold. The circuits change.</p>
+    </div>
+    <figure class="plate">
+      <video class="plate-video" autoplay muted loop playsinline preload="metadata" poster="assets/img/poster-compose.png">
+        <source src="assets/video/v9b_bridge.mp4" type="video/mp4">
+      </video>
+      <figcaption data-i18n="a2.cap">One frozen declaration card. Every layout renders from its real GDS.</figcaption>
+    </figure>
+  </section>
+
+  <section class="drop">
+    <figure class="plate">
+      <video class="plate-video" autoplay muted loop playsinline preload="metadata" poster="assets/img/poster-pnr.png">
+        <source src="assets/video/v11_loop_lightsout.mp4" type="video/mp4">
+      </video>
+      <figcaption data-i18n="a3.cap">Declarations in. Verified circuits out. Unattended.</figcaption>
+    </figure>
+  </section>
+
+  <section class="drop">
+    <div class="video-block">
+      <video id="story-video" controls loop muted playsinline poster="assets/img/poster-story.png" preload="metadata">
+        <source src="assets/video/from-primitive-to-layout.mp4" type="video/mp4">
+      </video>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <img class="footer-mark" src="assets/img/logo.png" alt="clay seal logo">
+  <p><span data-i18n="footer.line">read the why, build the how.</span></p>
+</footer>
+
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
