@@ -1,7 +1,7 @@
 ---
 layout: page
 title: clay
-description: 模拟版图，终于自动化
+description: 模拟电路端到端生成方法。
 img: assets/img/clay/logo.png
 importance: 1
 category: work

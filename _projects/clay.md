@@ -1,7 +1,7 @@
 ---
 layout: page
 title: clay
-description: analog layout, finally automated
+description: Analog layout was never automatable. Until now.
 img: assets/img/clay/logo.png
 importance: 1
 category: work
