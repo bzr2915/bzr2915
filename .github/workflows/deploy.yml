@@ -27,6 +27,7 @@ jobs:
         bundler-cache: true
     - name: Install and Build 🔧
       run: |
+        sudo apt-get update && sudo apt-get install -y imagemagick
         npm install -g mermaid.cli
         bundle exec jekyll build
         touch _site/.nojekyll
