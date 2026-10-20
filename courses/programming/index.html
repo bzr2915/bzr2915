@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <!-- Head -->
+  <head>    <!-- Metadata, OpenGraph and Schema.org -->
+    
+
+    <!-- Standard metadata -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>程序设计 | Zhaori  Bi (毕朝日)</title>
+    <meta name="author" content="Zhaori  Bi (毕朝日)" />
+    <meta name="description" content="复旦大学本科生课程（2026秋季）。以C语言为工具，理解程序如何表示数据、控制执行、组织函数和管理内存，训练严谨、清晰、可验证的程序设计能力。" />
+    <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website" />
+
+
+    <!-- Bootstrap & MDB -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-DF7Zhf293AJxJNTmh5zhoYYIMs2oXitRfBjY+9L//AY=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous" />
+
+    <!-- Bootstrap Table -->
+    <link defer rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.21.4/dist/bootstrap-table.min.css">
+
+    <!-- Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha256-i1+4qU2G2860dGGIOJscdC30s9beBXjFfzjWLjBRsBg=" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
+
+    <!-- Code Syntax Highlighting -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/github.css" media="" id="highlight_theme_light" />
+
+    
+
+    <!-- Styles -->
+    
+    <link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚛️</text></svg>">
+    
+    <link rel="stylesheet" href="/bzr2915/assets/css/main.css">
+    <link rel="canonical" href="https://bzr2915.github.io/bzr2915//bzr2915/courses/programming/">
+
+    <!-- Dark Mode -->
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/native.css" media="none" id="highlight_theme_dark" />
+
+    <script src="/bzr2915/assets/js/theme.js"></script>
+    <script src="/bzr2915/assets/js/dark_mode.js"></script>
+    
+
+  </head>
+
+  <!-- Body -->
+  <body class="fixed-top-nav sticky-bottom-footer">
+
+    <!-- Header -->
+    <header>
+
+      <!-- Nav Bar -->
+      <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top">
+        <div class="container">
+          <a class="navbar-brand title font-weight-lighter" href="/bzr2915/"><span class="font-weight-bold">Zhaori&nbsp;</span>Bi (毕朝日)</a>
+          <!-- Navbar Toggle -->
+          <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar top-bar"></span>
+            <span class="icon-bar middle-bar"></span>
+            <span class="icon-bar bottom-bar"></span>
+          </button>
+
+          <div class="collapse navbar-collapse text-right" id="navbarNav">
+            <ul class="navbar-nav ml-auto flex-nowrap">
+
+              <!-- About -->
+              <li class="nav-item ">
+                <a class="nav-link" href="/bzr2915/">About</a>
+              </li>
+              <!--  -->
+              <!-- Blog -->
+              <!-- <li class="nav-item ">
+                <a class="nav-link" href="/bzr2915/blog/">Opinions</a>
+              </li> -->
+
+              <!-- Other pages -->
+              <li class="nav-item ">
+                <a class="nav-link" href="/bzr2915/cv/">Curriculum Vitae</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/bzr2915/projects/">Research</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/bzr2915/publications/">Publications</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/bzr2915/opinions/">Opinions</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/bzr2915/work/">Projects</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/bzr2915/courses/">Teaching</a>
+              </li>
+
+              <!-- Toogle theme mode -->
+              <li class="toggle-container">
+                <button id="light-toggle" title="Change theme">
+                  <i class="fas fa-moon"></i>
+                  <i class="fas fa-sun"></i>
+                </button>
+              </li>
+
+              <!-- Language toggle -->
+              <li class="nav-item"><a class="nav-link" href="/bzr2915/zh/">中</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Scrolling Progress Bar -->
+      <progress id="progress" value="0">
+        <div class="progress-container">
+          <span class="progress-bar"></span>
+        </div>
+      </progress>
+    </header>
+
+
+    <!-- Content -->
+    <div class="container mt-5">
+      
+        <!-- page.html -->
+        <div class="post">
+
+          <header class="post-header">
+            <h1 class="post-title">程序设计</h1>
+            <p class="post-description">复旦大学本科生课程（2026秋季）。以C语言为工具，理解程序如何表示数据、控制执行、组织函数和管理内存，训练严谨、清晰、可验证的程序设计能力。</p>
+          </header>
+
+          <article>
+            <h2 id="课程简介">课程简介</h2>
+
+<p>C语言只有几十个关键字，却能写出操作系统、编译器、网络设备和嵌入式程序。它给程序员很大的自由，也把类型、内存和边界的责任交给程序员：一个下标、一个地址、一个未初始化的变量，都可能直接改变程序行为。学习C，就是学习怎样把人的计算意图准确、清楚地交给机器执行。</p>
+
+<p>本课程从“程序为什么这样运行”出发。我们从数据、表达式和控制流开始，逐步进入函数、数组、指针、字符串、结构体、动态内存、文件和模块化设计。课堂不把语法背成清单，而是用可运行的程序追踪：值从哪里来，对象放在哪里，循环怎样结束，函数怎样交接，错误怎样被定位。随着主题推进，小程序会逐步组合成更完整、可复用、可测试的程序。</p>
+
+<h2 id="这门课怎样学">这门课怎样学</h2>
+
+<ul>
+  <li><strong>先看清机器，再动手写代码</strong>：从位、字节、地址和执行过程理解语法，而不是先背格式。</li>
+  <li><strong>从小程序练准确性</strong>：每个例子都要求说清类型、对象、条件和结果，不靠猜输出。</li>
+  <li><strong>把程序拆开，再组合起来</strong>：通过函数、头文件和多文件组织，把一段能跑的代码变成结构清楚的程序。</li>
+  <li><strong>把错误变成信息</strong>：编译警告、测试失败和异常输出都用来定位假设与实现之间的差别。</li>
+</ul>
+
+<h2 id="学习路线">学习路线</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>阶段</th>
+      <th>主要内容</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>程序入门</td>
+      <td>计算机执行、程序结构、数据类型、常量与变量、格式化输入输出</td>
+    </tr>
+    <tr>
+      <td>计算与控制</td>
+      <td>运算符、表达式、类型转换、分支、循环、结构化控制</td>
+    </tr>
+    <tr>
+      <td>函数与组织</td>
+      <td>函数接口、参数与返回值、递归、多文件编译、指针与函数间通信</td>
+    </tr>
+    <tr>
+      <td>数据组织</td>
+      <td>数组、字符串、指针运算、结构体与数据表示</td>
+    </tr>
+    <tr>
+      <td>深入主题</td>
+      <td>动态内存、文件、预处理、模块化程序设计与综合实践</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="已发布讲义">已发布讲义</h2>
+
+<ol>
+  <li><a href="/bzr2915/assets/pdf/programming_2026_fall/lecture1_introduction.pdf">第一讲：引言（PDF）</a></li>
+  <li><a href="/bzr2915/assets/pdf/programming_2026_fall/lecture2_data_types_formatted_io.pdf">第二讲：基本数据类型与格式化输入输出（PDF）</a></li>
+  <li><a href="/bzr2915/assets/pdf/programming_2026_fall/lecture3_strings_formatted_io.pdf">第三讲：字符串与格式化输入输出（PDF）</a></li>
+  <li><a href="/bzr2915/assets/pdf/programming_2026_fall/lecture4_operators_expressions.pdf">第四讲：运算符与表达式（PDF）</a></li>
+  <li><a href="/bzr2915/assets/pdf/programming_2026_fall/lecture5_structured_control.pdf">第五讲：结构化控制（PDF）</a></li>
+  <li><a href="/bzr2915/assets/pdf/programming_2026_fall/lecture6_functions.pdf">第六讲：函数（PDF）</a></li>
+</ol>
+
+<p>后续讲义与实验材料将随课程进度继续补充。</p>
+
+          </article>
+
+        </div>
+
+      
+    </div>
+
+    <!-- Footer -->    <footer class="sticky-bottom mt-5">
+      <div class="container">
+        &copy; Copyright 2026 Zhaori  Bi (毕朝日). 
+      </div>
+    </footer>
+
+    <!-- JavaScripts -->
+    <!-- jQuery -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- Bootsrap & MDB scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha256-fgLAgv7fyCGopR/gBNq2iW3ZKIdqIcyshnUULC4vex8=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js" integrity="sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA=" crossorigin="anonymous"></script>
+
+    <!-- Masonry & imagesLoaded -->
+  <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+  <script defer src="/bzr2915/assets/js/masonry.js" type="text/javascript"></script>
+    
+  <!-- Medium Zoom JS -->
+  <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.8/dist/medium-zoom.min.js" integrity="sha256-7PhEpEWEW0XXQ0k6kQrPKwuoIomz8R8IYyuU1Qew4P8=" crossorigin="anonymous"></script>
+  <script defer src="/bzr2915/assets/js/zoom.js"></script>
+
+  <!-- Bootstrap Table -->
+  <script defer src="https://unpkg.com/bootstrap-table@1.21.4/dist/bootstrap-table.min.js"></script>
+
+  <!-- Load Common JS -->
+  <script src="/bzr2915/assets/js/no_defer.js"></script>
+  <script defer src="/bzr2915/assets/js/common.js"></script>
+  <script defer src="/bzr2915/assets/js/copy_code.js" type="text/javascript"></script>
+
+    
+  <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
+  <script async src="https://badge.dimensions.ai/badge.js"></script>
+
+    <!-- MathJax -->
+  <script type="text/javascript">
+    window.MathJax = {
+      tex: {
+        tags: 'ams'
+      }
+    };
+  </script>
+  <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VD3DPZCL7J"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ window.dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-VD3DPZCL7J');
+  </script>
+    
+
+<!-- Scrolling Progress Bar -->
+<script type="text/javascript">
+  /*
+   * This JavaScript code has been adapted from the article 
+   * https://css-tricks.com/reading-position-indicator/ authored by Pankaj Parashar, 
+   * published on the website https://css-tricks.com on the 7th of May, 2014.
+   * Couple of changes were made to the original code to make it compatible 
+   * with the `al-foio` theme.
+   */
+  const progressBar = $("#progress");
+  /*
+   * We set up the bar after all elements are done loading.
+   * In some cases, if the images in the page are larger than the intended
+   * size they'll have on the page, they'll be resized via CSS to accomodate
+   * the desired size. This mistake, however, breaks the computations as the
+   * scroll size is computed as soon as the elements finish loading.
+   * To account for this, a minimal delay was introduced before computing the
+   * values.
+   */
+  window.onload = function () {
+    setTimeout(progressBarSetup, 50);
+  };
+  /*
+   * We set up the bar according to the browser.
+   * If the browser supports the progress element we use that.
+   * Otherwise, we resize the bar thru CSS styling
+   */
+  function progressBarSetup() {
+    if ("max" in document.createElement("progress")) {
+      initializeProgressElement();
+      $(document).on("scroll", function() {
+        progressBar.attr({ value: getCurrentScrollPosition() });
+      });
+      $(window).on("resize", initializeProgressElement);
+    } else {
+      resizeProgressBar();
+      $(document).on("scroll", resizeProgressBar);
+      $(window).on("resize", resizeProgressBar);
+    }
+  }
+  /*
+   * The vertical scroll position is the same as the number of pixels that
+   * are hidden from view above the scrollable area. Thus, a value > 0 is
+   * how much the user has scrolled from the top
+   */
+  function getCurrentScrollPosition() {
+    return $(window).scrollTop();
+  }
+
+  function initializeProgressElement() {
+    let navbarHeight = $("#navbar").outerHeight(true);
+    $("body").css({ "padding-top": navbarHeight });
+    $("progress-container").css({ "padding-top": navbarHeight });
+    progressBar.css({ top: navbarHeight });
+    progressBar.attr({
+      max: getDistanceToScroll(),
+      value: getCurrentScrollPosition(),
+    });
+  }
+  /*
+   * The offset between the html document height and the browser viewport
+   * height will be greater than zero if vertical scroll is possible.
+   * This is the distance the user can scroll
+   */
+  function getDistanceToScroll() {
+    return $(document).height() - $(window).height();
+  }
+
+  function resizeProgressBar() {
+    progressBar.css({ width: getWidthPercentage() + "%" });
+  }
+  // The scroll ratio equals the percentage to resize the bar
+  function getWidthPercentage() {
+    return (getCurrentScrollPosition() / getDistanceToScroll()) * 100;
+  }
+</script>
+
+  </body>
+</html>
