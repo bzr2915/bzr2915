@@ -12,9 +12,9 @@ lang_alternate: /opinions_zh/
 ---
 
 <div class="tag-filters mb-3">
-  <button class="btn btn-sm btn-outline-primary tag-btn active" data-tag="all">All</button>
+  <button class="btn btn-sm tag-btn active" data-tag="all">All</button>
   {%- for tag in site.display_tags -%}
-  <button class="btn btn-sm btn-outline-primary tag-btn" data-tag="{{ tag }}">{{ tag }}</button>
+  <button class="btn btn-sm tag-btn" data-tag="{{ tag }}">{{ tag }}</button>
   {%- endfor -%}
 </div>
 

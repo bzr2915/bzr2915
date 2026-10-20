@@ -9,9 +9,9 @@ lang_alternate: /opinions/
 ---
 
 <div class="tag-filters mb-3">
-  <button class="btn btn-sm btn-outline-primary tag-btn active" data-tag="all">全部</button>
+  <button class="btn btn-sm tag-btn active" data-tag="all">全部</button>
   {%- for tag in site.display_tags -%}
-  <button class="btn btn-sm btn-outline-primary tag-btn" data-tag="{{ tag }}">{{ tag }}</button>
+  <button class="btn btn-sm tag-btn" data-tag="{{ tag }}">{{ tag }}</button>
   {%- endfor -%}
 </div>
 
