@@ -2,6 +2,78 @@
 ---
 ---
 ---
+@article{qin2026analogmaster,
+  title={AnalogMaster: A Large Language Model-Based Framework for Automated Analog IC Design from Circuit Images to Layout},
+  author={Qin, Xian-Rong and Zhang, Yong and Hu, Ying and Su, Tao and Bi, Zhaori and Xu, Ning and Jia, Bo-Wen},
+  journal={Expert Systems with Applications},
+  year={2026},
+  publisher={Elsevier},
+  abbr={ESWA},
+  label={AI for EDA},
+  selected={false}
+}
+
+@inproceedings{zhao2026learningwhy,
+  title={Learning the ``Why'': Causal-Aware Learning in Explainable and Efficient CPU Design Optimization},
+  author={Zhao, Yiyang and Gao, Tianning and Pan, Hongyang and Wu, Liangji and Wei, Yiming and Bi, Zhaori and Yan, Changhao and Zeng, Xuan},
+  booktitle={Proceedings of the 63rd ACM/IEEE Design Automation Conference (DAC 26)},
+  pages={1--7},
+  year={2026},
+  organization={IEEE},
+  abbr={DAC},
+  label={AI for EDA},
+  selected={false}
+}
+
+@inproceedings{wang2026perifi,
+  title={PeRIFi: Physics-Infused RF Inverse Design with Parametric Data-Efficient Feasible-Region Sampling},
+  author={Wang, Siwen and Zhu, Keren and Chae, Hyunsu and Bi, Zhaori and Wang, Zhiang and Yan, Changhao and Zeng, Xuan},
+  booktitle={Proceedings of the 63rd ACM/IEEE Design Automation Conference (DAC 26)},
+  pages={1--7},
+  year={2026},
+  organization={IEEE},
+  abbr={DAC},
+  label={AI for EDA},
+  selected={false},
+  abstract={AI-driven inverse design shows promise in synthesizing complex electromagnetic (EM) structures for radio-frequency (RF) circuits. However, existing methods face two fundamental limitations: random topology generation produces physically infeasible layouts, and pixel-based representations encode only topology while ignoring geometric dimensions, forcing dataset regeneration and model retraining when layout scales change. We propose PeRIFi, a physics-constrained and geometry-aware inverse design framework built on three key innovations. (1) Feasibility-aware parameterization integrates B-splines (guaranteeing DC connectivity) with level-set representations (enabling flexible geometric variation), ensuring 100% physically feasible structure generation. (2) Explicit geometric encoding decouples topology from geometric dimensions, allowing a single surrogate model to generalize across multiple layout scales without regenerating datasets. (3) High-dimensional optimization employs Particle Swarm Optimization tailored to the proposed 268-dimensional feasible design space. Experimental results demonstrate substantial data-efficiency gains: with only 5k training samples, PeRIFi attains 62.8% lower MSE and a 6.7% higher R2 than a pixel-based baseline trained on 20k samples. Furthermore, PeRIFi reduces optimization cost by 22.19%--34.71% and prediction error (MAE) by 58.2% compared with state-of-the-art methods, enabling more accurate and scalable RF inverse design.}
+}
+
+@inproceedings{xiao2026tcadgpt,
+  title={TCAD-GPT: Multimodal Large Language Model Framework for Complete and Rapid TCAD Simulation},
+  author={Xiao, Gongteng and Huang, Haobo and Yu, Tianye and Zhao, Yudi and Xiong, Shisheng and Bi, Zhaori and Zeng, Xuan and Lu, Ye},
+  booktitle={2026 IEEE 26th International Conference on Nanotechnology (NANO 26)},
+  pages={488--494},
+  year={2026},
+  organization={IEEE},
+  abbr={NANO},
+  label={AI for EDA},
+  selected={false},
+  abstract={This paper presents TCAD-GPT, an end-to-end multimodal large language model (MLLM) framework for device technology computer-aided design (TCAD) simulation. TCAD-GPT is able to take textual descriptions of semiconductor device process flows (SDPF) as input, and generate corresponding device structures in situ, as well as the electrical characteristics of constructed device as output. Specifically, TCAD-GPT consists of a transformer-based SDPF text encoder with semantic alignment, and a diffusion-based multimodal dual-head (DMDH) decoder with a single latent space. The contrastive learning is introduced for semantic alignment of SDPF encoder using dataset synthesized from standard process steps and their combinational sequences, enabling the learning of device structural evolutions at each process stage. The shared latent space is designed in the DMDH decoder for a variational autoencoder (VAE) and a pooling feedforward network (PFN), facilitating the joint generation of both device structures and electrical characteristics, covering the complete device TCAD simulation results. Experiments on process flows and structural evolutions of different device process variations are demonstrated. It's shown that TCAD-GPT achieves up to 327x speed-up over traditional approach, while keeping average error to less than 1%. This work paves the way for fast device simulations that contains both process and electrical properties of the devices in a unified generative paradigm.}
+}
+
+@article{li2026tlgrpo,
+  title={TL-GRPO: Turn-Level RL for Reasoning-Guided Iterative Optimization},
+  author={Li, Peiji and Li, Linyang and Sun, Handa and Mai, Wenjin and Chen, Yongkang and Li, Xiaozhe and Shen, Yue and Ma, Yichuan and Sun, Yiliu and Cao, Jiaxi and He, Zhishu and Wang, Bo and Zheng, Xiaoqing and Bi, Zhaori and Qiu, Xipeng and Guo, Qipeng and Chen, Kai and Lin, Dahua},
+  journal={arXiv preprint arXiv:2601.16480},
+  year={2026},
+  abbr={arXiv},
+  label={AI for EDA},
+  selected={false},
+  abstract={Large language models have demonstrated strong reasoning capabilities in complex tasks through tool integration, which is typically framed as a Markov Decision Process and optimized with trajectory-level RL algorithms such as GRPO. However, a common class of reasoning tasks, iterative optimization, presents distinct challenges: the agent interacts with the same underlying environment state across turns, and the value of a trajectory is determined by the best turn-level reward rather than cumulative returns. Existing GRPO-based methods cannot perform fine-grained, turn-level optimization in such settings, while black-box optimization methods discard prior knowledge and reasoning capabilities. To address this gap, we propose Turn-Level GRPO (TL-GRPO), a lightweight RL algorithm that performs turn-level group sampling for fine-grained optimization. We evaluate TL-GRPO on analog circuit sizing (ACS), a challenging scientific optimization task requiring multiple simulations and domain expertise. Results show that TL-GRPO outperforms standard GRPO and Bayesian optimization methods across various specifications. Furthermore, our 30B model trained with TL-GRPO achieves state-of-the-art performance on ACS tasks under same simulation budget, demonstrating both strong generalization and practical utility.}
+}
+
+@article{chen2026mfrlnet,
+  title={MFRLNet: A Layout Hotspot Detection Network Based on Multi-feature Representation Learning},
+  author={Chen, Han and Cao, Ziqiang and Bi, Zhaori and Tang, Jun and Wang, Ke and Zhu, Ming and Wu, Xiulong},
+  journal={ACM Transactions on Design Automation of Electronic Systems},
+  year={2026},
+  publisher={ACM},
+  abbr={TODAES},
+  label={AI for EDA},
+  selected={false},
+  abstract={Layout hotspot detection (LHD) aims to localize potential hotspot regions from complex layouts that may cause exposure distortions, which is crucial in the physical verification process. With the development of technology nodes to the physical limit, traditional methods can only retrieve hotspot patterns with simple structures and struggle to handle more complex patterns, thus failing to adequately address practical requirements. In this study, we model the layout hotspot detection task as a process of multi-feature representation learning, and accordingly design a novel layout hotspot detection network based on multi-feature representation learning (MFRLNet). Specifically, we design a reconstruction network (Rec Net) and an adaptive cross-layer feature fusion network (ACFF Net) to perform feature reconstruction and selectively fuse multi-scale reconstructed features in MFRLNet, respectively. Motivated by the multi-feature modeling and interaction (MFM-I), Rec Net extracts visual and geometric features from various layers using MFM-I, and conducts interactive learning to enhance the representational capacity of the network. Thereby, the module facilitates learning by the subsequent Classifier. Moreover, due to the extreme imbalance between hotspots and nonhotspots, we propose a two-stage training strategy to alleviate the issue of the network overfocusing on nonhotspot features. Experiments on the public datasets ICCAD 12 and ICCAD 19 demonstrate that our method achieves superior performance.}
+}
+
 @inproceedings{holmes2026,
   title={HOLMES: Hierarchical Optimization with poLygonal ModEling for Large-Scale AMS Placement},
   author={Chen, Guanhua and Yan, Yujie and Liu, Jiahua and Xu, Zecheng and Qiu, Linxi and Wu, Yumao and Wang, Zhiang and Yan, Changhao and Bi, Zhaori and Zhu, Keren},
@@ -263,6 +335,17 @@
   label={AI for EDA},
   selected={false},
   abstract={High-dimensional constrained optimization poses significant challenges in analog circuit design automation, where expensive simulations and complex design spaces hinder efficient exploration. This paper proposes a self-review Bayesian optimization method that integrates a teacher-student paradigm within a local Bayesian optimization framework to reduce model errors and enhance exploration efficiency in constrained high-dimensional design spaces. The method employs deep ensembles for effective constraint handling, enabling reliable identification of feasible regions. Experimental results on both synthetic benchmarks and real-world analog circuits demonstrate that the proposed approach achieves superior performance compared to state-of-the-art methods for constrained high-dimensional design space exploration.}
+}
+
+@inproceedings{zhao2024exploring,
+  title={Exploring High-dimensional Search Space via Voronoi Graph Traversing},
+  author={Zhao, Aidong and Zhao, Xuyang and Gu, Tianchen and Bi, Zhaori and Sun, Xinwei and Yan, Changhao and Yang, Fan and Zhou, Dian and Zeng, Xuan},
+  booktitle={The 40th Conference on Uncertainty in Artificial Intelligence (UAI 24)},
+  year={2024},
+  abbr={UAI},
+  label={AI for EDA},
+  selected={false},
+  abstract={Bayesian optimization (BO) is a well-established methodology for optimizing costly black-box functions. However, the sparse observations in the high-dimensional search space pose challenges in constructing reliable Gaussian Process (GP) models, which leads to blind exploration of the search space. We propose a novel Voronoi Graph Traversing (VGT) algorithm to extend BO to ultra high-dimensional problems. VGT employs a Voronoi diagram to mesh the design space and transform it into an undirected Voronoi graph. VGT explores the search space by iteratively performing path selection, promising cell sampling, and graph expansion operations. We introduce a UCB-based global traversal strategy to select the path towards promising Voronoi cells. Then we perform local BO within the promising cell and train local GP with a neighboring subset. The intrinsic geometric boundaries and adjacency of the Voronoi graph assist in fine-tuning the trajectory of local BO sampling. We also present a subspace enhancement approach for the intrinsic low-dimensional problems. Experimental results, including both synthetic benchmarks and real-world applications, demonstrate the proposed approach's state-of-the-art performance for tackling ultra high-dimensional problems ranging from hundreds to one thousand dimensions.}
 }
 
 @inproceedings{himoss,
